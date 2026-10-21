@@ -13,9 +13,9 @@ export default async function CoursesPage({ params }: PageProps) {
   const k = c.courses;
   return (
     <>
-      <PageHead trail="black" title={k.intro.title} lede={k.intro.lede} />
+      <PageHead icon="rezultaty" title={k.intro.title} lede={k.intro.lede} />
 
-      <section className="section section--tight" style={{ paddingTop: 0 }}>
+      <section className="section">
         <div className="wrap stack">
           <SectionHeading>{k.free.title}</SectionHeading>
           <div style={{ marginTop: 32 }}>
@@ -24,23 +24,14 @@ export default async function CoursesPage({ params }: PageProps) {
         </div>
       </section>
 
-      <section className="section section--mist">
+      <section className="section section--lavender">
         <div className="wrap split">
           <h2>{k.online.title}</h2>
           <div className="stack">
             <p>{k.online.body}</p>
-            <a className="btn btn--ghost" href={mailto(k.online.title)} style={{ marginTop: 20 }}>
+            <a className="btn btn--ghost" href={mailto(k.online.title)}>
               {k.online.action}
             </a>
-          </div>
-        </div>
-      </section>
-
-      <section className="section">
-        <div className="wrap stack">
-          <SectionHeading>{k.outdoor.title}</SectionHeading>
-          <div style={{ marginTop: 32 }}>
-            <Items c={c} items={k.outdoor.items} />
           </div>
         </div>
       </section>

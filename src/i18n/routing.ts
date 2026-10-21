@@ -12,6 +12,8 @@ export const routing = defineRouting({
     "/mentoring": "/mentoring",
     "/szkolenia": { pl: "/szkolenia", en: "/training" },
     "/wystapienia": { pl: "/wystapienia", en: "/speaking" },
+    "/networking-w-gorach": { pl: "/networking-w-gorach", en: "/mountain-networking" },
+    "/wydarzenia": { pl: "/wydarzenia", en: "/events" },
     "/ksiazki": { pl: "/ksiazki", en: "/books" },
     "/kursy": { pl: "/kursy", en: "/courses" },
     "/linkaris": "/linkaris",

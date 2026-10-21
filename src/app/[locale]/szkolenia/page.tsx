@@ -13,9 +13,9 @@ export default async function TrainingPage({ params }: PageProps) {
   const t = c.training;
   return (
     <>
-      <PageHead trail="blue" title={t.intro.title} lede={t.intro.lede} />
+      <PageHead icon="ludzie" image="/images/scena-6.webp" title={t.intro.title} lede={t.intro.lede} />
 
-      <section className="section section--tight" style={{ paddingTop: 0 }}>
+      <section className="section section--tight">
         <div className="wrap stack">
           <SectionHeading>{t.programs.title}</SectionHeading>
           <div style={{ marginTop: 32 }}>
@@ -24,7 +24,7 @@ export default async function TrainingPage({ params }: PageProps) {
         </div>
       </section>
 
-      <section className="section section--mist">
+      <section className="section section--lavender">
         <div className="wrap split">
           <div className="stack">
             <SectionHeading>{t.custom.title}</SectionHeading>
@@ -45,12 +45,12 @@ export default async function TrainingPage({ params }: PageProps) {
         </div>
       </section>
 
-      <section className="section section--mist section--tight">
+      <section className="section section--lavender section--tight">
         <div className="wrap split">
           <h2>{t.funding.title}</h2>
           <div className="stack">
             <p>{t.funding.body}</p>
-            <a className="text-link" href={mailto(t.funding.title === "Dofinansowanie" ? "Szkolenie przez BUR" : "Training via BUR")}>
+            <a className="text-link" href={mailto(t.funding.mailSubject)}>
               {c.cta.write}
             </a>
           </div>

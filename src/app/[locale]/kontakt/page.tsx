@@ -13,9 +13,9 @@ export default async function ContactPage({ params }: PageProps) {
   const k = c.contact;
   return (
     <>
-      <PageHead title={k.intro.title} lede={k.intro.lede} />
+      <PageHead image="/images/hero-gory2.webp" title={k.intro.title} lede={k.intro.lede} />
 
-      <section className="section" style={{ paddingTop: 0 }}>
+      <section className="section">
         <div className="wrap contact-grid">
           <div className="stack">
             <h2>{k.calendar.title}</h2>

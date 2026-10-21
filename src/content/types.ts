@@ -1,16 +1,9 @@
 import type { AppPathname } from "@/i18n/routing";
 
-/** Colours of Polish mountain trail markings. Each area of work has its own trail. */
-export type Trail = "red" | "blue" | "green" | "yellow" | "black";
+/** Line icons from the brand board (Ikony / elementy graficzne). */
+export type IconName = "rozwoj" | "kierunek" | "swiadomosc" | "ludzie" | "dzialanie" | "rezultaty";
 
 export type NavItem = { href: AppPathname; label: string };
-
-export type SignpostArm = {
-  href: AppPathname;
-  trail: Trail;
-  label: string;
-  detail: string;
-};
 
 export type Item = { title: string; body: string; note?: string };
 
@@ -18,15 +11,40 @@ export type Step = { title: string; body: string };
 
 export type PageIntro = { title: string; lede: string };
 
+export type Path = {
+  href: AppPathname;
+  icon: IconName;
+  image: string;
+  title: string;
+  body: string;
+  link: string;
+};
+
+export type Testimonial = { quote: string; name: string; role: string };
+
+export type EventInfo = {
+  slug: string;
+  title: string;
+  dates: string;
+  place: string;
+  lede: string;
+  facts: { label: string; value: string }[];
+  points: string[];
+  cta: { label: string; href: string; external?: boolean };
+};
+
 export type Content = {
   meta: { title: string; description: string };
   nav: {
     items: NavItem[];
+    more: NavItem[];
     home: string;
     menu: string;
     langLabel: string;
     langName: string;
+    skip: string;
   };
+  brand: { roles: string; tagline: string; signature: string };
   cta: {
     book: string;
     bookNote: string;
@@ -35,19 +53,18 @@ export type Content = {
     bandBody: string;
   };
   home: {
-    name: string;
-    title: string;
     lede: string;
-    signpostLabel: string;
-    coursesLink: string;
-    arms: SignpostArm[];
-    origin: { title: string; body: string[]; facts: { value: string; label: string }[] };
-    mentoring: { title: string; body: string; link: string };
-    training: { title: string; body: string; link: string };
-    speaking: { title: string; body: string; link: string };
-    books: { title: string; body: string; link: string };
-    linkaris: { title: string; body: string; link: string };
+    stats: { value: string; label: string }[];
+    credentialsLabel: string;
+    credentials: string[];
+    origin: { title: string; body: string[] };
+    pathsTitle: string;
+    paths: Path[];
+    testimonialsTitle: string;
+    eventsTitle: string;
+    eventsLink: string;
   };
+  testimonials: Testimonial[];
   mentoring: {
     intro: PageIntro;
     program: { name: string; body: string[] };
@@ -61,7 +78,7 @@ export type Content = {
     programs: { title: string; items: Item[] };
     custom: { title: string; body: string; topics: string[] };
     process: { title: string; items: Step[] };
-    funding: { title: string; body: string };
+    funding: { title: string; body: string; mailSubject: string };
   };
   speaking: {
     intro: PageIntro;
@@ -69,16 +86,27 @@ export type Content = {
     moderation: { title: string; body: string };
     credentials: { title: string; points: string[] };
   };
+  networking: {
+    intro: PageIntro;
+    why: { title: string; body: string[] };
+    peaks: { title: string; items: Item[] };
+    how: { title: string; items: Step[] };
+    join: { title: string; body: string; action: string; mailSubject: string };
+  };
+  events: {
+    intro: PageIntro;
+    list: EventInfo[];
+    past: { title: string; body: string };
+  };
   books: {
     intro: PageIntro;
-    coauthored: { title: string; body: string; titles: string[]; order: string };
+    coauthored: { title: string; body: string; titles: { title: string; image?: string }[]; order: string };
     ebooks: { title: string; body: string; items: Item[] };
   };
   courses: {
     intro: PageIntro;
     free: { title: string; items: Item[] };
     online: { title: string; body: string; action: string };
-    outdoor: { title: string; items: Item[] };
   };
   linkaris: {
     intro: PageIntro;
@@ -100,6 +128,6 @@ export type Content = {
     social: { title: string };
     company: string;
   };
-  footer: { tagline: string; rights: string; social: string };
+  footer: { tagline: string; rights: string };
   status: { soon: string; inProgress: string; free: string };
 };

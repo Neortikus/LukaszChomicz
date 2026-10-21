@@ -1,62 +1,40 @@
-import type { Content, Item, Step, Trail as TrailColour } from "@/content/types";
+import type { Content, IconName, Item, Step, Testimonial } from "@/content/types";
 import { site, mailto } from "@/content/site";
-import { Trail } from "./Trail";
-import fs from "node:fs";
-import path from "node:path";
+import { Icon } from "./Icon";
 
-export function BookButton({
-  c,
-  variant,
-}: {
-  c: Content;
-  variant?: "light" | "ghost";
-}) {
+export function BookButton({ c, variant }: { c: Content; variant?: "accent" | "ghost" | "ghost-light" }) {
   return (
-    <a
-      href={site.calendly}
-      target="_blank"
-      rel="noopener noreferrer"
-      className={`btn${variant ? ` btn--${variant}` : ""}`}
-    >
+    <a href={site.calendly} target="_blank" rel="noopener noreferrer" className={`btn${variant ? ` btn--${variant}` : ""}`}>
       {c.cta.book}
     </a>
   );
 }
 
-export function PageHead({
-  trail,
-  title,
-  lede,
-}: {
-  trail?: TrailColour;
-  title: string;
-  lede: string;
-}) {
+export function PageHead({ icon, image, title, lede }: { icon?: IconName; image?: string; title: string; lede: string }) {
   return (
-    <section className={`page-head${trail ? ` page-head--${trail}` : ""}`}>
+    <section className={`page-head${image ? "" : " page-head--plain"}`}>
+      {image && (
+        <div className="page-head__bg">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={image} alt="" />
+        </div>
+      )}
       <div className="wrap">
         <div className="heading-row">
-          {trail && <Trail colour={trail} size="lg" />}
+          {icon && <Icon name={icon} size={44} />}
           <h1>{title}</h1>
         </div>
+        <span className="accent-bar" />
         <p className="lede">{lede}</p>
       </div>
     </section>
   );
 }
 
-export function SectionHeading({
-  trail,
-  children,
-  id,
-}: {
-  trail?: TrailColour;
-  children: React.ReactNode;
-  id?: string;
-}) {
+export function SectionHeading({ icon, children, id }: { icon?: IconName; children: React.ReactNode; id?: string }) {
   return (
     <div className="heading-row">
-      {trail && <Trail colour={trail} />}
+      {icon && <Icon name={icon} />}
       <h2 id={id}>{children}</h2>
     </div>
   );
@@ -105,6 +83,33 @@ export function Bullets({ points }: { points: string[] }) {
   );
 }
 
+export function Photo({ src, alt, shape = "wide" }: { src: string; alt: string; shape?: "wide" | "tall" | "fill" }) {
+  return (
+    <div className={`photo${shape === "fill" ? "" : ` photo--${shape}`}`}>
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img src={src} alt={alt} loading="lazy" />
+    </div>
+  );
+}
+
+export function Quotes({ items }: { items: Testimonial[] }) {
+  return (
+    <ul className="quotes">
+      {items.map((t) => (
+        <li key={t.name}>
+          <figure className="quote" style={{ margin: 0 }}>
+            <blockquote>{t.quote}</blockquote>
+            <figcaption>
+              <strong>{t.name}</strong>
+              <span>{t.role}</span>
+            </figcaption>
+          </figure>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
 export function CtaBand({ c }: { c: Content }) {
   return (
     <section className="cta-band" aria-labelledby="cta-band-title">
@@ -112,9 +117,12 @@ export function CtaBand({ c }: { c: Content }) {
         <div>
           <h2 id="cta-band-title">{c.cta.bandTitle}</h2>
           <p>{c.cta.bandBody}</p>
+          <span className="script" aria-hidden="true">
+            {c.brand.signature}
+          </span>
         </div>
         <div className="stack">
-          <BookButton c={c} variant="light" />
+          <BookButton c={c} />
           <p className="cta-note">
             {c.cta.bookNote}{" "}
             <a href={mailto()} style={{ color: "#fff" }}>
@@ -124,26 +132,5 @@ export function CtaBand({ c }: { c: Content }) {
         </div>
       </div>
     </section>
-  );
-}
-
-/**
- * Shows /public/images/lukasz.jpg when it exists. Until a photo is added,
- * a neutral block with initials keeps the layout intact.
- */
-export function Portrait({ alt }: { alt: string }) {
-  const file = path.join(process.cwd(), "public", "images", "lukasz.jpg");
-  const hasPhoto = fs.existsSync(file);
-  return (
-    <div className="portrait">
-      {hasPhoto ? (
-        // eslint-disable-next-line @next/next/no-img-element
-        <img src="/images/lukasz.jpg" alt={alt} loading="lazy" />
-      ) : (
-        <span className="portrait__initials" aria-hidden="true">
-          ŁC
-        </span>
-      )}
-    </div>
   );
 }

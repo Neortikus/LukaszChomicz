@@ -12,9 +12,9 @@ export default async function SpeakingPage({ params }: PageProps) {
   const s = c.speaking;
   return (
     <>
-      <PageHead trail="green" title={s.intro.title} lede={s.intro.lede} />
+      <PageHead icon="swiadomosc" image="/images/scena-1.webp" title={s.intro.title} lede={s.intro.lede} />
 
-      <section className="section section--tight" style={{ paddingTop: 0 }}>
+      <section className="section section--tight">
         <div className="wrap stack">
           <SectionHeading>{s.topics.title}</SectionHeading>
           <div style={{ marginTop: 32 }}>
@@ -23,7 +23,7 @@ export default async function SpeakingPage({ params }: PageProps) {
         </div>
       </section>
 
-      <section className="section section--mist">
+      <section className="section section--lavender">
         <div className="wrap split">
           <h2>{s.moderation.title}</h2>
           <p>{s.moderation.body}</p>

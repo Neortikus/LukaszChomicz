@@ -2,86 +2,80 @@ import type { Content } from "./types";
 
 export const en: Content = {
   meta: {
-    title: "Łukasz Chomicz - mentoring, training and talks for leaders",
+    title: "Łukasz Chomicz - mentoring and leadership. Trust. Clarity. Action.",
     description:
-      "Mentor, trainer and speaker with 20+ years of leading teams in logistics. 1:1 mentoring for managers, training for companies, keynotes and books.",
+      "Mentor, trainer and speaker with 20+ years of leading teams in logistics. 1:1 mentoring for managers, company training, keynotes, mountain networking and books.",
   },
   nav: {
     items: [
       { href: "/mentoring", label: "Mentoring" },
       { href: "/szkolenia", label: "Training" },
       { href: "/wystapienia", label: "Speaking" },
+      { href: "/networking-w-gorach", label: "Mountain networking" },
+      { href: "/wydarzenia", label: "Events" },
       { href: "/ksiazki", label: "Books" },
-      { href: "/kursy", label: "Courses" },
-      { href: "/linkaris", label: "Linkaris" },
       { href: "/o-mnie", label: "About" },
+    ],
+    more: [
+      { href: "/kursy", label: "Courses and tools" },
+      { href: "/linkaris", label: "Linkaris" },
       { href: "/kontakt", label: "Contact" },
     ],
     home: "Home",
     menu: "Menu",
     langLabel: "Przełącz na polski",
     langName: "PL",
+    skip: "Skip to content",
+  },
+  brand: {
+    roles: "Mentoring • Leadership",
+    tagline: "Trust. Clarity. Action.",
+    signature: "More in you",
   },
   cta: {
     book: "Book a free call",
     bookNote: "30 minutes online. Pick a time that suits you in my calendar.",
     write: "Email me",
-    bandTitle: "Let's talk about your team",
+    bandTitle: "Let's talk about you and your team",
     bandBody:
       "The first call is free and comes with no obligation. After 30 minutes you'll know whether and how I can help.",
   },
   home: {
-    name: "Łukasz Chomicz",
-    title: "Management is simple. Take care of people - the rest is process.",
-    lede: "I spent more than 20 years leading teams in logistics. Today, as a mentor, trainer and speaker, I work with managers who have lost the energy for leading, and with companies that want leaders rather than supervisors.",
-    signpostLabel: "Choose your trail",
-    coursesLink: "See courses and tools",
-    arms: [
-      { href: "/mentoring", trail: "red", label: "1:1 mentoring", detail: "for managers, 16 weeks" },
-      { href: "/szkolenia", trail: "blue", label: "Company training", detail: "workshops for teams and leadership" },
-      { href: "/wystapienia", trail: "green", label: "Speaking", detail: "keynotes and event hosting" },
-      { href: "/ksiazki", trail: "yellow", label: "Books", detail: "4 co-authored, plus e-books" },
-      { href: "/kursy", trail: "black", label: "Courses and tools", detail: "tests, workbooks, retreats" },
+    lede: "I spent more than 20 years leading teams in logistics. Today I work with managers and business owners who have lost the energy for leading. Management is simple. Take care of people, the rest is process.",
+    stats: [
+      { value: "20+", label: "years in logistics and courier services, 13 in management" },
+      { value: "2000+", label: "Toastmasters members in District 108 I have led" },
+      { value: "7", label: "countries in District 108" },
+      { value: "30+", label: "people from a dozen countries mentored in the Odyssey Project" },
+      { value: "4", label: "co-authored books, including with Brian Tracy" },
     ],
+    credentialsLabel: "I have worked and spoken with",
+    credentials: ["Toastmasters International", "District 108", "Odyssey Project", "Brian Tracy", "WFS Polska", "Self-Storage Summit Poland", "Military University of Land Forces"],
     origin: {
       title: "I led teams before I started teaching it",
       body: [
-        "More than 20 years in logistics and courier services, 13 of them in management. I know the Monday when a shift is short-staffed, a client has been calling since six and the board wants its report.",
-        "That's the perspective I bring to managers and companies today. No theory detached from operations, and no promise that a leader has to be a superhero.",
-      ],
-      facts: [
-        { value: "20+ years", label: "in logistics and courier services" },
-        { value: "13+ years", label: "leading teams" },
-        { value: "since 2018", label: "in Toastmasters International, now leading District 108" },
-        { value: "4 books", label: "co-authored, including with Brian Tracy" },
+        "I know the Monday when a shift is short-staffed, a client has been calling since six and the board wants its report. For 13 years I was a manager in logistics and courier services.",
+        "That's the perspective I bring to leaders today. No theory detached from operations, and no promise that a leader has to be a superhero.",
       ],
     },
-    mentoring: {
-      title: "Manager 2.0 - from burnout to influence",
-      body: "16 weeks of 1:1 work for managers aged 35-50 who deliver results at the cost of their own energy. We work with my W.I.Z.J.A. method, DISC profiling and Gallup CliftonStrengths.",
-      link: "How the programme works",
-    },
-    training: {
-      title: "Training for teams and leadership",
-      body: "Communication, accountability, working with talent, delegation and getting things finished. Signature programmes or tailored to a specific team, from a two-hour workshop to a multi-day retreat.",
-      link: "See the programmes",
-    },
-    speaking: {
-      title: "Speaking",
-      body: "The neuroscience of leadership, strategy on a mountain trail, superpowers in a team. I speak at conferences and company events, and host panels and whole conferences.",
-      link: "Talk topics",
-    },
-    books: {
-      title: "Books",
-      body: "Co-author of four books on personal development and leadership, including with Brian Tracy. Own e-books on leading in the age of AI and on corporate games are in progress.",
-      link: "See the books",
-    },
-    linkaris: {
-      title: "Linkaris is the company behind it",
-      body: "A family training and advisory firm I run with my wife. Contracts, invoices and company projects go through Linkaris.",
-      link: "About Linkaris",
-    },
+    pathsTitle: "How I can help",
+    paths: [
+      { href: "/mentoring", icon: "kierunek", image: "/images/portret.webp", title: "1:1 mentoring", body: "Manager 2.0 - from burnout to influence. 16 weeks of individual work with the W.I.Z.J.A. method.", link: "The programme" },
+      { href: "/szkolenia", icon: "ludzie", image: "/images/scena-6.webp", title: "Company training", body: "Communication, accountability, talent, delegation. Workshops built around your team.", link: "Training programmes" },
+      { href: "/wystapienia", icon: "swiadomosc", image: "/images/scena-1.webp", title: "Speaking", body: "Keynotes, talks and conference hosting. The neuroscience of leadership, strategy on a mountain trail.", link: "Talk topics" },
+      { href: "/networking-w-gorach", icon: "rozwoj", image: "/images/gory-grupa.webp", title: "Mountain networking", body: "I take entrepreneurs into the Beskid mountains: Pilsko, Barania Góra, Skrzyczne, Babia Góra.", link: "Upcoming hikes" },
+      { href: "/wydarzenia", icon: "rezultaty", image: "/images/scena-3.webp", title: "Events", body: "Workshop retreats and open training. Bieszczady in November, Leader Without Blocks in February.", link: "Calendar" },
+      { href: "/ksiazki", icon: "dzialanie", image: "/images/ksiazka-moc-slow.webp", title: "Books", body: "Moc Słów, Wiedza Warta Miliony, Potęga Samodoskonalenia and Sztuka Inspirowania.", link: "See the books" },
+    ],
+    testimonialsTitle: "What people I've worked with say",
+    eventsTitle: "Upcoming events",
+    eventsLink: "All events",
   },
+  testimonials: [
+    { quote: "Łukasz is a professional speaker and trainer. He guarantees a solid approach to the business topics he presents.", name: "Artur Pezda", role: "Director, ByteFine" },
+    { quote: "A well-prepared speaker. At last someone who believes in people, doesn't judge and doesn't write anyone off.", name: "Ryszard Kosowicz", role: "Information logistician" },
+    { quote: "Łukasz's talks focus on delivering practical advice, inspiration and motivation.", name: "Dr Piotr Janulek", role: "Entrepreneur and educator, editor-in-chief of Coach's Workshop" },
+  ],
   mentoring: {
     intro: {
       title: "1:1 mentoring for managers",
@@ -140,18 +134,7 @@ export const en: Content = {
     custom: {
       title: "Tailored topics",
       body: "I build the programme around your team, its problems and the time you have. These are the areas we work on most often:",
-      topics: [
-        "building and leading a team",
-        "team communication",
-        "accountability and follow-through",
-        "getting things finished",
-        "delegation",
-        "change management",
-        "self-management and time",
-        "working with talent",
-        "setting and reaching goals",
-        "public speaking",
-      ],
+      topics: ["building and leading a team", "team communication", "accountability and follow-through", "getting things finished", "delegation", "change management", "self-management and time", "working with talent", "setting and reaching goals", "public speaking"],
     },
     process: {
       title: "How I prepare a training",
@@ -165,6 +148,7 @@ export const en: Content = {
     funding: {
       title: "Funding (Poland)",
       body: "Ask about delivering the training through the Polish Development Services Database (BUR). For many companies it's a way to cover part of the cost from public funds.",
+      mailSubject: "Training via BUR",
     },
   },
   speaking: {
@@ -194,6 +178,95 @@ export const en: Content = {
       ],
     },
   },
+  networking: {
+    intro: {
+      title: "Mountain networking",
+      lede: "I take entrepreneurs into the Beskid mountains. We climb together, talk business along the way and come back with contacts that actually mean something.",
+    },
+    why: {
+      title: "Why on a trail rather than at a table",
+      body: [
+        "At a typical networking event you get one minute to introduce yourself and a pile of business cards that lead nowhere. On a trail you walk next to someone for two hours.",
+        "Climbing together quickly shows who someone is. Conversations are honest because nobody is performing. Those acquaintances turn into collaboration.",
+      ],
+    },
+    peaks: {
+      title: "Where we go",
+      items: [
+        { title: "Pilsko", body: "The second-highest peak of the Beskids, with a view of the Tatras on a clear day." },
+        { title: "Barania Góra", body: "The source of the Vistula. An easy climb with plenty of time to talk." },
+        { title: "Skrzyczne", body: "The highest peak of the Silesian Beskids, good for a first hike." },
+        { title: "Babia Góra", body: "The queen of the Beskids. Demanding, which is why people remember it." },
+      ],
+    },
+    how: {
+      title: "How a hike works",
+      items: [
+        { title: "Meet at the car park", body: "Short introductions and setting a pace that suits the group." },
+        { title: "The climb", body: "Conversations in pairs and small groups, switching along the way." },
+        { title: "At the summit", body: "A group photo, a moment for the view and a quick round: what you bring and what you're looking for." },
+        { title: "Descent and mountain hut", body: "A hot meal and arranging follow-up conversations back in business." },
+      ],
+    },
+    join: {
+      title: "Want to join us?",
+      body: "I agree the dates of upcoming hikes with the group. Drop me a line and I'll tell you when and where we're going.",
+      action: "Add me to the list",
+      mailSubject: "Mountain networking - I'd like to join",
+    },
+  },
+  events: {
+    intro: {
+      title: "Events",
+      lede: "Workshop retreats and open training I run on my own or with partners. Events are held in Polish.",
+    },
+    list: [
+      {
+        slug: "bieszczady-2026",
+        title: "Bieszczady: A company, not another job. AI in strategic business development",
+        dates: "16-19 November 2026",
+        place: "Wetlina, Bieszczady mountains",
+        lede: "Three days of working on your own company away from your desk. A small group of business owners, Mastermind sessions and AI tools that support decisions. You leave with a 90-day plan.",
+        facts: [
+          { label: "Group", value: "8-12 business owners" },
+          { label: "Price", value: "PLN 4,400, early bird PLN 3,500" },
+          { label: "Funding", value: "up to 80% possible" },
+          { label: "Hosts", value: "Sara Jagiełło, Anna Jagiełło, Łukasz Chomicz" },
+        ],
+        points: [
+          "analysis of your company and business model",
+          "AI tools that support decision-making",
+          "Mastermind sessions on participants' real challenges",
+          "an action plan for the next 90 days",
+          "a wooden house in the mountains with sauna, hot tub and jacuzzi",
+        ],
+        cta: { label: "Event details and sign-up", href: "https://fb.me/e/75D9mmFcO", external: true },
+      },
+      {
+        slug: "lider-bez-blokad",
+        title: "Leader Without Blocks. Attract, don't chase",
+        dates: "19-20 February 2027",
+        place: "Bielsko-Biała",
+        lede: "A two-day workshop for leaders and business owners who want more influence without constant pressure. I run it with Łukasz Dylik, followed by two online Mastermind sessions.",
+        facts: [
+          { label: "Format", value: "2 days live + 2 online Masterminds" },
+          { label: "Day 1", value: "Leader without limits, Łukasz Dylik" },
+          { label: "Day 2", value: "The leader who attracts, Łukasz Chomicz" },
+        ],
+        points: [
+          "working with beliefs and regulating tension",
+          "public speaking and an elevator pitch",
+          "an influence map and networking without pushiness",
+          "a concrete implementation plan after the training",
+        ],
+        cta: { label: "Programme and sign-up", href: "https://lukaszchomicz.pl/lider-bez-blokad/", external: true },
+      },
+    ],
+    past: {
+      title: "Want an event for your company?",
+      body: "I can also prepare a workshop retreat, mastermind or open training for your team or club.",
+    },
+  },
   books: {
     intro: {
       title: "Books",
@@ -201,8 +274,13 @@ export const en: Content = {
     },
     coauthored: {
       title: "Co-authored books",
-      body: "I'm a co-author of four books on personal development and leadership, including with Brian Tracy and Sebastian Kotow. Selected titles (in Polish):",
-      titles: ["Wiedza Warta Miliony", "Sztuka Inspirowania", "Moc Słów"],
+      body: "I'm a co-author of four books on personal development and leadership (in Polish), including with Brian Tracy and Sebastian Kotow.",
+      titles: [
+        { title: "Moc Słów", image: "/images/ksiazka-moc-slow.webp" },
+        { title: "Wiedza Warta Miliony", image: "/images/ksiazka-wiedza.webp" },
+        { title: "Potęga Samodoskonalenia", image: "/images/ksiazka-potega.webp" },
+        { title: "Sztuka Inspirowania" },
+      ],
       order: "Order a signed copy",
     },
     ebooks: {
@@ -218,7 +296,7 @@ export const en: Content = {
   courses: {
     intro: {
       title: "Courses and tools",
-      lede: "Tools for working on your own and group formats. Some are free, some are still being built.",
+      lede: "Tools for working on your own. Some are free, some are still being built.",
     },
     free: {
       title: "To get started",
@@ -229,16 +307,9 @@ export const en: Content = {
       ],
     },
     online: {
-      title: "Online course",
-      body: "The first online course for managers is in the works. Drop me a line and I'll let you know when it launches.",
+      title: "Online course: The Leader's Path",
+      body: "The online course for managers is in the works. Drop me a line and I'll let you know when it launches.",
       action: "Tell me when it launches",
-    },
-    outdoor: {
-      title: "Mountain retreats",
-      items: [
-        { title: "The CEO decision edge", body: "A three-day workshop retreat for a small group of business owners, in a mountain hotel, with masterminds afterwards." },
-        { title: "Networking in the mountains", body: "Entrepreneurs meeting on the trail. Business conversations go better when you're walking uphill." },
-      ],
     },
   },
   linkaris: {
@@ -255,7 +326,7 @@ export const en: Content = {
       items: [
         { title: "Tailored training", body: "Programmes built for a team, from diagnosis to wrap-up." },
         { title: "Leadership mentoring", body: "Individual work with managers as part of one company project." },
-        { title: "Events and retreats", body: "Off-site workshops, masterminds and networking meetings." },
+        { title: "Events and retreats", body: "Off-site workshops, masterminds and mountain networking." },
       ],
     },
     company: {
@@ -275,7 +346,7 @@ export const en: Content = {
     story: [
       "I spent more than 20 years in logistics and courier services, 13 of them as a manager. Before that I sold insurance for seven years, which taught me to listen before I talk.",
       "In the corporate world I learned that people are the hardest part of management, and the leader is the most neglected one. That's why I moved into mentoring and training. I want to show that taking care of a team is the simplest route to a company's goals.",
-      "I've been in Toastmasters International since 2018 and now lead District 108, with more than 2,000 members in seven countries. In the Odyssey Project I mentored over 30 people from more than a dozen countries.",
+      "I've been in Toastmasters International since 2018. As District 108 leader I support more than 2,000 members in seven countries. In the Odyssey Project I mentored over 30 people from more than a dozen countries.",
     ],
     timeline: {
       title: "Along the way",
@@ -288,7 +359,7 @@ export const en: Content = {
     },
     outside: {
       title: "Outside work",
-      body: "I run ultramarathons in the Beskid mountains. Bieg 7 Dolin, Beskidzki Topór and the trails around Babia Góra taught me more about planning and crises than many trainings did.",
+      body: "I run ultramarathons in the Beskid mountains. Bieg 7 Dolin, Beskidzki Topór and the trails around Babia Góra taught me more about planning and crises than many trainings did. That's why I take entrepreneurs into the mountains too.",
     },
     portraitAlt: "Łukasz Chomicz",
   },
@@ -306,9 +377,8 @@ export const en: Content = {
     company: "Contracts and invoices: Linkaris Sp. z o.o.",
   },
   footer: {
-    tagline: "Mentoring, training and talks for leaders.",
+    tagline: "Mentoring, training, talks and mountain networking.",
     rights: "All rights reserved.",
-    social: "Find me here too",
   },
   status: { soon: "coming soon", inProgress: "in progress", free: "free" },
 };

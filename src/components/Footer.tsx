@@ -1,7 +1,6 @@
 import { Link } from "@/i18n/navigation";
 import type { Content } from "@/content/types";
 import { site } from "@/content/site";
-import { Trail } from "./Trail";
 
 export function Footer({ c }: { c: Content }) {
   const year = new Date().getFullYear();
@@ -11,18 +10,13 @@ export function Footer({ c }: { c: Content }) {
         <div className="site-footer__grid">
           <div>
             <div className="site-footer__brand">Łukasz Chomicz</div>
-            <p style={{ marginTop: 8 }}>{c.footer.tagline}</p>
-            <div className="site-footer__trails">
-              <Trail colour="red" size="sm" />
-              <Trail colour="blue" size="sm" />
-              <Trail colour="green" size="sm" />
-              <Trail colour="yellow" size="sm" />
-              <Trail colour="black" size="sm" />
-            </div>
+            <div className="roles">{c.brand.roles}</div>
+            <p style={{ marginTop: 16 }}>{c.footer.tagline}</p>
+            <span className="script">{c.brand.signature}</span>
           </div>
           <nav className="site-footer__nav" aria-label={c.nav.menu}>
             <ul>
-              {c.nav.items.map((item) => (
+              {[...c.nav.items, ...c.nav.more].map((item) => (
                 <li key={item.href}>
                   <Link href={item.href}>{item.label}</Link>
                 </li>
@@ -51,7 +45,7 @@ export function Footer({ c }: { c: Content }) {
           <span>
             © {year} {site.company}. {c.footer.rights}
           </span>
-          <span>lukaszchomicz.pl</span>
+          <span>{c.brand.tagline}</span>
         </div>
       </div>
     </footer>

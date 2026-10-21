@@ -13,26 +13,38 @@ export default async function BooksPage({ params }: PageProps) {
   const b = c.books;
   return (
     <>
-      <PageHead trail="yellow" title={b.intro.title} lede={b.intro.lede} />
+      <PageHead icon="dzialanie" title={b.intro.title} lede={b.intro.lede} />
 
-      <section className="section section--tight" style={{ paddingTop: 0 }}>
-        <div className="wrap split">
-          <div className="stack">
+      <section className="section">
+        <div className="wrap">
+          <div className="section-head split">
             <SectionHeading>{b.coauthored.title}</SectionHeading>
-            <p>{b.coauthored.body}</p>
-            <a className="btn btn--ghost" href={mailto(b.coauthored.order)} style={{ marginTop: 24 }}>
-              {b.coauthored.order}
-            </a>
+            <div className="stack">
+              <p>{b.coauthored.body}</p>
+              <a className="btn btn--ghost" href={mailto(b.coauthored.order)}>
+                {b.coauthored.order}
+              </a>
+            </div>
           </div>
-          <ul className="book-titles">
+          <ul className="books">
             {b.coauthored.titles.map((t) => (
-              <li key={t}>{t}</li>
+              <li key={t.title} className="book">
+                <div className="book__cover">
+                  {t.image ? (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img src={t.image} alt={t.title} loading="lazy" />
+                  ) : (
+                    <span>{t.title}</span>
+                  )}
+                </div>
+                <h3>{t.title}</h3>
+              </li>
             ))}
           </ul>
         </div>
       </section>
 
-      <section className="section section--mist">
+      <section className="section section--lavender">
         <div className="wrap stack">
           <SectionHeading>{b.ebooks.title}</SectionHeading>
           <p className="muted">{b.ebooks.body}</p>

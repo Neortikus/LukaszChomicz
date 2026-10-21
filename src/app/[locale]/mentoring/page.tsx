@@ -12,9 +12,9 @@ export default async function MentoringPage({ params }: PageProps) {
   const m = c.mentoring;
   return (
     <>
-      <PageHead trail="red" title={m.intro.title} lede={m.intro.lede} />
+      <PageHead icon="kierunek" image="/images/portret2.webp" title={m.intro.title} lede={m.intro.lede} />
 
-      <section className="section section--spruce">
+      <section className="section section--dusk">
         <div className="wrap split">
           <h2>{m.program.name}</h2>
           <div className="stack">
@@ -22,7 +22,7 @@ export default async function MentoringPage({ params }: PageProps) {
               <p key={p}>{p}</p>
             ))}
             <div className="cta-row" style={{ marginTop: 28 }}>
-              <BookButton c={c} variant="light" />
+              <BookButton c={c} variant="accent" />
               <span className="cta-note">{c.cta.bookNote}</span>
             </div>
           </div>
@@ -36,7 +36,7 @@ export default async function MentoringPage({ params }: PageProps) {
         </div>
       </section>
 
-      <section className="section section--mist">
+      <section className="section section--lavender">
         <div className="wrap stack">
           <SectionHeading>{m.tools.title}</SectionHeading>
           <div style={{ marginTop: 32 }}>
@@ -52,7 +52,7 @@ export default async function MentoringPage({ params }: PageProps) {
         </div>
       </section>
 
-      <section className="section section--mist section--tight">
+      <section className="section section--lavender section--tight">
         <div className="wrap split">
           <h2>{m.boundary.title}</h2>
           <p>{m.boundary.body}</p>

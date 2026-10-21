@@ -1,6 +1,7 @@
-import "@fontsource-variable/archivo/wdth.css";
-import "@fontsource-variable/source-serif-4/opsz.css";
-import "@fontsource-variable/source-serif-4/opsz-italic.css";
+import "@fontsource-variable/montserrat/wght.css";
+import "@fontsource-variable/manrope/wght.css";
+import "@fontsource/allura/latin-ext-400.css";
+import "@fontsource/allura/latin-400.css";
 import "../globals.css";
 
 import type { Metadata, Viewport } from "next";
@@ -23,28 +24,24 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     metadataBase: new URL(site.url),
     title: { default: c.meta.title, template: `%s | ${site.name}` },
     description: c.meta.description,
+    openGraph: { images: ["/images/hero-gory.webp"] },
   };
 }
 
 export const viewport: Viewport = {
-  themeColor: "#16362f",
+  themeColor: "#211d29",
 };
 
-export default async function LocaleLayout({
-  children,
-  params,
-}: {
-  children: React.ReactNode;
-} & PageProps) {
+export default async function LocaleLayout({ children, params }: { children: React.ReactNode } & PageProps) {
   const { locale, c } = await loadPage(params);
   return (
     <html lang={locale}>
       <body>
         <NextIntlClientProvider>
           <a className="skip-link" href="#main">
-            {locale === "pl" ? "Przejdź do treści" : "Skip to content"}
+            {c.nav.skip}
           </a>
-          <Header nav={c.nav} />
+          <Header nav={c.nav} book={c.cta.book} />
           <main id="main">{children}</main>
           <Footer c={c} />
         </NextIntlClientProvider>

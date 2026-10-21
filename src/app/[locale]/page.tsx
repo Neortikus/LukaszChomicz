@@ -1,10 +1,8 @@
 import { Link } from "@/i18n/navigation";
-import { BookButton, CtaBand, SectionHeading } from "@/components/Blocks";
-import { Signpost } from "@/components/Signpost";
-import { Trail } from "@/components/Trail";
+import { BookButton, CtaBand, Photo, Quotes } from "@/components/Blocks";
+import { EventCard } from "@/components/EventCard";
+import { Icon } from "@/components/Icon";
 import { loadPage, pageMetadata, type PageProps } from "@/lib/page";
-import type { AppPathname } from "@/i18n/routing";
-import type { Trail as TrailColour } from "@/content/types";
 
 export const generateMetadata = ({ params }: PageProps) => pageMetadata(params, "/");
 
@@ -12,105 +10,131 @@ export default async function HomePage({ params }: PageProps) {
   const { c } = await loadPage(params);
   const h = c.home;
 
-  const areas: { trail?: TrailColour; href: AppPathname; data: typeof h.training }[] = [
-    { trail: "blue", href: "/szkolenia", data: h.training },
-    { trail: "green", href: "/wystapienia", data: h.speaking },
-    { trail: "yellow", href: "/ksiazki", data: h.books },
-  ];
-
   return (
     <>
       <section className="hero">
+        <div className="hero__bg">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/images/hero-gory.webp" alt="" fetchPriority="high" />
+        </div>
         <div className="wrap hero__grid">
-          <div>
-            <p className="hero__name">{h.name}</p>
-            <h1>{h.title}</h1>
+          <div className="hero__text">
+            <h1 className="hero__name">
+              Łukasz
+              <br />
+              Chomicz
+            </h1>
+            <div className="roles">{c.brand.roles}</div>
+            <span className="accent-bar" />
+            <p className="hero__tagline">{c.brand.tagline}</p>
             <p className="lede">{h.lede}</p>
-            <div className="cta-row">
-              <BookButton c={c} />
-              <span className="cta-note">{c.cta.bookNote}</span>
+            <div className="cta-row on-dark">
+              <BookButton c={c} variant="accent" />
+              <Link href="/mentoring" className="btn btn--ghost-light">
+                {c.mentoring.program.name.split(" - ")[0]}
+              </Link>
             </div>
           </div>
-          <Signpost label={h.signpostLabel} arms={h.arms} />
+          <div className="hero__portrait">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/images/portret3.webp" alt={c.about.portraitAlt} />
+            <span className="hero__signature script" aria-hidden="true">
+              {c.brand.signature}
+            </span>
+          </div>
         </div>
       </section>
 
-      <section className="section section--mist" aria-labelledby="origin">
-        <div className="wrap split">
+      <section className="stats" aria-label={h.stats.map((s) => s.value).join(", ")}>
+        <div className="wrap">
+          <ul className="stats__list">
+            {h.stats.map((s) => (
+              <li key={s.label}>
+                <span className="stats__value">{s.value}</span>
+                <span className="stats__label">{s.label}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      <div className="creds">
+        <div className="wrap creds__inner">
+          <span className="creds__label">{h.credentialsLabel}</span>
+          <ul>
+            {h.credentials.map((x) => (
+              <li key={x}>{x}</li>
+            ))}
+          </ul>
+        </div>
+      </div>
+
+      <section className="section" aria-labelledby="origin">
+        <div className="wrap split split--center">
+          <Photo src="/images/scena-2.webp" alt={c.about.portraitAlt} shape="tall" />
           <div className="stack">
             <h2 id="origin">{h.origin.title}</h2>
-          </div>
-          <div className="stack">
+            <span className="accent-bar" />
             {h.origin.body.map((p) => (
               <p key={p}>{p}</p>
             ))}
-            <dl className="facts" style={{ marginTop: 32 }}>
-              {h.origin.facts.map((f) => (
-                <div key={f.value}>
-                  <dt>{f.value}</dt>
-                  <dd>{f.label}</dd>
-                </div>
-              ))}
-            </dl>
-          </div>
-        </div>
-      </section>
-
-      <section className="section section--spruce" aria-labelledby="mentoring">
-        <div className="wrap split">
-          <SectionHeading trail="red" id="mentoring">
-            {h.mentoring.title}
-          </SectionHeading>
-          <div className="stack">
-            <p className="lede">{h.mentoring.body}</p>
             <div className="cta-row" style={{ marginTop: 28 }}>
-              <BookButton c={c} variant="light" />
-              <Link href="/mentoring" className="text-link" style={{ color: "#fff" }}>
-                {h.mentoring.link}
+              <Link href="/o-mnie" className="text-link">
+                {c.about.intro.title}
               </Link>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="section">
+      <section className="section section--lavender" aria-labelledby="paths" style={{ paddingTop: "clamp(56px, 7vw, 96px)" }}>
         <div className="wrap">
-          <ul className="areas">
-            {areas.map((a) => (
-              <li className="area" key={a.href}>
-                {a.trail ? <Trail colour={a.trail} /> : <span />}
-                <h2 style={{ fontSize: "clamp(1.5rem, 2.4vw, 2rem)" }}>{a.data.title}</h2>
-                <div>
-                  <p>{a.data.body}</p>
-                  <Link href={a.href} className="text-link">
-                    {a.data.link}
-                  </Link>
-                </div>
+          <div className="section-head">
+            <h2 id="paths">{h.pathsTitle}</h2>
+            <span className="accent-bar" />
+          </div>
+          <ul className="paths">
+            {h.paths.map((p) => (
+              <li key={p.href}>
+                <Link href={p.href} className={`path${p.href === "/ksiazki" ? " path--books" : ""}`}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={p.image} alt="" loading="lazy" />
+                  <span className="path__body">
+                    <Icon name={p.icon} />
+                    <h3>{p.title}</h3>
+                    <p>{p.body}</p>
+                    <span className="path__link">{p.link}</span>
+                  </span>
+                </Link>
               </li>
             ))}
-            <li className="area">
-              <Trail colour="black" />
-              <h2 style={{ fontSize: "clamp(1.5rem, 2.4vw, 2rem)" }}>{c.courses.intro.title}</h2>
-              <div>
-                <p>{c.courses.intro.lede}</p>
-                <Link href="/kursy" className="text-link">
-                  {h.coursesLink}
-                </Link>
-              </div>
-            </li>
           </ul>
         </div>
       </section>
 
-      <section className="section section--mist section--tight" aria-labelledby="linkaris">
-        <div className="wrap split">
-          <h2 id="linkaris">{h.linkaris.title}</h2>
-          <div className="stack">
-            <p>{h.linkaris.body}</p>
-            <Link href="/linkaris" className="text-link">
-              {h.linkaris.link}
+      <section className="section section--dusk" aria-labelledby="quotes">
+        <div className="wrap">
+          <div className="section-head">
+            <h2 id="quotes">{h.testimonialsTitle}</h2>
+            <span className="accent-bar" />
+          </div>
+          <Quotes items={c.testimonials} />
+        </div>
+      </section>
+
+      <section className="section" aria-labelledby="events">
+        <div className="wrap">
+          <div className="section-head heading-row" style={{ justifyContent: "space-between", flexWrap: "wrap" }}>
+            <h2 id="events">{h.eventsTitle}</h2>
+            <Link href="/wydarzenia" className="text-link">
+              {h.eventsLink}
             </Link>
           </div>
+          <ul className="events">
+            {c.events.list.map((e) => (
+              <EventCard key={e.slug} e={e} />
+            ))}
+          </ul>
         </div>
       </section>
 

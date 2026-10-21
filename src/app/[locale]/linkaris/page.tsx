@@ -12,9 +12,9 @@ export default async function LinkarisPage({ params }: PageProps) {
   const l = c.linkaris;
   return (
     <>
-      <PageHead title={l.intro.title} lede={l.intro.lede} />
+      <PageHead image="/images/networking-grupa.webp" title={l.intro.title} lede={l.intro.lede} />
 
-      <section className="section section--tight" style={{ paddingTop: 0 }}>
+      <section className="section section--tight">
         <div className="wrap stack">
           {l.body.map((p) => (
             <p key={p}>{p}</p>
@@ -22,7 +22,7 @@ export default async function LinkarisPage({ params }: PageProps) {
         </div>
       </section>
 
-      <section className="section section--mist">
+      <section className="section section--lavender">
         <div className="wrap stack">
           <SectionHeading>{l.offer.title}</SectionHeading>
           <div style={{ marginTop: 32 }}>

@@ -2,86 +2,80 @@ import type { Content } from "./types";
 
 export const pl: Content = {
   meta: {
-    title: "Łukasz Chomicz - mentoring, szkolenia i wystąpienia dla liderów",
+    title: "Łukasz Chomicz - mentoring i leadership. Zaufanie. Kierunek. Działanie.",
     description:
-      "Mentor, trener i mówca. Ponad 20 lat zarządzania zespołami w logistyce. Mentoring 1:1 dla menedżerów, szkolenia dla firm, wystąpienia i książki.",
+      "Mentor, trener i mówca. Ponad 20 lat zarządzania zespołami w logistyce. Mentoring 1:1 dla menedżerów, szkolenia dla firm, wystąpienia, networking w górach i książki.",
   },
   nav: {
     items: [
       { href: "/mentoring", label: "Mentoring" },
       { href: "/szkolenia", label: "Szkolenia" },
       { href: "/wystapienia", label: "Wystąpienia" },
+      { href: "/networking-w-gorach", label: "Networking w górach" },
+      { href: "/wydarzenia", label: "Wydarzenia" },
       { href: "/ksiazki", label: "Książki" },
-      { href: "/kursy", label: "Kursy" },
-      { href: "/linkaris", label: "Linkaris" },
       { href: "/o-mnie", label: "O mnie" },
+    ],
+    more: [
+      { href: "/kursy", label: "Kursy i materiały" },
+      { href: "/linkaris", label: "Linkaris" },
       { href: "/kontakt", label: "Kontakt" },
     ],
     home: "Strona główna",
     menu: "Menu",
     langLabel: "Switch to English",
     langName: "EN",
+    skip: "Przejdź do treści",
+  },
+  brand: {
+    roles: "Mentoring • Leadership",
+    tagline: "Zaufanie. Kierunek. Działanie.",
+    signature: "Więcej w Tobie",
   },
   cta: {
     book: "Umów bezpłatną rozmowę",
     bookNote: "30 minut online. Termin wybierasz sam w kalendarzu.",
     write: "Napisz do mnie",
-    bandTitle: "Porozmawiajmy o Twoim zespole",
+    bandTitle: "Porozmawiajmy o Tobie i Twoim zespole",
     bandBody:
       "Pierwsza rozmowa jest bezpłatna i do niczego nie zobowiązuje. Po 30 minutach będziesz wiedzieć, czy i jak mogę pomóc.",
   },
   home: {
-    name: "Łukasz Chomicz",
-    title: "Zarządzanie jest proste. Zadbaj o ludzi - reszta jest procesem.",
-    lede: "Przez ponad 20 lat prowadziłem zespoły w logistyce. Dziś jako mentor, trener i mówca pracuję z menedżerami, którym zarządzanie przestało dawać energię, i z firmami, które chcą mieć liderów zamiast nadzorców.",
-    signpostLabel: "Wybierz szlak",
-    coursesLink: "Zobacz kursy i materiały",
-    arms: [
-      { href: "/mentoring", trail: "red", label: "Mentoring 1:1", detail: "dla menedżerów, 16 tygodni" },
-      { href: "/szkolenia", trail: "blue", label: "Szkolenia dla firm", detail: "warsztaty dla zespołów i kadry" },
-      { href: "/wystapienia", trail: "green", label: "Wystąpienia", detail: "keynote i moderacja wydarzeń" },
-      { href: "/ksiazki", trail: "yellow", label: "Książki", detail: "4 współautorskie i e-booki" },
-      { href: "/kursy", trail: "black", label: "Kursy i materiały", detail: "testy, zeszyty, wyjazdy" },
+    lede: "Przez ponad 20 lat prowadziłem zespoły w logistyce. Dziś pracuję z menedżerami i właścicielami firm, którym zarządzanie przestało dawać energię. Zarządzanie jest proste. Zadbaj o ludzi, reszta jest procesem.",
+    stats: [
+      { value: "20+", label: "lat w logistyce i branży KEP, 13 na stanowiskach kierowniczych" },
+      { value: "2000+", label: "członków Toastmasters w Dystrykcie 108, którym przewodziłem" },
+      { value: "7", label: "krajów w Dystrykcie 108" },
+      { value: "30+", label: "osób z kilkunastu krajów, które mentorowałem w Odyssey Project" },
+      { value: "4", label: "książki współautorskie, m.in. z Brianem Tracym" },
     ],
+    credentialsLabel: "Współpracowałem i występowałem m.in. z",
+    credentials: ["Toastmasters International", "Dystrykt 108", "Odyssey Project", "Brian Tracy", "WFS Polska", "Self-Storage Summit Poland", "Akademia Wojsk Lądowych"],
     origin: {
       title: "Prowadziłem zespoły, zanim zacząłem o tym uczyć",
       body: [
-        "Ponad 20 lat w logistyce i branży kurierskiej, z tego 13 lat na stanowiskach kierowniczych. Znam poniedziałek, w którym brakuje ludzi na zmianie, klient dzwoni od szóstej, a zarząd czeka na raport.",
-        "Z tej perspektywy pracuję dziś z menedżerami i firmami. Bez teorii oderwanej od operacji i bez obietnic, że lider ma być superbohaterem.",
-      ],
-      facts: [
-        { value: "20+ lat", label: "w logistyce i branży KEP" },
-        { value: "13+ lat", label: "kierowania zespołami" },
-        { value: "od 2018", label: "w Toastmasters International, dziś lider Dystryktu 108" },
-        { value: "4 książki", label: "współautorskie, m.in. z Brianem Tracym" },
+        "Znam poniedziałek, w którym brakuje ludzi na zmianie, klient dzwoni od szóstej, a zarząd czeka na raport. Przez 13 lat byłem menedżerem w logistyce i branży kurierskiej.",
+        "Z tej perspektywy pracuję dziś z liderami. Bez teorii oderwanej od operacji i bez obietnic, że lider ma być superbohaterem.",
       ],
     },
-    mentoring: {
-      title: "Menedżer 2.0 - z wypalenia do wpływu",
-      body: "16 tygodni pracy 1:1 dla menedżerów w wieku 35-50 lat, którzy dowożą wyniki kosztem własnej energii. Pracujemy na autorskiej metodzie W.I.Z.J.A., profilu DISC i Gallup CliftonStrengths.",
-      link: "Jak wygląda program",
-    },
-    training: {
-      title: "Szkolenia dla zespołów i kadry",
-      body: "Komunikacja, odpowiedzialność, praca z talentami, delegowanie i domykanie tematów. Programy autorskie albo szyte pod konkretny zespół, od dwugodzinnego warsztatu po kilkudniowy wyjazd.",
-      link: "Zobacz programy",
-    },
-    speaking: {
-      title: "Wystąpienia",
-      body: "Neurobiologia przywództwa, strategia na górskim szlaku, supermoce w zespole. Mówię na konferencjach i wydarzeniach firmowych, prowadzę też panele i całe konferencje.",
-      link: "Tematy wystąpień",
-    },
-    books: {
-      title: "Książki",
-      body: "Współautor czterech książek o rozwoju i przywództwie, m.in. z Brianem Tracym. W przygotowaniu własne e-booki o liderze w czasach AI i o korporacyjnych grach.",
-      link: "Zobacz książki",
-    },
-    linkaris: {
-      title: "Za ofertą stoi Linkaris",
-      body: "Rodzinna firma szkoleniowo-doradcza, którą prowadzę z żoną. Przez Linkaris podpisujemy umowy, wystawiamy faktury i realizujemy projekty dla firm.",
-      link: "O Linkaris",
-    },
+    pathsTitle: "Jak mogę pomóc",
+    paths: [
+      { href: "/mentoring", icon: "kierunek", image: "/images/portret.webp", title: "Mentoring 1:1", body: "Menedżer 2.0 - z wypalenia do wpływu. 16 tygodni pracy indywidualnej na metodzie W.I.Z.J.A.", link: "Program mentoringu" },
+      { href: "/szkolenia", icon: "ludzie", image: "/images/scena-6.webp", title: "Szkolenia dla firm", body: "Komunikacja, odpowiedzialność, talenty, delegowanie. Warsztaty szyte pod Wasz zespół.", link: "Programy szkoleń" },
+      { href: "/wystapienia", icon: "swiadomosc", image: "/images/scena-1.webp", title: "Wystąpienia", body: "Keynote, prelekcje i moderacja konferencji. Neurobiologia przywództwa, strategia na górskim szlaku.", link: "Tematy wystąpień" },
+      { href: "/networking-w-gorach", icon: "rozwoj", image: "/images/gory-grupa.webp", title: "Networking w górach", body: "Zabieram przedsiębiorców w Beskidy: Pilsko, Barania Góra, Skrzyczne, Babia Góra.", link: "Najbliższe wyjścia" },
+      { href: "/wydarzenia", icon: "rezultaty", image: "/images/scena-3.webp", title: "Wydarzenia", body: "Wyjazdy warsztatowe i szkolenia otwarte. Bieszczady w listopadzie, Lider bez blokad w lutym.", link: "Kalendarz" },
+      { href: "/ksiazki", icon: "dzialanie", image: "/images/ksiazka-moc-slow.webp", title: "Książki", body: "Moc Słów, Wiedza Warta Miliony, Potęga Samodoskonalenia i Sztuka Inspirowania.", link: "Zobacz książki" },
+    ],
+    testimonialsTitle: "Co mówią ludzie, z którymi pracowałem",
+    eventsTitle: "Najbliższe wydarzenia",
+    eventsLink: "Wszystkie wydarzenia",
   },
+  testimonials: [
+    { quote: "Łukasz to profesjonalny mówca i szkoleniowiec. Gwarantuje solidne podejście do prezentowanych tematów biznesowych.", name: "Artur Pezda", role: "Dyrektor, ByteFine" },
+    { quote: "To mówca przygotowany. To wreszcie ktoś, kto wierzy w człowieka, nie ocenia, nie przekreśla.", name: "Ryszard Kosowicz", role: "Logistyk Informacji" },
+    { quote: "Wykłady Łukasza koncentrują się na dostarczaniu praktycznych wskazówek, inspiracji i motywacji.", name: "dr Piotr Janulek", role: "Przedsiębiorca i edukator, redaktor naczelny Coach's Workshop" },
+  ],
   mentoring: {
     intro: {
       title: "Mentoring 1:1 dla menedżerów",
@@ -140,18 +134,7 @@ export const pl: Content = {
     custom: {
       title: "Tematy na zamówienie",
       body: "Program układam pod zespół, jego problemy i czas, jakim dysponujecie. Najczęściej pracujemy nad tymi obszarami:",
-      topics: [
-        "budowanie i prowadzenie zespołu",
-        "komunikacja w zespole",
-        "odpowiedzialność i egzekwowanie ustaleń",
-        "domykanie tematów",
-        "delegowanie",
-        "zarządzanie zmianą",
-        "zarządzanie sobą w czasie",
-        "praca z talentami",
-        "stawianie i realizacja celów",
-        "wystąpienia publiczne",
-      ],
+      topics: ["budowanie i prowadzenie zespołu", "komunikacja w zespole", "odpowiedzialność i egzekwowanie ustaleń", "domykanie tematów", "delegowanie", "zarządzanie zmianą", "zarządzanie sobą w czasie", "praca z talentami", "stawianie i realizacja celów", "wystąpienia publiczne"],
     },
     process: {
       title: "Jak przygotowuję szkolenie",
@@ -165,6 +148,7 @@ export const pl: Content = {
     funding: {
       title: "Dofinansowanie",
       body: "Zapytaj o realizację szkolenia przez Bazę Usług Rozwojowych (BUR). Dla wielu firm to sposób na sfinansowanie części kosztów ze środków publicznych.",
+      mailSubject: "Szkolenie przez BUR",
     },
   },
   speaking: {
@@ -194,6 +178,95 @@ export const pl: Content = {
       ],
     },
   },
+  networking: {
+    intro: {
+      title: "Networking w górach",
+      lede: "Zabieram przedsiębiorców w Beskidy. Idziemy razem na szczyt, rozmawiamy o biznesie po drodze i wracamy z kontaktami, które coś znaczą.",
+    },
+    why: {
+      title: "Dlaczego na szlaku, a nie przy stoliku",
+      body: [
+        "Na typowym spotkaniu networkingowym masz minutę na przedstawienie się i stos wizytówek, z których nic nie wynika. Na szlaku idziesz obok kogoś przez dwie godziny.",
+        "Wspólne podejście pod górę szybko pokazuje, kim ktoś jest. Rozmowy są szczere, bo nikt nie gra. Takie znajomości zamieniają się we współpracę.",
+      ],
+    },
+    peaks: {
+      title: "Dokąd chodzimy",
+      items: [
+        { title: "Pilsko", body: "Drugi szczyt Beskidów, z widokiem na Tatry przy dobrej pogodzie." },
+        { title: "Barania Góra", body: "Tu rodzi się Wisła. Spokojne podejście, dużo czasu na rozmowę." },
+        { title: "Skrzyczne", body: "Najwyższy szczyt Beskidu Śląskiego, dobry na pierwsze wyjście." },
+        { title: "Babia Góra", body: "Królowa Beskidów. Wymagająca, dlatego zostaje w pamięci na długo." },
+      ],
+    },
+    how: {
+      title: "Jak wygląda wyjście",
+      items: [
+        { title: "Zbiórka na parkingu", body: "Krótkie przedstawienie się i dobór tempa do grupy." },
+        { title: "Wejście na szczyt", body: "Rozmowy w parach i małych grupach, zmieniamy się po drodze." },
+        { title: "Na szczycie", body: "Wspólne zdjęcie, chwila na widok i krótka runda: z czym przyszedłeś i czego szukasz." },
+        { title: "Zejście i schronisko", body: "Ciepły posiłek i umawianie się na dalsze rozmowy już w biznesie." },
+      ],
+    },
+    join: {
+      title: "Chcesz iść z nami?",
+      body: "Terminy najbliższych wyjść ustalam z grupą. Napisz, a dam znać, kiedy i dokąd idziemy.",
+      action: "Zapisz mnie na listę",
+      mailSubject: "Networking w górach - chcę dołączyć",
+    },
+  },
+  events: {
+    intro: {
+      title: "Wydarzenia",
+      lede: "Wyjazdy warsztatowe i szkolenia otwarte, które prowadzę sam albo z partnerami.",
+    },
+    list: [
+      {
+        slug: "bieszczady-2026",
+        title: "Bieszczady: Firma, nie kolejny etat. AI w strategicznym rozwoju przedsiębiorstwa",
+        dates: "16-19 listopada 2026",
+        place: "Wetlina, Bieszczady",
+        lede: "Trzy dni pracy nad własną firmą z dala od biurka. Kameralna grupa przedsiębiorców, sesje Mastermind i narzędzia AI wspierające decyzje. Wracasz z planem na 90 dni.",
+        facts: [
+          { label: "Grupa", value: "8-12 przedsiębiorców" },
+          { label: "Cena", value: "4 400 zł, early bird 3 500 zł" },
+          { label: "Dofinansowanie", value: "możliwe do 80%" },
+          { label: "Prowadzą", value: "Sara Jagiełło, Anna Jagiełło, Łukasz Chomicz" },
+        ],
+        points: [
+          "analiza firmy i modelu biznesowego",
+          "narzędzia AI wspierające podejmowanie decyzji",
+          "sesje Mastermind na realnych wyzwaniach uczestników",
+          "plan działania na najbliższe 90 dni",
+          "drewniany dom w górach, sauna, balia i jacuzzi",
+        ],
+        cta: { label: "Zobacz wydarzenie i zapisy", href: "https://fb.me/e/75D9mmFcO", external: true },
+      },
+      {
+        slug: "lider-bez-blokad",
+        title: "Lider bez blokad. Przyciągaj, a nie goń",
+        dates: "19-20 lutego 2027",
+        place: "Bielsko-Biała",
+        lede: "Dwudniowy warsztat dla liderów i przedsiębiorców, którzy chcą mieć więcej wpływu bez ciągłej presji. Prowadzimy go razem z Łukaszem Dylikiem, a po nim są dwie sesje Mastermind online.",
+        facts: [
+          { label: "Format", value: "2 dni na żywo + 2 Mastermindy online" },
+          { label: "Dzień 1", value: "Lider bez ograniczeń, Łukasz Dylik" },
+          { label: "Dzień 2", value: "Lider, który przyciąga, Łukasz Chomicz" },
+        ],
+        points: [
+          "praca z przekonaniami i regulacją napięcia",
+          "wystąpienia publiczne i elevator pitch",
+          "mapa wpływu i networking bez nachalności",
+          "konkretny plan wdrożenia po szkoleniu",
+        ],
+        cta: { label: "Program i zapisy", href: "https://lukaszchomicz.pl/lider-bez-blokad/", external: true },
+      },
+    ],
+    past: {
+      title: "Chcesz wydarzenie dla swojej firmy?",
+      body: "Wyjazd warsztatowy, mastermind albo szkolenie otwarte mogę przygotować także dla Waszego zespołu lub klubu.",
+    },
+  },
   books: {
     intro: {
       title: "Książki",
@@ -201,8 +274,13 @@ export const pl: Content = {
     },
     coauthored: {
       title: "Książki współautorskie",
-      body: "Jestem współautorem czterech książek o rozwoju i przywództwie, m.in. razem z Brianem Tracym i Sebastianem Kotowem. Wybrane tytuły:",
-      titles: ["Wiedza Warta Miliony", "Sztuka Inspirowania", "Moc Słów"],
+      body: "Jestem współautorem czterech książek o rozwoju i przywództwie, m.in. razem z Brianem Tracym i Sebastianem Kotowem.",
+      titles: [
+        { title: "Moc Słów", image: "/images/ksiazka-moc-slow.webp" },
+        { title: "Wiedza Warta Miliony", image: "/images/ksiazka-wiedza.webp" },
+        { title: "Potęga Samodoskonalenia", image: "/images/ksiazka-potega.webp" },
+        { title: "Sztuka Inspirowania" },
+      ],
       order: "Zamów egzemplarz z dedykacją",
     },
     ebooks: {
@@ -218,7 +296,7 @@ export const pl: Content = {
   courses: {
     intro: {
       title: "Kursy i materiały",
-      lede: "Narzędzia do samodzielnej pracy i formaty grupowe. Część jest bezpłatna, część dopiero powstaje.",
+      lede: "Narzędzia do samodzielnej pracy. Część jest bezpłatna, część dopiero powstaje.",
     },
     free: {
       title: "Na początek",
@@ -229,16 +307,9 @@ export const pl: Content = {
       ],
     },
     online: {
-      title: "Kurs online",
-      body: "Pierwszy kurs online dla menedżerów jest w przygotowaniu. Napisz, a dam znać, kiedy ruszy.",
+      title: "Kurs online Droga Lidera",
+      body: "Kurs online dla menedżerów jest w przygotowaniu. Napisz, a dam znać, kiedy ruszy.",
       action: "Chcę wiedzieć o starcie",
-    },
-    outdoor: {
-      title: "Wyjazdy w góry",
-      items: [
-        { title: "Przewaga decyzyjna CEO", body: "Trzydniowy wyjazd warsztatowy dla wąskiej grupy właścicieli firm, w hotelu w górach, z mastermindami po powrocie." },
-        { title: "Networking w górach", body: "Spotkania przedsiębiorców na szlaku. Rozmowy o biznesie idą lepiej, kiedy idzie się pod górę." },
-      ],
     },
   },
   linkaris: {
@@ -255,7 +326,7 @@ export const pl: Content = {
       items: [
         { title: "Dedykowane szkolenia", body: "Programy szyte pod zespół, od diagnozy po podsumowanie." },
         { title: "Mentoring dla kadry", body: "Indywidualna praca z menedżerami w ramach jednego projektu dla firmy." },
-        { title: "Wydarzenia i wyjazdy", body: "Warsztaty wyjazdowe, mastermindy i spotkania networkingowe." },
+        { title: "Wydarzenia i wyjazdy", body: "Warsztaty wyjazdowe, mastermindy i networking w górach." },
       ],
     },
     company: {
@@ -275,7 +346,7 @@ export const pl: Content = {
     story: [
       "Ponad 20 lat przepracowałem w logistyce i branży kurierskiej, z czego 13 lat jako menedżer. Wcześniej przez siedem lat sprzedawałem ubezpieczenia, co nauczyło mnie słuchać, zanim zacznę mówić.",
       "W korporacji przekonałem się, że najtrudniejsza część zarządzania to ludzie, a najczęściej zaniedbywana to sam lider. Dlatego zająłem się mentoringiem i szkoleniami. Chcę pokazywać, że dbanie o zespół jest najprostszą drogą do realizacji celów firmy.",
-      "Od 2018 roku działam w Toastmasters International. Dziś jestem liderem Dystryktu 108, który obejmuje ponad 2000 członków w siedmiu krajach. W programie Odyssey Project mentorowałem ponad 30 osób z kilkunastu krajów.",
+      "Od 2018 roku działam w Toastmasters International. Jako lider Dystryktu 108 wspieram ponad 2000 członków w siedmiu krajach. W programie Odyssey Project mentorowałem ponad 30 osób z kilkunastu krajów.",
     ],
     timeline: {
       title: "Po drodze",
@@ -288,7 +359,7 @@ export const pl: Content = {
     },
     outside: {
       title: "Poza pracą",
-      body: "Biegam ultramaratony w Beskidach. Bieg 7 Dolin, Beskidzki Topór i trasy wokół Babiej Góry nauczyły mnie więcej o planowaniu i kryzysach niż niejedno szkolenie.",
+      body: "Biegam ultramaratony w Beskidach. Bieg 7 Dolin, Beskidzki Topór i trasy wokół Babiej Góry nauczyły mnie więcej o planowaniu i kryzysach niż niejedno szkolenie. Dlatego w góry zabieram też przedsiębiorców.",
     },
     portraitAlt: "Łukasz Chomicz",
   },
@@ -306,9 +377,8 @@ export const pl: Content = {
     company: "Umowy i faktury: Linkaris Sp. z o.o.",
   },
   footer: {
-    tagline: "Mentoring, szkolenia i wystąpienia dla liderów.",
+    tagline: "Mentoring, szkolenia, wystąpienia i networking w górach.",
     rights: "Wszelkie prawa zastrzeżone.",
-    social: "Znajdziesz mnie też tutaj",
   },
   status: { soon: "wkrótce", inProgress: "w przygotowaniu", free: "bezpłatnie" },
 };
