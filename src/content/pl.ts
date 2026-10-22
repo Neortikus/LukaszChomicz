@@ -4,7 +4,7 @@ export const pl: Content = {
   meta: {
     title: "Łukasz Chomicz - mentoring i leadership. Zaufanie. Kierunek. Działanie.",
     description:
-      "Mentor, trener i mówca. Ponad 20 lat zarządzania zespołami w logistyce. Mentoring 1:1 dla menedżerów, szkolenia dla firm, wystąpienia, networking w górach i książki.",
+      "Mentor, trener i mówca. Ponad 20 lat zarządzania zespołami w logistyce. Mentoring dla menedżerów, szkolenia dla firm, wystąpienia, networking w górach i książki.",
   },
   nav: {
     items: [
@@ -44,10 +44,9 @@ export const pl: Content = {
   home: {
     lede: "Przez ponad 20 lat prowadziłem zespoły w logistyce. Dziś pracuję z menedżerami i właścicielami firm, którym zarządzanie przestało dawać energię. Zarządzanie jest proste. Zadbaj o ludzi, reszta jest procesem.",
     stats: [
-      { value: "20+", label: "lat w logistyce i branży KEP, 13 na stanowiskach kierowniczych" },
-      { value: "2000+", label: "członków Toastmasters w Dystrykcie 108, którym przewodziłem" },
-      { value: "7", label: "krajów w Dystrykcie 108" },
-      { value: "30+", label: "osób z kilkunastu krajów, które mentorowałem w Odyssey Project" },
+      { value: "20+", label: "lat w logistyce i branży KEP, 15 na stanowiskach kierowniczych" },
+      { value: "7 państw", label: "Były Dyrektor Dystryktu 108 Toastmasters: 2000 członków, 100 klubów" },
+      { value: "70+", label: "osób, które mentorowałem, w tym 50 w Toastmasters International" },
       { value: "4", label: "książki współautorskie, m.in. z Brianem Tracym" },
     ],
     credentialsLabel: "Współpracowałem i występowałem m.in. z",
@@ -55,7 +54,7 @@ export const pl: Content = {
     origin: {
       title: "Prowadziłem zespoły, zanim zacząłem o tym uczyć",
       body: [
-        "Znam poniedziałek, w którym brakuje ludzi na zmianie, klient dzwoni od szóstej, a zarząd czeka na raport. Przez 13 lat byłem menedżerem w logistyce i branży kurierskiej.",
+        "Znam poniedziałek, w którym brakuje ludzi na zmianie, klient dzwoni od szóstej, a zarząd czeka na raport. Przez 15 lat byłem menedżerem w logistyce i branży kurierskiej.",
         "Z tej perspektywy pracuję dziś z liderami. Bez teorii oderwanej od operacji i bez obietnic, że lider ma być superbohaterem.",
       ],
     },
@@ -66,18 +65,18 @@ export const pl: Content = {
       legend: "Kolory to prawdziwe oznaczenia szlaków górskich.",
       summit: "Twój cel",
       arms: [
-        { href: "/mentoring", trail: "red", label: "Mentoring 1:1", detail: "długa, równa droga z przewodnikiem" },
-        { href: "/interim-manager", trail: "black", label: "Interim manager", detail: "najkrótsza i najbardziej stroma" },
-        { href: "/szkolenia", trail: "blue", label: "Szkolenia dla firm", detail: "cały zespół idzie razem" },
-        { href: "/wystapienia", trail: "green", label: "Wystąpienia", detail: "z widokiem dla całej sali" },
-        { href: "/networking-w-gorach", trail: "yellow", label: "Networking w górach", detail: "serpentyny i rozmowy po drodze" },
+        { href: "/mentoring", trail: "red", label: "Mentoring", detail: "indywidualna praca z liderem" },
+        { href: "/interim-manager", trail: "black", label: "Interim manager", detail: "przejmuję zarządzanie na czas zmiany" },
+        { href: "/szkolenia", trail: "blue", label: "Szkolenia dla firm", detail: "warsztaty dla zespołów i kadry" },
+        { href: "/wystapienia", trail: "green", label: "Wystąpienia", detail: "keynote i prowadzenie konferencji" },
+        { href: "/networking-w-gorach", trail: "yellow", label: "Networking w górach", detail: "wspólne wyjścia z przedsiębiorcami" },
       ],
     },
     stages: ["Etap 1 · Start", "Etap 2 · Wybór szlaku", "Etap 3 · Po drodze", "Etap 4 · Najbliższe wyjścia", "Szczyt · Pierwszy krok"],
     railLabel: "Twoja droga przez stronę",
     pathsTitle: "Jak mogę pomóc",
     paths: [
-      { href: "/mentoring", icon: "kierunek", image: "/images/portret2.webp", title: "Mentoring 1:1", body: "Menedżer 2.0 - z wypalenia do wpływu. Indywidualna praca z liderem na autorskiej metodzie W.I.Z.J.A.", link: "Program mentoringu" },
+      { href: "/mentoring", icon: "kierunek", image: "/images/portret2.webp", title: "Mentoring", body: "Menedżer 2.0 - z wypalenia do wpływu. Indywidualna praca z liderem na autorskiej metodzie W.I.Z.J.A.", link: "Program mentoringu" },
       { href: "/szkolenia", icon: "ludzie", image: "/images/scena-6.webp", title: "Szkolenia dla firm", body: "Komunikacja, odpowiedzialność, talenty, delegowanie. Warsztaty szyte pod Wasz zespół.", link: "Programy szkoleń" },
       { href: "/wystapienia", icon: "swiadomosc", image: "/images/scena-1.webp", title: "Wystąpienia", body: "Keynote, prelekcje i moderacja konferencji. Neurobiologia przywództwa, strategia na górskim szlaku.", link: "Tematy wystąpień" },
       { href: "/networking-w-gorach", icon: "rozwoj", image: "/images/gory-grupa.webp", title: "Networking w górach", body: "Zabieram przedsiębiorców w Beskidy: Pilsko, Barania Góra, Skrzyczne, Babia Góra.", link: "Najbliższe wyjścia" },
@@ -95,7 +94,7 @@ export const pl: Content = {
   ],
   mentoring: {
     intro: {
-      title: "Mentoring 1:1 dla menedżerów",
+      title: "Mentoring dla menedżerów",
       lede: "Dla liderów, którzy mają wyniki, ale coraz mniej siły, żeby je utrzymać. Pracujemy nad Tobą jako liderem, a nie nad naprawianiem firmy za Ciebie.",
     },
     program: {
@@ -117,7 +116,7 @@ export const pl: Content = {
     tools: {
       title: "Na czym pracujemy",
       items: [
-        { title: "Metoda W.I.Z.J.A.", body: "Mój autorski model pracy z liderem, zbudowany na doświadczeniu z zarządzania i z ponad trzydziestu procesów mentoringowych." },
+        { title: "Metoda W.I.Z.J.A.", body: "Mój autorski model pracy z liderem, zbudowany na doświadczeniu z zarządzania i z ponad 70 procesów mentoringowych." },
         { title: "DISC", body: "Pokazuje Twój styl działania i komunikacji oraz to, jak odbierają Cię ludzie w zespole." },
         { title: "Gallup CliftonStrengths", body: "Wskazuje talenty, na których warto budować, zamiast łatać słabe strony." },
       ],
@@ -160,7 +159,7 @@ export const pl: Content = {
     why: {
       title: "Dlaczego ja",
       body: [
-        "Przez ponad 20 lat pracowałem w logistyce i branży kurierskiej, z czego 13 lat na stanowiskach kierowniczych. Prowadziłem zespoły w codziennej operacji, pod presją klienta i wyniku.",
+        "Przez ponad 20 lat pracowałem w logistyce i branży kurierskiej, z czego 15 lat na stanowiskach kierowniczych. Prowadziłem zespoły w codziennej operacji, pod presją klienta i wyniku.",
         "Do tego dochodzi warsztat mentora i trenera. Nie tylko dowiozę wynik, ale zostawię zespół i następcę przygotowanych do dalszej pracy beze mnie.",
       ],
     },
@@ -234,7 +233,7 @@ export const pl: Content = {
       title: "Dlaczego mogę stanąć na Waszej scenie",
       points: [
         "Certyfikowany Zawodowy Mówca (Akademia Zawodowych Mówców).",
-        "W Toastmasters International od 2018 roku, dziś lider Dystryktu 108.",
+        "W Toastmasters International od 2018 roku, były Dyrektor Dystryktu 108.",
         "Wystąpienia po polsku i angielsku.",
       ],
     },
@@ -405,16 +404,16 @@ export const pl: Content = {
       lede: "Menedżer z logistyki, który został mentorem. Ultramaratończyk z Beskidów. Mąż, współwłaściciel rodzinnej firmy.",
     },
     story: [
-      "Ponad 20 lat przepracowałem w logistyce i branży kurierskiej, z czego 13 lat jako menedżer. Wcześniej przez siedem lat sprzedawałem ubezpieczenia, co nauczyło mnie słuchać, zanim zacznę mówić.",
+      "Ponad 20 lat przepracowałem w logistyce i branży kurierskiej, z czego 15 lat jako menedżer. Wcześniej przez siedem lat sprzedawałem ubezpieczenia, co nauczyło mnie słuchać, zanim zacznę mówić.",
       "W korporacji przekonałem się, że najtrudniejsza część zarządzania to ludzie, a najczęściej zaniedbywana to sam lider. Dlatego zająłem się mentoringiem i szkoleniami. Chcę pokazywać, że dbanie o zespół jest najprostszą drogą do realizacji celów firmy.",
-      "Od 2018 roku działam w Toastmasters International. Jako lider Dystryktu 108 wspieram ponad 2000 członków w siedmiu krajach. W programie Odyssey Project mentorowałem ponad 30 osób z kilkunastu krajów.",
+      "Od 2018 roku działam w Toastmasters International. Byłem Dyrektorem Dystryktu 108, który obejmuje 7 państw, 2000 członków i 100 klubów. W Toastmasters mentorowałem 50 osób, a łącznie ponad 70.",
     ],
     timeline: {
       title: "Po drodze",
       items: [
         { title: "Ubezpieczenia", body: "Siedem lat sprzedaży bezpośredniej, analizy potrzeb i negocjacji." },
-        { title: "Logistyka i KEP", body: "Ponad 20 lat w branży, 13 lat kierowania zespołami." },
-        { title: "Toastmasters", body: "Od 2018 roku, dziś lider Dystryktu 108." },
+        { title: "Logistyka i KEP", body: "Ponad 20 lat w branży, 15 lat kierowania zespołami." },
+        { title: "Toastmasters", body: "Od 2018 roku, były Dyrektor Dystryktu 108." },
         { title: "Mentoring i szkolenia", body: "Absolwent Akademii Certyfikowanych Mentorów, certyfikowany Zawodowy Mówca, współzałożyciel Linkaris." },
       ],
     },

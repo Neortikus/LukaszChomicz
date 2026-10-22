@@ -4,7 +4,7 @@ export const en: Content = {
   meta: {
     title: "Łukasz Chomicz - mentoring and leadership. Trust. Clarity. Action.",
     description:
-      "Mentor, trainer and speaker with 20+ years of leading teams in logistics. 1:1 mentoring for managers, company training, keynotes, mountain networking and books.",
+      "Mentor, trainer and speaker with 20+ years of leading teams in logistics. mentoring for managers, company training, keynotes, mountain networking and books.",
   },
   nav: {
     items: [
@@ -44,10 +44,9 @@ export const en: Content = {
   home: {
     lede: "I spent more than 20 years leading teams in logistics. Today I work with managers and business owners who have lost the energy for leading. Management is simple. Take care of people, the rest is process.",
     stats: [
-      { value: "20+", label: "years in logistics and courier services, 13 in management" },
-      { value: "2000+", label: "Toastmasters members in District 108 I have led" },
-      { value: "7", label: "countries in District 108" },
-      { value: "30+", label: "people from a dozen countries mentored in the Odyssey Project" },
+      { value: "20+", label: "years in logistics and courier services, 15 in management" },
+      { value: "7 countries", label: "Former Toastmasters District 108 Director: 2,000 members, 100 clubs" },
+      { value: "70+", label: "people I have mentored, 50 of them in Toastmasters International" },
       { value: "4", label: "co-authored books, including with Brian Tracy" },
     ],
     credentialsLabel: "I have worked and spoken with",
@@ -55,7 +54,7 @@ export const en: Content = {
     origin: {
       title: "I led teams before I started teaching it",
       body: [
-        "I know the Monday when a shift is short-staffed, a client has been calling since six and the board wants its report. For 13 years I was a manager in logistics and courier services.",
+        "I know the Monday when a shift is short-staffed, a client has been calling since six and the board wants its report. For 15 years I was a manager in logistics and courier services.",
         "That's the perspective I bring to leaders today. No theory detached from operations, and no promise that a leader has to be a superhero.",
       ],
     },
@@ -66,18 +65,18 @@ export const en: Content = {
       legend: "The colours are real Polish mountain trail markings.",
       summit: "Your goal",
       arms: [
-        { href: "/mentoring", trail: "red", label: "1:1 mentoring", detail: "a long, steady route with a guide" },
-        { href: "/interim-manager", trail: "black", label: "Interim manager", detail: "the shortest and steepest" },
-        { href: "/szkolenia", trail: "blue", label: "Company training", detail: "the whole team climbs together" },
-        { href: "/wystapienia", trail: "green", label: "Speaking", detail: "a view for the whole room" },
-        { href: "/networking-w-gorach", trail: "yellow", label: "Mountain networking", detail: "switchbacks and talks on the way" },
+        { href: "/mentoring", trail: "red", label: "Mentoring", detail: "individual work with a leader" },
+        { href: "/interim-manager", trail: "black", label: "Interim manager", detail: "I take over management for a time of change" },
+        { href: "/szkolenia", trail: "blue", label: "Company training", detail: "workshops for teams and leadership" },
+        { href: "/wystapienia", trail: "green", label: "Speaking", detail: "keynotes and conference hosting" },
+        { href: "/networking-w-gorach", trail: "yellow", label: "Mountain networking", detail: "hikes with business owners" },
       ],
     },
     stages: ["Stage 1 · The start", "Stage 2 · Choosing the route", "Stage 3 · Along the way", "Stage 4 · Next departures", "Summit · The first step"],
     railLabel: "Your route through the page",
     pathsTitle: "How I can help",
     paths: [
-      { href: "/mentoring", icon: "kierunek", image: "/images/portret2.webp", title: "1:1 mentoring", body: "Manager 2.0 - from burnout to influence. Individual work with a leader using my own W.I.Z.J.A. method.", link: "The programme" },
+      { href: "/mentoring", icon: "kierunek", image: "/images/portret2.webp", title: "Mentoring", body: "Manager 2.0 - from burnout to influence. Individual work with a leader using my own W.I.Z.J.A. method.", link: "The programme" },
       { href: "/szkolenia", icon: "ludzie", image: "/images/scena-6.webp", title: "Company training", body: "Communication, accountability, talent, delegation. Workshops built around your team.", link: "Training programmes" },
       { href: "/wystapienia", icon: "swiadomosc", image: "/images/scena-1.webp", title: "Speaking", body: "Keynotes, talks and conference hosting. The neuroscience of leadership, strategy on a mountain trail.", link: "Talk topics" },
       { href: "/networking-w-gorach", icon: "rozwoj", image: "/images/gory-grupa.webp", title: "Mountain networking", body: "I take entrepreneurs into the Beskid mountains: Pilsko, Barania Góra, Skrzyczne, Babia Góra.", link: "Upcoming hikes" },
@@ -95,7 +94,7 @@ export const en: Content = {
   ],
   mentoring: {
     intro: {
-      title: "1:1 mentoring for managers",
+      title: "Mentoring for managers",
       lede: "For leaders who deliver results but have less and less strength to keep it up. We work on you as a leader, not on fixing the company for you.",
     },
     program: {
@@ -117,7 +116,7 @@ export const en: Content = {
     tools: {
       title: "What we work with",
       items: [
-        { title: "The W.I.Z.J.A. method", body: "My own model for working with leaders, built on years of management and more than thirty mentoring relationships." },
+        { title: "The W.I.Z.J.A. method", body: "My own model for working with leaders, built on years of management and more than 70 mentoring relationships." },
         { title: "DISC", body: "Shows your working and communication style, and how people on your team experience you." },
         { title: "Gallup CliftonStrengths", body: "Points to the talents worth building on, instead of patching weaknesses." },
       ],
@@ -160,7 +159,7 @@ export const en: Content = {
     why: {
       title: "Why me",
       body: [
-        "I spent more than 20 years in logistics and courier services, 13 of them in management. I led teams in day-to-day operations, under pressure from clients and targets.",
+        "I spent more than 20 years in logistics and courier services, 15 of them in management. I led teams in day-to-day operations, under pressure from clients and targets.",
         "On top of that I bring the skills of a mentor and trainer. I won't just deliver the result; I'll leave the team and my successor ready to carry on without me.",
       ],
     },
@@ -234,7 +233,7 @@ export const en: Content = {
       title: "Why I belong on your stage",
       points: [
         "Certified Professional Speaker (Akademia Zawodowych Mówców).",
-        "Toastmasters International member since 2018, now leading District 108.",
+        "Toastmasters International member since 2018, former District 108 Director.",
         "Talks in Polish and English.",
       ],
     },
@@ -405,16 +404,16 @@ export const en: Content = {
       lede: "A logistics manager who became a mentor. An ultrarunner from the Beskid mountains. Husband and co-owner of a family business.",
     },
     story: [
-      "I spent more than 20 years in logistics and courier services, 13 of them as a manager. Before that I sold insurance for seven years, which taught me to listen before I talk.",
+      "I spent more than 20 years in logistics and courier services, 15 of them as a manager. Before that I sold insurance for seven years, which taught me to listen before I talk.",
       "In the corporate world I learned that people are the hardest part of management, and the leader is the most neglected one. That's why I moved into mentoring and training. I want to show that taking care of a team is the simplest route to a company's goals.",
-      "I've been in Toastmasters International since 2018. As District 108 leader I support more than 2,000 members in seven countries. In the Odyssey Project I mentored over 30 people from more than a dozen countries.",
+      "I've been in Toastmasters International since 2018. I served as District 108 Director, covering 7 countries, 2,000 members and 100 clubs. I mentored 50 people in Toastmasters and more than 70 in total.",
     ],
     timeline: {
       title: "Along the way",
       items: [
         { title: "Insurance", body: "Seven years of direct sales, needs analysis and negotiation." },
-        { title: "Logistics and courier services", body: "More than 20 years in the industry, 13 years leading teams." },
-        { title: "Toastmasters", body: "Since 2018, now leading District 108." },
+        { title: "Logistics and courier services", body: "More than 20 years in the industry, 15 years leading teams." },
+        { title: "Toastmasters", body: "Since 2018, former District 108 Director." },
         { title: "Mentoring and training", body: "Graduate of the Certified Mentors Academy, certified Professional Speaker, co-founder of Linkaris." },
       ],
     },

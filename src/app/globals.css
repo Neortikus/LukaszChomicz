@@ -403,7 +403,7 @@ img { max-width: 100%; display: block; }
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 .stats__list li { padding: 30px 20px 34px 0; }
 .stats__list li + li { padding-left: 20px; border-left: 1px solid rgba(201, 192, 214, 0.15); }
@@ -811,8 +811,8 @@ img { max-width: 100%; display: block; }
 .hero__inner .hero__text { pointer-events: auto; max-width: 540px; padding-block: 0; }
 .hero--journey .hero__name { font-size: clamp(3rem, 7vw, 6rem); }
 
-.jroute__glow { fill: none; stroke: var(--c); stroke-width: 6; opacity: 0.16; }
-.jroute__line { fill: none; stroke: var(--c); stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; opacity: 0.92; transition: stroke-width 0.25s ease; }
+.jroute__glow { fill: none; stroke: var(--c); stroke-width: 5; opacity: 0.25; }
+.jroute__line { fill: none; stroke: var(--c); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; opacity: 0.92; transition: stroke-width 0.25s ease; }
 .jroute--red { --c: #ef5267; }
 .jroute--blue { --c: #5aa0f5; }
 .jroute--yellow { --c: #f5cf3d; }
@@ -820,9 +820,9 @@ img { max-width: 100%; display: block; }
 .jroute--green { --c: #45c97c; }
 .jroute { transition: opacity 0.25s ease; }
 .jsummit__dot { fill: #fff; }
-.jsummit__label { font-family: var(--font-script); font-size: 52px; fill: var(--white); opacity: 0.95; }
+.jsummit__label { font-family: var(--font-script); font-size: 44px; fill: var(--white); opacity: 0.95; }
 @media (prefers-reduced-motion: no-preference) {
-  .jsummit__halo { animation: halo 3.2s ease-in-out infinite; transform-origin: 1443px 325px; transform-box: view-box; }
+  .jsummit__halo { animation: halo 3.2s ease-in-out infinite; transform-origin: 1436px 322px; transform-box: view-box; }
   .jroute__line { stroke-dasharray: 1; stroke-dashoffset: 0; animation: route-draw 2.6s cubic-bezier(0.45, 0, 0.2, 1) both; }
   .jroute--blue .jroute__line { animation-delay: 0.15s; }
   .jroute--yellow .jroute__line { animation-delay: 0.3s; }
@@ -853,7 +853,7 @@ img { max-width: 100%; display: block; }
 .hero:has(.r-blue:hover) .jroute--blue .jroute__line,
 .hero:has(.r-yellow:hover) .jroute--yellow .jroute__line,
 .hero:has(.r-black:hover) .jroute--black .jroute__line,
-.hero:has(.r-green:hover) .jroute--green .jroute__line { stroke-width: 5; }
+.hero:has(.r-green:hover) .jroute--green .jroute__line { stroke-width: 3.5; }
 
 @media (max-width: 1100px) {
   .hero--journey { min-height: 0; }
