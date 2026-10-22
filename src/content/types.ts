@@ -62,7 +62,7 @@ export type Content = {
     credentialsLabel: string;
     credentials: string[];
     origin: { title: string; body: string[] };
-    signpost: { label: string; title: string; body: string; legend: string; arms: SignpostArm[] };
+    signpost: { label: string; title: string; body: string; legend: string; summit: string; arms: SignpostArm[] };
     pathsTitle: string;
     paths: Path[];
     testimonialsTitle: string;

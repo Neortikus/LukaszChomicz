@@ -790,101 +790,77 @@ img { max-width: 100%; display: block; }
 .signpost-section .legend { margin-top: 22px; font-size: 0.875rem; color: var(--on-dark-soft); display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
 .signpost-section .legend .trail { width: 22px; height: 15px; border-color: transparent; }
 
-.signpost { position: relative; padding: 0 0 28px; max-width: 600px; width: 100%; justify-self: end; }
-.signpost__label {
-  font-family: var(--font-head);
-  font-weight: 600;
-  font-size: 0.95rem;
-  color: var(--on-dark-soft);
-  margin: 0 auto 14px;
-  text-align: center;
+.trailmap { margin-top: clamp(28px, 4vw, 48px); }
+.trailmap__scene { position: relative; }
+.trailmap__scene svg { display: block; width: 100%; height: auto; }
+.trailmap__scene svg {
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 9%, #000 91%, transparent 100%);
+  mask-image: linear-gradient(90deg, transparent 0%, #000 9%, #000 91%, transparent 100%);
 }
-.signpost__pole {
-  position: absolute;
-  top: 36px;
-  bottom: 0;
-  left: 50%;
-  width: 14px;
-  margin-left: -7px;
-  background: linear-gradient(to right, #4f3f2f, #6e5a45 40%, #806a52);
-  border-radius: 2px 2px 0 0;
-}
-.signpost__cap {
-  position: absolute;
-  top: 28px;
-  left: 50%;
-  width: 22px;
-  height: 10px;
-  margin-left: -11px;
-  background: #3f3226;
-  border-radius: 2px;
-}
-.signpost__arms { list-style: none; margin: 0; padding: 18px 0 0; position: relative; display: grid; gap: 12px; }
-.signpost__arm { display: flex; }
-.signpost__arm:nth-child(odd) { justify-content: flex-start; padding-left: calc(50% - 7px); }
-.signpost__arm:nth-child(even) { justify-content: flex-end; padding-right: calc(50% - 7px); }
+.summit__label { font-family: var(--font-script); font-size: 46px; fill: var(--on-dark); }
 
-.plate {
-  --tip: 22px;
-  position: relative;
-  display: block;
-  width: min(300px, 100%);
-  text-decoration: none;
-  color: var(--graphite);
-  background: var(--graphite);
-  padding: 2px;
-  clip-path: polygon(0 0, calc(100% - var(--tip)) 0, 100% 50%, calc(100% - var(--tip)) 100%, 0 100%);
-  transition: transform 0.18s ease;
-}
-.plate__inner {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  background: var(--white);
-  padding: 10px calc(var(--tip) + 8px) 10px 12px;
-  clip-path: polygon(0 0, calc(100% - var(--tip) + 1px) 0, 100% 50%, calc(100% - var(--tip) + 1px) 100%, 0 100%);
-  transition: background-color 0.15s ease;
-}
-.plate__text { display: grid; line-height: 1.2; }
-.plate__label { font-family: var(--font-head); font-weight: 700; font-size: 1.1rem; }
-.plate__detail { font-size: 0.85rem; color: var(--text-soft); margin-top: 2px; }
-.plate--left { clip-path: polygon(var(--tip) 0, 100% 0, 100% 100%, var(--tip) 100%, 0 50%); }
-.plate--left .plate__inner {
-  clip-path: polygon(calc(var(--tip) - 1px) 0, 100% 0, 100% 100%, calc(var(--tip) - 1px) 100%, 0 50%);
-  padding: 10px 12px 10px calc(var(--tip) + 8px);
-  flex-direction: row-reverse;
-  text-align: right;
-}
-.plate:hover .plate__inner { background: var(--lavender); }
-.plate:hover { transform: translateX(5px); }
-.plate--left:hover { transform: translateX(-5px); }
-.plate:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; clip-path: none; }
-.plate:focus-visible .plate__inner { clip-path: none; }
+.route { transition: opacity 0.2s ease; }
+.route__base { fill: none; stroke: #fff; stroke-width: 9; stroke-linecap: round; stroke-linejoin: round; opacity: 0.92; }
+.route__color { fill: none; stroke: var(--c); stroke-width: 3.5; stroke-linecap: round; stroke-linejoin: round; transition: stroke-width 0.2s ease; }
+.route__start { fill: var(--c); stroke: #fff; stroke-width: 3; }
+.route--red { --c: #c8102e; }
+.route--blue { --c: #0057a8; }
+.route--green { --c: #00843d; }
+.route--yellow { --c: #e0b000; }
+.route--black { --c: #1a1a1a; }
+.summit line { stroke: var(--white); stroke-width: 3; stroke-linecap: round; }
+.summit path { fill: var(--accent); }
 
 @media (prefers-reduced-motion: no-preference) {
-  .signpost__arm .plate { animation: arm-out 0.55s cubic-bezier(0.2, 0.7, 0.2, 1) both; transform-origin: left center; }
-  .signpost__arm:nth-child(even) .plate { transform-origin: right center; }
-  .signpost__arm:nth-child(1) .plate { animation-delay: 0.1s; }
-  .signpost__arm:nth-child(2) .plate { animation-delay: 0.2s; }
-  .signpost__arm:nth-child(3) .plate { animation-delay: 0.3s; }
-  .signpost__arm:nth-child(4) .plate { animation-delay: 0.4s; }
-  .signpost__arm:nth-child(5) .plate { animation-delay: 0.5s; }
+  .route__base, .route__color { stroke-dasharray: 1; stroke-dashoffset: 0; animation: route-draw 1.8s cubic-bezier(0.4, 0, 0.2, 1) both; }
+  .route--blue path { animation-delay: 0.15s; }
+  .route--yellow path { animation-delay: 0.3s; }
+  .route--black path { animation-delay: 0.45s; }
+  .route--green path { animation-delay: 0.6s; }
 }
-@keyframes arm-out { from { opacity: 0; transform: scaleX(0.2); } to { opacity: 1; transform: none; } }
+@keyframes route-draw { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
 
-@media (max-width: 860px) {
-  .signpost { justify-self: start; max-width: 420px; }
-  .signpost__label { text-align: left; padding-left: 30px; }
-  .signpost__pole { left: 7px; margin-left: 0; }
-  .signpost__cap { left: 3px; margin-left: 0; }
-  .signpost__arm:nth-child(n) { justify-content: flex-start; padding: 0 0 0 21px; }
-  .plate--left { clip-path: polygon(0 0, calc(100% - var(--tip)) 0, 100% 50%, calc(100% - var(--tip)) 100%, 0 100%); }
-  .plate--left .plate__inner {
-    clip-path: polygon(0 0, calc(100% - var(--tip) + 1px) 0, 100% 50%, calc(100% - var(--tip) + 1px) 100%, 0 100%);
-    padding: 10px calc(var(--tip) + 8px) 10px 12px;
-    flex-direction: row;
-    text-align: left;
-  }
-  .plate--left:hover { transform: translateX(5px); }
-  .signpost__arm:nth-child(even) .plate { transform-origin: left center; }
+.trailheads {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 10px;
+  border-top: 2px solid rgba(201, 192, 214, 0.25);
+}
+.trailhead {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 6px;
+  padding: 18px 10px 8px;
+  text-decoration: none;
+  color: var(--on-dark);
+  border-radius: var(--radius);
+  transition: background-color 0.15s ease;
+}
+.trailhead__label { font-family: var(--font-head); font-weight: 700; font-size: 1.05rem; line-height: 1.2; }
+.trailhead__detail { font-size: 0.875rem; line-height: 1.35; color: var(--on-dark-soft); }
+.trailhead:hover, .trailhead:focus-visible { background: rgba(247, 245, 242, 0.07); }
+.trailhead:hover .trailhead__label, .trailhead:focus-visible .trailhead__label { text-decoration: underline; text-decoration-color: var(--accent); text-decoration-thickness: 2px; text-underline-offset: 5px; }
+
+/* Hovering a trailhead lights up its route and dims the rest */
+.trailmap:has(.trailhead:hover) .route, .trailmap:has(.trailhead:focus-visible) .route { opacity: 0.3; }
+.trailmap:has(.trailhead--red:hover) .route--red, .trailmap:has(.trailhead--red:focus-visible) .route--red,
+.trailmap:has(.trailhead--blue:hover) .route--blue, .trailmap:has(.trailhead--blue:focus-visible) .route--blue,
+.trailmap:has(.trailhead--yellow:hover) .route--yellow, .trailmap:has(.trailhead--yellow:focus-visible) .route--yellow,
+.trailmap:has(.trailhead--black:hover) .route--black, .trailmap:has(.trailhead--black:focus-visible) .route--black,
+.trailmap:has(.trailhead--green:hover) .route--green, .trailmap:has(.trailhead--green:focus-visible) .route--green { opacity: 1; }
+.trailmap:has(.trailhead--red:hover) .route--red .route__color,
+.trailmap:has(.trailhead--blue:hover) .route--blue .route__color,
+.trailmap:has(.trailhead--yellow:hover) .route--yellow .route__color,
+.trailmap:has(.trailhead--black:hover) .route--black .route__color,
+.trailmap:has(.trailhead--green:hover) .route--green .route__color { stroke-width: 6; }
+
+@media (max-width: 760px) {
+  .trailheads { grid-template-columns: 1fr; gap: 0; }
+  .trailhead { flex-direction: row; flex-wrap: wrap; text-align: left; align-items: center; gap: 4px 12px; padding: 14px 4px; border-bottom: 1px solid rgba(201, 192, 214, 0.15); border-radius: 0; }
+  .trailhead__detail { flex-basis: 100%; padding-left: 42px; }
 }

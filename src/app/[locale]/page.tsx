@@ -2,7 +2,7 @@ import { Link } from "@/i18n/navigation";
 import { BookButton, CtaBand, Photo, Quotes } from "@/components/Blocks";
 import { EventCard } from "@/components/EventCard";
 import { Icon } from "@/components/Icon";
-import { Signpost } from "@/components/Signpost";
+import { TrailMap } from "@/components/TrailMap";
 import { loadPage, pageMetadata, type PageProps } from "@/lib/page";
 
 export const generateMetadata = ({ params }: PageProps) => pageMetadata(params, "/");
@@ -71,19 +71,23 @@ export default async function HomePage({ params }: PageProps) {
       </div>
 
       <section className="section section--dusk signpost-section" aria-labelledby="signpost">
-        <div className="wrap split">
-          <div className="stack">
-            <h2 id="signpost">{h.signpost.title}</h2>
-            <span className="accent-bar" />
-            <p className="lede">{h.signpost.body}</p>
-            <p className="legend">
-              {h.signpost.arms.map((a) => (
-                <span key={a.trail} aria-hidden="true" className={`trail trail--${a.trail}`} />
-              ))}
-              <span>{h.signpost.legend}</span>
-            </p>
+        <div className="wrap">
+          <div className="split">
+            <div className="stack">
+              <h2 id="signpost">{h.signpost.title}</h2>
+              <span className="accent-bar" />
+            </div>
+            <div className="stack">
+              <p className="lede">{h.signpost.body}</p>
+              <p className="legend">
+                {h.signpost.arms.map((a) => (
+                  <span key={a.trail} aria-hidden="true" className={`trail trail--${a.trail}`} />
+                ))}
+                <span>{h.signpost.legend}</span>
+              </p>
+            </div>
           </div>
-          <Signpost label={h.signpost.label} arms={h.signpost.arms} />
+          <TrailMap label={h.signpost.label} summit={h.signpost.summit} arms={h.signpost.arms} />
         </div>
       </section>
 
