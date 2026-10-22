@@ -73,9 +73,11 @@ export const en: Content = {
         { href: "/networking-w-gorach", trail: "yellow", label: "Mountain networking", detail: "switchbacks and talks on the way" },
       ],
     },
+    stages: ["Stage 1 · The start", "Stage 2 · Choosing the route", "Stage 3 · Along the way", "Stage 4 · Next departures", "Summit · The first step"],
+    railLabel: "Your route through the page",
     pathsTitle: "How I can help",
     paths: [
-      { href: "/mentoring", icon: "kierunek", image: "/images/portret.webp", title: "1:1 mentoring", body: "Manager 2.0 - from burnout to influence. Individual work with a leader using my own W.I.Z.J.A. method.", link: "The programme" },
+      { href: "/mentoring", icon: "kierunek", image: "/images/portret2.webp", title: "1:1 mentoring", body: "Manager 2.0 - from burnout to influence. Individual work with a leader using my own W.I.Z.J.A. method.", link: "The programme" },
       { href: "/szkolenia", icon: "ludzie", image: "/images/scena-6.webp", title: "Company training", body: "Communication, accountability, talent, delegation. Workshops built around your team.", link: "Training programmes" },
       { href: "/wystapienia", icon: "swiadomosc", image: "/images/scena-1.webp", title: "Speaking", body: "Keynotes, talks and conference hosting. The neuroscience of leadership, strategy on a mountain trail.", link: "Talk topics" },
       { href: "/networking-w-gorach", icon: "rozwoj", image: "/images/gory-grupa.webp", title: "Mountain networking", body: "I take entrepreneurs into the Beskid mountains: Pilsko, Barania Góra, Skrzyczne, Babia Góra.", link: "Upcoming hikes" },

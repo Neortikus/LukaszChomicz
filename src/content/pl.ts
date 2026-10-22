@@ -73,9 +73,11 @@ export const pl: Content = {
         { href: "/networking-w-gorach", trail: "yellow", label: "Networking w górach", detail: "serpentyny i rozmowy po drodze" },
       ],
     },
+    stages: ["Etap 1 · Start", "Etap 2 · Wybór szlaku", "Etap 3 · Po drodze", "Etap 4 · Najbliższe wyjścia", "Szczyt · Pierwszy krok"],
+    railLabel: "Twoja droga przez stronę",
     pathsTitle: "Jak mogę pomóc",
     paths: [
-      { href: "/mentoring", icon: "kierunek", image: "/images/portret.webp", title: "Mentoring 1:1", body: "Menedżer 2.0 - z wypalenia do wpływu. Indywidualna praca z liderem na autorskiej metodzie W.I.Z.J.A.", link: "Program mentoringu" },
+      { href: "/mentoring", icon: "kierunek", image: "/images/portret2.webp", title: "Mentoring 1:1", body: "Menedżer 2.0 - z wypalenia do wpływu. Indywidualna praca z liderem na autorskiej metodzie W.I.Z.J.A.", link: "Program mentoringu" },
       { href: "/szkolenia", icon: "ludzie", image: "/images/scena-6.webp", title: "Szkolenia dla firm", body: "Komunikacja, odpowiedzialność, talenty, delegowanie. Warsztaty szyte pod Wasz zespół.", link: "Programy szkoleń" },
       { href: "/wystapienia", icon: "swiadomosc", image: "/images/scena-1.webp", title: "Wystąpienia", body: "Keynote, prelekcje i moderacja konferencji. Neurobiologia przywództwa, strategia na górskim szlaku.", link: "Tematy wystąpień" },
       { href: "/networking-w-gorach", icon: "rozwoj", image: "/images/gory-grupa.webp", title: "Networking w górach", body: "Zabieram przedsiębiorców w Beskidy: Pilsko, Barania Góra, Skrzyczne, Babia Góra.", link: "Najbliższe wyjścia" },

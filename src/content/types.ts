@@ -63,6 +63,8 @@ export type Content = {
     credentials: string[];
     origin: { title: string; body: string[] };
     signpost: { label: string; title: string; body: string; legend: string; summit: string; arms: SignpostArm[] };
+    stages: string[];
+    railLabel: string;
     pathsTitle: string;
     paths: Path[];
     testimonialsTitle: string;

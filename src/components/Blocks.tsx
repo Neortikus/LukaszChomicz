@@ -110,11 +110,17 @@ export function Quotes({ items }: { items: Testimonial[] }) {
   );
 }
 
-export function CtaBand({ c }: { c: Content }) {
+export function CtaBand({ c, stage }: { c: Content; stage?: string }) {
   return (
     <section className="cta-band" aria-labelledby="cta-band-title">
       <div className="wrap cta-band__grid">
         <div>
+          {stage && (
+            <p className="stage stage--light">
+              <span className="stage__line" aria-hidden="true" />
+              {stage}
+            </p>
+          )}
           <h2 id="cta-band-title">{c.cta.bandTitle}</h2>
           <p>{c.cta.bandBody}</p>
           <span className="script" aria-hidden="true">
