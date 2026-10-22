@@ -767,3 +767,124 @@ img { max-width: 100%; display: block; }
   font-size: 0.85rem;
 }
 @media (max-width: 860px) { .site-footer__grid { grid-template-columns: 1fr; } }
+
+/* ---------- Signpost: Beskid trail sign ---------- */
+
+.trail {
+  --c: var(--graphite);
+  display: inline-block;
+  flex: none;
+  width: 30px;
+  height: 20px;
+  background: linear-gradient(to bottom, #fff 0 33.33%, var(--c) 33.33% 66.66%, #fff 66.66% 100%);
+  border: 1px solid var(--mist);
+  border-radius: 1px;
+}
+.trail--red { --c: #c8102e; }
+.trail--blue { --c: #0057a8; }
+.trail--green { --c: #00843d; }
+.trail--yellow { --c: #f2c200; }
+.trail--black { --c: #1a1a1a; }
+
+.signpost-section .split { align-items: center; }
+.signpost-section .legend { margin-top: 22px; font-size: 0.875rem; color: var(--on-dark-soft); display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
+.signpost-section .legend .trail { width: 22px; height: 15px; border-color: transparent; }
+
+.signpost { position: relative; padding: 0 0 28px; max-width: 600px; width: 100%; justify-self: end; }
+.signpost__label {
+  font-family: var(--font-head);
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--on-dark-soft);
+  margin: 0 auto 14px;
+  text-align: center;
+}
+.signpost__pole {
+  position: absolute;
+  top: 36px;
+  bottom: 0;
+  left: 50%;
+  width: 14px;
+  margin-left: -7px;
+  background: linear-gradient(to right, #4f3f2f, #6e5a45 40%, #806a52);
+  border-radius: 2px 2px 0 0;
+}
+.signpost__cap {
+  position: absolute;
+  top: 28px;
+  left: 50%;
+  width: 22px;
+  height: 10px;
+  margin-left: -11px;
+  background: #3f3226;
+  border-radius: 2px;
+}
+.signpost__arms { list-style: none; margin: 0; padding: 18px 0 0; position: relative; display: grid; gap: 12px; }
+.signpost__arm { display: flex; }
+.signpost__arm:nth-child(odd) { justify-content: flex-start; padding-left: calc(50% - 7px); }
+.signpost__arm:nth-child(even) { justify-content: flex-end; padding-right: calc(50% - 7px); }
+
+.plate {
+  --tip: 22px;
+  position: relative;
+  display: block;
+  width: min(300px, 100%);
+  text-decoration: none;
+  color: var(--graphite);
+  background: var(--graphite);
+  padding: 2px;
+  clip-path: polygon(0 0, calc(100% - var(--tip)) 0, 100% 50%, calc(100% - var(--tip)) 100%, 0 100%);
+  transition: transform 0.18s ease;
+}
+.plate__inner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--white);
+  padding: 10px calc(var(--tip) + 8px) 10px 12px;
+  clip-path: polygon(0 0, calc(100% - var(--tip) + 1px) 0, 100% 50%, calc(100% - var(--tip) + 1px) 100%, 0 100%);
+  transition: background-color 0.15s ease;
+}
+.plate__text { display: grid; line-height: 1.2; }
+.plate__label { font-family: var(--font-head); font-weight: 700; font-size: 1.1rem; }
+.plate__detail { font-size: 0.85rem; color: var(--text-soft); margin-top: 2px; }
+.plate--left { clip-path: polygon(var(--tip) 0, 100% 0, 100% 100%, var(--tip) 100%, 0 50%); }
+.plate--left .plate__inner {
+  clip-path: polygon(calc(var(--tip) - 1px) 0, 100% 0, 100% 100%, calc(var(--tip) - 1px) 100%, 0 50%);
+  padding: 10px 12px 10px calc(var(--tip) + 8px);
+  flex-direction: row-reverse;
+  text-align: right;
+}
+.plate:hover .plate__inner { background: var(--lavender); }
+.plate:hover { transform: translateX(5px); }
+.plate--left:hover { transform: translateX(-5px); }
+.plate:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; clip-path: none; }
+.plate:focus-visible .plate__inner { clip-path: none; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .signpost__arm .plate { animation: arm-out 0.55s cubic-bezier(0.2, 0.7, 0.2, 1) both; transform-origin: left center; }
+  .signpost__arm:nth-child(even) .plate { transform-origin: right center; }
+  .signpost__arm:nth-child(1) .plate { animation-delay: 0.1s; }
+  .signpost__arm:nth-child(2) .plate { animation-delay: 0.2s; }
+  .signpost__arm:nth-child(3) .plate { animation-delay: 0.3s; }
+  .signpost__arm:nth-child(4) .plate { animation-delay: 0.4s; }
+  .signpost__arm:nth-child(5) .plate { animation-delay: 0.5s; }
+}
+@keyframes arm-out { from { opacity: 0; transform: scaleX(0.2); } to { opacity: 1; transform: none; } }
+
+@media (max-width: 860px) {
+  .signpost { justify-self: start; max-width: 420px; }
+  .signpost__label { text-align: left; padding-left: 30px; }
+  .signpost__pole { left: 7px; margin-left: 0; }
+  .signpost__cap { left: 3px; margin-left: 0; }
+  .signpost__arm:nth-child(n) { justify-content: flex-start; padding: 0 0 0 21px; }
+  .plate--left { clip-path: polygon(0 0, calc(100% - var(--tip)) 0, 100% 50%, calc(100% - var(--tip)) 100%, 0 100%); }
+  .plate--left .plate__inner {
+    clip-path: polygon(0 0, calc(100% - var(--tip) + 1px) 0, 100% 50%, calc(100% - var(--tip) + 1px) 100%, 0 100%);
+    padding: 10px calc(var(--tip) + 8px) 10px 12px;
+    flex-direction: row;
+    text-align: left;
+  }
+  .plate--left:hover { transform: translateX(5px); }
+  .signpost__arm:nth-child(even) .plate { transform-origin: left center; }
+}

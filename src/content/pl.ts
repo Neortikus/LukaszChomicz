@@ -9,14 +9,15 @@ export const pl: Content = {
   nav: {
     items: [
       { href: "/mentoring", label: "Mentoring" },
+      { href: "/interim-manager", label: "Interim manager" },
       { href: "/szkolenia", label: "Szkolenia" },
       { href: "/wystapienia", label: "Wystąpienia" },
       { href: "/networking-w-gorach", label: "Networking w górach" },
       { href: "/wydarzenia", label: "Wydarzenia" },
-      { href: "/ksiazki", label: "Książki" },
       { href: "/o-mnie", label: "O mnie" },
     ],
     more: [
+      { href: "/ksiazki", label: "Książki" },
       { href: "/kursy", label: "Kursy i materiały" },
       { href: "/linkaris", label: "Linkaris" },
       { href: "/kontakt", label: "Kontakt" },
@@ -58,13 +59,26 @@ export const pl: Content = {
         "Z tej perspektywy pracuję dziś z liderami. Bez teorii oderwanej od operacji i bez obietnic, że lider ma być superbohaterem.",
       ],
     },
+    signpost: {
+      label: "Wybierz szlak",
+      title: "Dokąd idziemy?",
+      body: "Każdy obszar mojej pracy ma swój kolor szlaku, jak w Beskidach. Wybierz ten, który prowadzi do Twojego celu.",
+      legend: "Kolory to prawdziwe oznaczenia szlaków górskich.",
+      arms: [
+        { href: "/mentoring", trail: "red", label: "Mentoring 1:1", detail: "dla menedżerów, 16 tygodni" },
+        { href: "/interim-manager", trail: "black", label: "Interim manager", detail: "zarządzanie na czas zmiany" },
+        { href: "/szkolenia", trail: "blue", label: "Szkolenia dla firm", detail: "warsztaty dla zespołów i kadry" },
+        { href: "/wystapienia", trail: "green", label: "Wystąpienia", detail: "keynote i moderacja wydarzeń" },
+        { href: "/networking-w-gorach", trail: "yellow", label: "Networking w górach", detail: "Pilsko, Barania Góra, Babia Góra" },
+      ],
+    },
     pathsTitle: "Jak mogę pomóc",
     paths: [
       { href: "/mentoring", icon: "kierunek", image: "/images/portret.webp", title: "Mentoring 1:1", body: "Menedżer 2.0 - z wypalenia do wpływu. 16 tygodni pracy indywidualnej na metodzie W.I.Z.J.A.", link: "Program mentoringu" },
       { href: "/szkolenia", icon: "ludzie", image: "/images/scena-6.webp", title: "Szkolenia dla firm", body: "Komunikacja, odpowiedzialność, talenty, delegowanie. Warsztaty szyte pod Wasz zespół.", link: "Programy szkoleń" },
       { href: "/wystapienia", icon: "swiadomosc", image: "/images/scena-1.webp", title: "Wystąpienia", body: "Keynote, prelekcje i moderacja konferencji. Neurobiologia przywództwa, strategia na górskim szlaku.", link: "Tematy wystąpień" },
       { href: "/networking-w-gorach", icon: "rozwoj", image: "/images/gory-grupa.webp", title: "Networking w górach", body: "Zabieram przedsiębiorców w Beskidy: Pilsko, Barania Góra, Skrzyczne, Babia Góra.", link: "Najbliższe wyjścia" },
-      { href: "/wydarzenia", icon: "rezultaty", image: "/images/scena-3.webp", title: "Wydarzenia", body: "Wyjazdy warsztatowe i szkolenia otwarte. Bieszczady w listopadzie, Lider bez blokad w lutym.", link: "Kalendarz" },
+      { href: "/interim-manager", icon: "rezultaty", image: "/images/portret4.webp", title: "Interim manager", body: "Wchodzę do firmy na określony czas: buduję dział, porządkuję operacje albo prowadzę zespół w okresie przejściowym.", link: "Jak pracuję jako interim" },
       { href: "/ksiazki", icon: "dzialanie", image: "/images/ksiazka-moc-slow.webp", title: "Książki", body: "Moc Słów, Wiedza Warta Miliony, Potęga Samodoskonalenia i Sztuka Inspirowania.", link: "Zobacz książki" },
     ],
     testimonialsTitle: "Co mówią ludzie, z którymi pracowałem",
@@ -116,6 +130,50 @@ export const pl: Content = {
     boundary: {
       title: "Mentor, nie konsultant",
       body: "W mentoringu pracujemy nad Twoim sposobem prowadzenia ludzi i siebie. Jeśli firma potrzebuje uporządkowania procesów, to osobna usługa doradcza i mówię o tym wprost na pierwszej rozmowie.",
+    },
+  },
+  interim: {
+    intro: {
+      title: "Interim manager",
+      lede: "Wchodzę do firmy na określony czas jako menedżer, a nie doradca z boku. Biorę odpowiedzialność za zespół i wynik, a gdy cel jest osiągnięty, przekazuję stery stałemu kierownictwu.",
+    },
+    when: {
+      title: "Kiedy warto sięgnąć po interim managera",
+      points: [
+        "Budujesz nowy dział albo linię biznesu od zera i potrzebujesz kogoś, kto już to robił.",
+        "Odszedł kluczowy menedżer, a rekrutacja następcy potrwa miesiące.",
+        "Zespół lub oddział nie dowozi wyników i trzeba go uporządkować.",
+        "Wchodzisz w zmianę: restrukturyzację, nowy system, przejęcie albo szybki wzrost.",
+      ],
+    },
+    what: {
+      title: "Co mogę wziąć na siebie",
+      items: [
+        { title: "Budowa działu od zera", body: "Struktura, procesy, ludzie i pierwsze wyniki. Doświadczenie z logistyki, branży KEP i TSL." },
+        { title: "Porządkowanie operacji", body: "Diagnoza, plan naprawczy i wdrożenie razem z zespołem, z mierzalnymi celami." },
+        { title: "Zarządzanie na czas przejściowy", body: "Prowadzę zespół, dopóki nie pojawi się stały menedżer, i pomagam mu dobrze wystartować." },
+      ],
+    },
+    why: {
+      title: "Dlaczego ja",
+      body: [
+        "Przez ponad 20 lat pracowałem w logistyce i branży kurierskiej, z czego 13 lat na stanowiskach kierowniczych. Prowadziłem zespoły w codziennej operacji, pod presją klienta i wyniku.",
+        "Do tego dochodzi warsztat mentora i trenera. Nie tylko dowiozę wynik, ale zostawię zespół i następcę przygotowanych do dalszej pracy beze mnie.",
+      ],
+    },
+    how: {
+      title: "Jak wygląda współpraca",
+      items: [
+        { title: "Rozmowa i diagnoza", body: "Poznaję sytuację, cele i oczekiwania zarządu. Ustalamy, co ma się zmienić i po czym poznamy sukces." },
+        { title: "Zakres i czas", body: "Określamy rolę, uprawnienia, czas trwania i formę współpracy." },
+        { title: "Działanie", body: "Wchodzę w rolę, prowadzę zespół i regularnie raportuję postępy." },
+        { title: "Przekazanie", body: "Przekazuję stery stałemu menedżerowi razem z procesami i wiedzą, które zostają w firmie." },
+      ],
+    },
+    contact: {
+      title: "Potrzebujesz menedżera na czas zmiany?",
+      body: "Opisz krótko sytuację, a umówimy się na rozmowę. Wszystko, co powiesz, zostaje między nami.",
+      mailSubject: "Interim manager - zapytanie",
     },
   },
   training: {

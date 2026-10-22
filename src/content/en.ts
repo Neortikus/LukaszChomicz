@@ -9,14 +9,15 @@ export const en: Content = {
   nav: {
     items: [
       { href: "/mentoring", label: "Mentoring" },
+      { href: "/interim-manager", label: "Interim manager" },
       { href: "/szkolenia", label: "Training" },
       { href: "/wystapienia", label: "Speaking" },
       { href: "/networking-w-gorach", label: "Mountain networking" },
       { href: "/wydarzenia", label: "Events" },
-      { href: "/ksiazki", label: "Books" },
       { href: "/o-mnie", label: "About" },
     ],
     more: [
+      { href: "/ksiazki", label: "Books" },
       { href: "/kursy", label: "Courses and tools" },
       { href: "/linkaris", label: "Linkaris" },
       { href: "/kontakt", label: "Contact" },
@@ -58,13 +59,26 @@ export const en: Content = {
         "That's the perspective I bring to leaders today. No theory detached from operations, and no promise that a leader has to be a superhero.",
       ],
     },
+    signpost: {
+      label: "Choose your trail",
+      title: "Where are we heading?",
+      body: "Each area of my work has its own trail colour, just like in the Beskid mountains. Pick the one that leads to your goal.",
+      legend: "The colours are real Polish mountain trail markings.",
+      arms: [
+        { href: "/mentoring", trail: "red", label: "1:1 mentoring", detail: "for managers, 16 weeks" },
+        { href: "/interim-manager", trail: "black", label: "Interim manager", detail: "leadership for a time of change" },
+        { href: "/szkolenia", trail: "blue", label: "Company training", detail: "workshops for teams and leadership" },
+        { href: "/wystapienia", trail: "green", label: "Speaking", detail: "keynotes and event hosting" },
+        { href: "/networking-w-gorach", trail: "yellow", label: "Mountain networking", detail: "Pilsko, Barania Góra, Babia Góra" },
+      ],
+    },
     pathsTitle: "How I can help",
     paths: [
       { href: "/mentoring", icon: "kierunek", image: "/images/portret.webp", title: "1:1 mentoring", body: "Manager 2.0 - from burnout to influence. 16 weeks of individual work with the W.I.Z.J.A. method.", link: "The programme" },
       { href: "/szkolenia", icon: "ludzie", image: "/images/scena-6.webp", title: "Company training", body: "Communication, accountability, talent, delegation. Workshops built around your team.", link: "Training programmes" },
       { href: "/wystapienia", icon: "swiadomosc", image: "/images/scena-1.webp", title: "Speaking", body: "Keynotes, talks and conference hosting. The neuroscience of leadership, strategy on a mountain trail.", link: "Talk topics" },
       { href: "/networking-w-gorach", icon: "rozwoj", image: "/images/gory-grupa.webp", title: "Mountain networking", body: "I take entrepreneurs into the Beskid mountains: Pilsko, Barania Góra, Skrzyczne, Babia Góra.", link: "Upcoming hikes" },
-      { href: "/wydarzenia", icon: "rezultaty", image: "/images/scena-3.webp", title: "Events", body: "Workshop retreats and open training. Bieszczady in November, Leader Without Blocks in February.", link: "Calendar" },
+      { href: "/interim-manager", icon: "rezultaty", image: "/images/portret4.webp", title: "Interim manager", body: "I join a company for a set period: building a department, sorting out operations or leading a team through a transition.", link: "How I work as an interim" },
       { href: "/ksiazki", icon: "dzialanie", image: "/images/ksiazka-moc-slow.webp", title: "Books", body: "Moc Słów, Wiedza Warta Miliony, Potęga Samodoskonalenia and Sztuka Inspirowania.", link: "See the books" },
     ],
     testimonialsTitle: "What people I've worked with say",
@@ -116,6 +130,50 @@ export const en: Content = {
     boundary: {
       title: "A mentor, not a consultant",
       body: "Mentoring is about how you lead people and yourself. If the company needs its processes sorted out, that's a separate advisory service, and I'll say so plainly on our first call.",
+    },
+  },
+  interim: {
+    intro: {
+      title: "Interim manager",
+      lede: "I join a company for a set period as a manager, not an adviser on the sidelines. I take responsibility for the team and the result, and once the goal is reached I hand over to permanent leadership.",
+    },
+    when: {
+      title: "When an interim manager makes sense",
+      points: [
+        "You're building a new department or business line from scratch and need someone who has done it before.",
+        "A key manager has left and recruiting a successor will take months.",
+        "A team or branch isn't delivering and needs to be put in order.",
+        "You're going through change: restructuring, a new system, an acquisition or rapid growth.",
+      ],
+    },
+    what: {
+      title: "What I can take on",
+      items: [
+        { title: "Building a department from scratch", body: "Structure, processes, people and first results. Experience from logistics, courier and transport services." },
+        { title: "Sorting out operations", body: "Diagnosis, a recovery plan and implementation together with the team, with measurable goals." },
+        { title: "Transitional leadership", body: "I lead the team until a permanent manager is in place and help them start well." },
+      ],
+    },
+    why: {
+      title: "Why me",
+      body: [
+        "I spent more than 20 years in logistics and courier services, 13 of them in management. I led teams in day-to-day operations, under pressure from clients and targets.",
+        "On top of that I bring the skills of a mentor and trainer. I won't just deliver the result; I'll leave the team and my successor ready to carry on without me.",
+      ],
+    },
+    how: {
+      title: "How we work together",
+      items: [
+        { title: "Conversation and diagnosis", body: "I learn the situation, the goals and the board's expectations. We agree what should change and how we'll know it worked." },
+        { title: "Scope and timeframe", body: "We define the role, authority, duration and form of cooperation." },
+        { title: "Action", body: "I step into the role, lead the team and report progress regularly." },
+        { title: "Handover", body: "I hand over to a permanent manager, along with the processes and knowledge that stay in the company." },
+      ],
+    },
+    contact: {
+      title: "Need a manager for a time of change?",
+      body: "Describe the situation briefly and we'll set up a call. Everything you tell me stays between us.",
+      mailSubject: "Interim manager - inquiry",
     },
   },
   training: {

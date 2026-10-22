@@ -10,6 +10,7 @@ export const routing = defineRouting({
   pathnames: {
     "/": "/",
     "/mentoring": "/mentoring",
+    "/interim-manager": { pl: "/interim-manager", en: "/interim-management" },
     "/szkolenia": { pl: "/szkolenia", en: "/training" },
     "/wystapienia": { pl: "/wystapienia", en: "/speaking" },
     "/networking-w-gorach": { pl: "/networking-w-gorach", en: "/mountain-networking" },

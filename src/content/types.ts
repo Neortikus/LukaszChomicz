@@ -11,6 +11,10 @@ export type Step = { title: string; body: string };
 
 export type PageIntro = { title: string; lede: string };
 
+export type Trail = "red" | "blue" | "green" | "yellow" | "black";
+
+export type SignpostArm = { href: AppPathname; trail: Trail; label: string; detail: string };
+
 export type Path = {
   href: AppPathname;
   icon: IconName;
@@ -58,6 +62,7 @@ export type Content = {
     credentialsLabel: string;
     credentials: string[];
     origin: { title: string; body: string[] };
+    signpost: { label: string; title: string; body: string; legend: string; arms: SignpostArm[] };
     pathsTitle: string;
     paths: Path[];
     testimonialsTitle: string;
@@ -72,6 +77,14 @@ export type Content = {
     tools: { title: string; items: Item[] };
     steps: { title: string; items: Step[] };
     boundary: { title: string; body: string };
+  };
+  interim: {
+    intro: PageIntro;
+    when: { title: string; points: string[] };
+    what: { title: string; items: Item[] };
+    why: { title: string; body: string[] };
+    how: { title: string; items: Step[] };
+    contact: { title: string; body: string; mailSubject: string };
   };
   training: {
     intro: PageIntro;
