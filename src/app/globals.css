@@ -816,7 +816,10 @@ img { max-width: 100%; display: block; }
 .jroute--red { --c: #ef5267; }
 .jroute--blue { --c: #5aa0f5; }
 .jroute--yellow { --c: #f5cf3d; }
-.jroute--black { --c: #f7f5f2; }
+.jroute--black { --c: #121014; }
+/* black trail: dark line on a pale casing, like the white-black-white blaze */
+.jroute--black .jroute__glow { stroke: #f3ece2; stroke-width: 6; opacity: 0.55; }
+.jroute--black .jroute__line { stroke-width: 2.6; opacity: 1; }
 .jroute--green { --c: #45c97c; }
 .jroute { transition: opacity 0.25s ease; }
 .jsummit__dot { fill: #fff; }

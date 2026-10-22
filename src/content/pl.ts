@@ -50,7 +50,7 @@ export const pl: Content = {
       { value: "4", label: "książki współautorskie, m.in. z Brianem Tracym" },
     ],
     credentialsLabel: "Współpracowałem i występowałem m.in. z",
-    credentials: ["Toastmasters International", "Dystrykt 108", "Odyssey Project", "Brian Tracy", "WFS Polska", "Self-Storage Summit Poland", "Akademia Wojsk Lądowych"],
+    credentials: ["Toastmasters International", "Odyssey Project", "Brian Tracy", "WFS Polska", "Barter Klub", "Self-Storage Summit Poland", "Boxado", "Eco System", "Meblart", "Centrum Optyki Popiołek", "Zielona Para", "Asepta", "Akademia Wojsk Lądowych", "Uniwersytet Bielsko-Bialski"],
     origin: {
       title: "Prowadziłem zespoły, zanim zacząłem o tym uczyć",
       body: [

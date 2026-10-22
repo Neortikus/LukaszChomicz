@@ -50,7 +50,7 @@ export const en: Content = {
       { value: "4", label: "co-authored books, including with Brian Tracy" },
     ],
     credentialsLabel: "I have worked and spoken with",
-    credentials: ["Toastmasters International", "District 108", "Odyssey Project", "Brian Tracy", "WFS Polska", "Self-Storage Summit Poland", "Military University of Land Forces"],
+    credentials: ["Toastmasters International", "Odyssey Project", "Brian Tracy", "WFS Polska", "Barter Klub", "Self-Storage Summit Poland", "Boxado", "Eco System", "Meblart", "Centrum Optyki Popiołek", "Zielona Para", "Asepta", "Military University of Land Forces", "University of Bielsko-Biala"],
     origin: {
       title: "I led teams before I started teaching it",
       body: [
