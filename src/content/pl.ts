@@ -47,7 +47,7 @@ export const pl: Content = {
     stats: [
       { value: "20+", label: "lat w logistyce i branży KEP, 15 na stanowiskach kierowniczych" },
       { value: "7 państw", label: "Były Dyrektor Dystryktu 108 Toastmasters: 2000 członków, 100 klubów" },
-      { value: "70+", label: "osób, które mentorowałem, w tym 50 w Toastmasters International" },
+      { value: "70+", label: "osób w mentoringu i ponad 500 godzin sesji, także po angielsku i z wielu krajów" },
       { value: "4", label: "książki współautorskie, m.in. z Brianem Tracym" },
     ],
     credentialsLabel: "Współpracowałem i występowałem m.in. z",
@@ -189,7 +189,8 @@ export const pl: Content = {
       ],
       points: [
         "15 lat na stanowiskach kierowniczych w logistyce i branży KEP",
-        "Ponad 70 osób w mentoringu, w tym 50 w Toastmasters International",
+        "Ponad 70 osób w mentoringu i ponad 500 godzin sesji",
+        "Część mentoringów po angielsku, z osobami z wielu krajów poza Polską",
         "Absolwent Akademii Certyfikowanych Mentorów",
         "Mentor w programach Uniwersytetu Bielsko-Bialskiego, Uniwersytetu Wrocławskiego i TEDx Nikiszowiec Women",
       ],
@@ -506,7 +507,7 @@ export const pl: Content = {
       longLabel: "Dłuższe",
       long: [
         "Łukasz Chomicz jest mentorem, trenerem i mówcą. Przez ponad 20 lat pracował w logistyce i branży KEP, z czego 15 lat jako menedżer odpowiedzialny za zespoły i wyniki operacyjne.",
-        "Dziś pracuje z menedżerami, prezesami i właścicielami firm. Prowadzi autorski program mentoringowy Menedżer 2.0, oparty na metodzie W.I.Z.J.A., szkolenia dla zarządów i zespołów oraz wystąpienia o przywództwie, komunikacji i decyzjach. Mentorował ponad 70 osób.",
+        "Dziś pracuje z menedżerami, prezesami i właścicielami firm. Prowadzi autorski program mentoringowy Menedżer 2.0, oparty na metodzie W.I.Z.J.A., szkolenia dla zarządów i zespołów oraz wystąpienia o przywództwie, komunikacji i decyzjach. Mentorował ponad 70 osób, także po angielsku i z wielu krajów, co daje ponad 500 godzin sesji.",
         "Jest mentorem studentów w programach mentoringowych Uniwersytetu Bielsko-Bialskiego i Uniwersytetu Wrocławskiego.",
         "Od 2018 roku działa w Toastmasters International. Był Dyrektorem Dystryktu 108, który obejmuje 7 państw, około 2000 członków i 100 klubów. Jest certyfikowanym Zawodowym Mówcą, współautorem czterech książek o rozwoju i przywództwie, m.in. z Brianem Tracym, oraz mentorem prelegentów TEDx Nikiszowiec Women 2026.",
         "Moderował Self-Storage Summit Poland 2026, prowadzi klub biznesu WFS w Bielsku-Białej i moderuje networking na spotkaniach online Barter Klubu.",
@@ -728,7 +729,7 @@ export const pl: Content = {
     story: [
       "Ponad 20 lat przepracowałem w logistyce i branży kurierskiej, z czego 15 lat jako menedżer. Wcześniej przez siedem lat sprzedawałem ubezpieczenia, co nauczyło mnie słuchać, zanim zacznę mówić.",
       "W korporacji przekonałem się, że najtrudniejsza część zarządzania to ludzie, a najczęściej zaniedbywana to sam lider. Dlatego zająłem się mentoringiem i szkoleniami. Chcę pokazywać, że dbanie o zespół jest najprostszą drogą do realizacji celów firmy.",
-      "Od 2018 roku działam w Toastmasters International. Byłem Dyrektorem Dystryktu 108, który obejmuje 7 państw, 2000 członków i 100 klubów. W Toastmasters mentorowałem 50 osób, a łącznie ponad 70.",
+      "Od 2018 roku działam w Toastmasters International. Byłem Dyrektorem Dystryktu 108, który obejmuje 7 państw, 2000 członków i 100 klubów. Łącznie mentorowałem ponad 70 osób, to ponad 500 godzin sesji. Część z nich prowadziłem po angielsku, z osobami z wielu krajów poza Polską.",
     ],
     timeline: {
       title: "Po drodze",

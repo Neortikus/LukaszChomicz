@@ -47,7 +47,7 @@ export const en: Content = {
     stats: [
       { value: "20+", label: "years in logistics and courier services, 15 in management" },
       { value: "7 countries", label: "Former Toastmasters District 108 Director: 2,000 members, 100 clubs" },
-      { value: "70+", label: "people I have mentored, 50 of them in Toastmasters International" },
+      { value: "70+", label: "people mentored and over 500 hours of sessions, also in English and across many countries" },
       { value: "4", label: "co-authored books, including with Brian Tracy" },
     ],
     credentialsLabel: "I have worked and spoken with",
@@ -189,7 +189,8 @@ export const en: Content = {
       ],
       points: [
         "15 years in management roles in logistics and courier services",
-        "More than 70 people mentored, 50 of them in Toastmasters International",
+        "More than 70 people mentored and over 500 hours of sessions",
+        "Some of the mentoring in English, with people from many countries outside Poland",
         "Graduate of the Akademia Certyfikowanych Mentorów (Certified Mentors Academy)",
         "Mentor in programmes at the University of Bielsko-Biala, the University of Wrocław and TEDx Nikiszowiec Women",
       ],
@@ -506,7 +507,7 @@ export const en: Content = {
       longLabel: "Longer",
       long: [
         "Łukasz Chomicz is a mentor, trainer and speaker. For over 20 years he worked in logistics and courier services, 15 of them as a manager responsible for teams and operational results.",
-        "Today he works with managers, CEOs and business owners. He runs his own mentoring programme, Manager 2.0, built on the W.I.Z.J.A. method, delivers training for boards and teams, and speaks about leadership, communication and decisions. He has mentored more than 70 people.",
+        "Today he works with managers, CEOs and business owners. He runs his own mentoring programme, Manager 2.0, built on the W.I.Z.J.A. method, delivers training for boards and teams, and speaks about leadership, communication and decisions. He has mentored more than 70 people, also in English and across many countries, totalling over 500 hours of sessions.",
         "He mentors students in the mentoring programmes of the University of Bielsko-Biala and the University of Wrocław.",
         "He has been active in Toastmasters International since 2018 and served as Director of District 108, which covers 7 countries, around 2000 members and 100 clubs. He is a certified Professional Speaker, co-author of four books on growth and leadership, including one with Brian Tracy, and a speaker mentor at TEDx Nikiszowiec Women 2026.",
         "He hosted Self-Storage Summit Poland 2026, runs the WFS business club in Bielsko-Biała and moderates networking at Barter Klub online meetings.",
@@ -728,7 +729,7 @@ export const en: Content = {
     story: [
       "I spent more than 20 years in logistics and courier services, 15 of them as a manager. Before that I sold insurance for seven years, which taught me to listen before I talk.",
       "In the corporate world I learned that people are the hardest part of management, and the leader is the most neglected one. That's why I moved into mentoring and training. I want to show that taking care of a team is the simplest route to a company's goals.",
-      "I've been in Toastmasters International since 2018. I served as District 108 Director, covering 7 countries, 2,000 members and 100 clubs. I mentored 50 people in Toastmasters and more than 70 in total.",
+      "I've been in Toastmasters International since 2018. I served as District 108 Director, covering 7 countries, 2,000 members and 100 clubs. In total I have mentored more than 70 people, over 500 hours of sessions. Some of it in English, with people from many countries outside Poland.",
     ],
     timeline: {
       title: "Along the way",
