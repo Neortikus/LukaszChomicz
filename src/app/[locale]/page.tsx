@@ -1,5 +1,5 @@
 import { Link } from "@/i18n/navigation";
-import { BookButton, CtaBand, Photo, Quotes } from "@/components/Blocks";
+import { BookButton, CtaBand, Photo, Quotes, StageList } from "@/components/Blocks";
 import { EventCard } from "@/components/EventCard";
 import { HeroJourney } from "@/components/HeroJourney";
 import { Icon } from "@/components/Icon";
@@ -155,6 +155,9 @@ export default async function HomePage({ params }: PageProps) {
             <h2 id="quotes">{h.testimonialsTitle}</h2>
           </div>
           <Quotes items={c.testimonials} />
+          <div className="home-stages">
+            <StageList title={c.speaking.stages.title} items={c.speaking.stages.items} />
+          </div>
         </div>
       </section>
 

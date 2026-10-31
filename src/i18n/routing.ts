@@ -17,6 +17,7 @@ export const routing = defineRouting({
     "/wydarzenia": { pl: "/wydarzenia", en: "/events" },
     "/ksiazki": { pl: "/ksiazki", en: "/books" },
     "/kursy": { pl: "/kursy", en: "/courses" },
+    "/media": "/media",
     "/linkaris": "/linkaris",
     "/o-mnie": { pl: "/o-mnie", en: "/about" },
     "/kontakt": { pl: "/kontakt", en: "/contact" },

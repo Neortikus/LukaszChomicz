@@ -20,6 +20,18 @@ export type Offer = {
 
 export type PageIntro = { title: string; lede: string };
 
+/** A talk topic shown with a photo from an event where it was given. */
+export type Talk = { title: string; body: string; image: string; position?: string; where: string };
+
+/** One past appearance: event, when and where, and the role I had there. */
+export type Appearance = { event: string; date?: string; place: string; role: string; image: string; position?: string };
+
+export type MediaPhoto = { image: string; caption: string; position?: string };
+
+export type Download = { file: string; preview: string; label: string; size: string };
+
+export type Faq = { q: string; a: string };
+
 export type Trail = "red" | "blue" | "green" | "yellow" | "black";
 
 export type SignpostArm = { href: AppPathname; trail: Trail; label: string; detail: string };
@@ -89,6 +101,10 @@ export type Content = {
     tools: { title: string; items: Item[] };
     steps: { title: string; items: Step[] };
     boundary: { title: string; body: string };
+    actions: { more: string };
+    areas: { title: string; items: (Item & { icon: IconName })[] };
+    testimonialsTitle: string;
+    faq: { title: string; items: Faq[] };
   };
   interim: {
     intro: PageIntro;
@@ -100,6 +116,7 @@ export type Content = {
   };
   training: {
     intro: PageIntro;
+    ask: { label: string; mailSubject: string };
     programs: { title: string; lede: string; items: Offer[] };
     custom: { title: string; body: string; topics: string[] };
     process: { title: string; items: Step[] };
@@ -107,10 +124,22 @@ export type Content = {
   };
   speaking: {
     intro: PageIntro;
-    topics: { title: string; items: Item[] };
+    ask: { label: string; mailSubject: string };
+    topics: { title: string; items: Talk[] };
     powerSpeech: { title: string; lede: string; items: Offer[] };
+    appearances: { title: string; lede: string; items: Appearance[] };
     moderation: { title: string; body: string };
+    stages: { title: string; items: string[] };
     credentials: { title: string; points: string[] };
+    booking: { title: string; body: string; email: string; phone: string; calendar: string };
+  };
+  media: {
+    intro: PageIntro;
+    bio: { title: string; shortLabel: string; short: string; longLabel: string; long: string[]; copy: string; copied: string };
+    photos: { title: string; body: string; download: string; items: Download[] };
+    gallery: { title: string; body: string; items: MediaPhoto[]; credit: string };
+    recordings: { title: string; body: string };
+    contact: { title: string; body: string; mailSubject: string };
   };
   networking: {
     intro: PageIntro;

@@ -19,6 +19,7 @@ export const pl: Content = {
     more: [
       { href: "/ksiazki", label: "Książki" },
       { href: "/kursy", label: "Kursy i materiały" },
+      { href: "/media", label: "Media" },
       { href: "/linkaris", label: "Linkaris" },
       { href: "/kontakt", label: "Kontakt" },
     ],
@@ -140,6 +141,29 @@ export const pl: Content = {
       title: "Mentor, nie konsultant",
       body: "W mentoringu pracujemy nad Twoim sposobem prowadzenia ludzi i siebie. Jeśli firma potrzebuje uporządkowania procesów, to osobna usługa doradcza i mówię o tym wprost na pierwszej rozmowie.",
     },
+    actions: { more: "Zobacz, jak pracujemy" },
+    areas: {
+      title: "Z czym przychodzą do mnie liderzy",
+      items: [
+        { icon: "rozwoj", title: "Przeciążenie i wypalenie", body: "Wyniki są, ale kosztem snu, zdrowia albo rodziny. Szukamy sposobu, żeby utrzymać tempo bez spalania się." },
+        { icon: "ludzie", title: "Delegowanie i zespół", body: "Robisz za dużo sam, a zespół czeka na Twoje decyzje. Uczysz się oddawać zadania i odpowiedzialność." },
+        { icon: "swiadomosc", title: "Rozmowy z zarządem i właścicielem", body: "Jak mówić o wynikach, potrzebach i granicach tak, żeby Cię słuchano." },
+        { icon: "kierunek", title: "Następny krok w karierze", body: "Awans, zmiana firmy albo własny biznes. Porządkujemy, czego naprawdę chcesz i co Cię blokuje." },
+        { icon: "rezultaty", title: "Decyzje na szczycie", body: "Dla CEO i właścicieli: priorytety, strategia, ludzie, z którymi budujesz firmę." },
+        { icon: "dzialanie", title: "Od planu do działania", body: "Cele, które nie zostają w notatkach. Konkretne kroki między sesjami i rozliczanie się z nich." },
+      ],
+    },
+    testimonialsTitle: "Co mówią ludzie, z którymi pracowałem",
+    faq: {
+      title: "Najczęstsze pytania",
+      items: [
+        { q: "Czy pierwsza rozmowa jest płatna?", a: "Nie. Pierwsze 30 minut jest bezpłatne. Po rozmowie wiesz, czy i jak mogę pomóc, a ja przygotowuję propozycję." },
+        { q: "Ile trwa mentoring?", a: "Program Menedżer 2.0 trwa 16 tygodni. Przy mentoringu dla CEO zakres i czas ustalamy indywidualnie." },
+        { q: "Czy spotykamy się online?", a: "Tak, większość sesji odbywa się online. Jeśli wolisz na żywo, spotykamy się w Bielsku-Białej." },
+        { q: "Czy firma może opłacić mentoring?", a: "Tak. Fakturę wystawia Linkaris Sp. z o.o., więc mentoring może być kosztem firmy." },
+        { q: "Czy to, o czym rozmawiamy, zostaje między nami?", a: "Tak. To, co mówisz na sesjach, zostaje między nami, także wtedy, gdy mentoring opłaca Twój pracodawca." },
+      ],
+    },
   },
   interim: {
     intro: {
@@ -190,6 +214,7 @@ export const pl: Content = {
       title: "Szkolenia dla zarządów i zespołów",
       lede: "Prowadzę warsztaty, na których ludzie pracują na swoich sytuacjach, a nie na przykładach z podręcznika. Dla zarządów, kadry kierowniczej i zespołów, na miejscu w firmie albo na wyjeździe.",
     },
+      ask: { label: "Zapytaj o szkolenie dla zespołu", mailSubject: "Szkolenie dla zespołu - zapytanie" },
     programs: {
       title: "Sprawdzone programy",
       lede: "Trzy warsztaty, które już prowadziłem. Każdy dopasowuję do firmy: czas trwania, przykłady i ćwiczenia ustalamy po rozmowie o tym, co ma się zmienić.",
@@ -260,13 +285,14 @@ export const pl: Content = {
       title: "Wystąpienia i moderacja",
       lede: "Mówię do menedżerów, właścicieli firm i zespołów. Opowiadam historie z zarządzania i z górskich ultramaratonów, a z każdej wynika coś, co słuchacze mogą zrobić w poniedziałek.",
     },
+      ask: { label: "Zapytaj o wolny termin", mailSubject: "Wystąpienie - zapytanie o termin" },
     topics: {
       title: "Tematy keynote",
       items: [
-        { title: "Neurobiologia przywództwa", body: "Jak najlepsi liderzy projektują decyzje pod to, jak działa ich własny mózg. Prezentowane m.in. na WFS Diamond 2026." },
-        { title: "Produktywność CEO: mniej działań, większy wpływ", body: "Dla właścicieli i prezesów: co odpuścić, żeby mieć większy wpływ na firmę. Prezentowane na CEO Performance 2026 w Bielsku-Białej." },
-        { title: "Strategia i konsekwencja na górskim szlaku", body: "Lekcje z biegów w Beskidach: Bieg 7 Dolin, Beskidzki Topór, Babia Góra. O planie, kryzysie na trasie i o tym, co to ma wspólnego z prowadzeniem firmy." },
-        { title: "Temat pod wydarzenie", body: "Przygotowuję wystąpienie pod temat konferencji i salę. Zaczynamy od rozmowy o tym, kto będzie słuchał." },
+        { title: "Neurobiologia przywództwa", body: "Jak najlepsi liderzy projektują decyzje pod to, jak działa ich własny mózg.", image: "/images/scena-6.webp", where: "WFS Diamond 2026 · Hotel Jakubus" },
+        { title: "CEO, który nie tonie w operacyjności", body: "Jak zbudować organizację, która działa efektywnie bez Twojego codziennego zaangażowania i konsekwentnie rośnie.", image: "/images/ev-ceo-performance.webp", position: "50% 20%", where: "CEO Performance 2026 · Bielsko-Biała" },
+        { title: "Strategia i konsekwencja na górskim szlaku", body: "Lekcje z biegów w Beskidach: Bieg 7 Dolin, Beskidzki Topór, Babia Góra. O planie, kryzysie na trasie i o tym, co to ma wspólnego z prowadzeniem firmy.", image: "/images/ev-lider-bez-ograniczen.webp", position: "50% 50%", where: "Lider bez Ograniczeń 2026 · Kielce, z Jackiem Walkiewiczem" },
+        { title: "Temat pod wydarzenie", body: "Przygotowuję wystąpienie pod temat konferencji i salę, także dla młodzieży. Zaczynamy od rozmowy o tym, kto będzie słuchał.", image: "/images/ev-liderzy-jutra.webp", position: "50% 45%", where: "Np. konferencja Liderzy Jutra" },
       ],
     },
     powerSpeech: {
@@ -308,9 +334,27 @@ export const pl: Content = {
         },
       ],
     },
+    appearances: {
+      title: "Gdzie ostatnio występowałem",
+      lede: "Kilka ostatnich scen. Więcej zdjęć do pobrania jest w zakładce Media.",
+      items: [
+        { event: "CEO Performance", date: "29 października 2026", place: "Bielsko-Biała, Hotel Qubus", role: "Prelegent: CEO, który nie tonie w operacyjności", image: "/images/ev-ceo-performance.webp", position: "50% 15%" },
+        { event: "TEDx Nikiszowiec Women", date: "24 października 2026", place: "Katowice", role: "Mentor prelegentów", image: "/images/ev-tedx-scena.webp", position: "62% 30%" },
+        { event: "Mikro Może (Więcej)", date: "13 października 2026", place: "Bielsko-Biała, Urząd Miejski", role: "Panel: Ile naprawdę daje networking?", image: "/images/ev-mikromoze.webp", position: "40% 60%" },
+        { event: "Lider bez Ograniczeń", date: "29 września 2026", place: "Kielce", role: "Prelegent, obok Jacka Walkiewicza", image: "/images/ev-lider-bez-ograniczen.webp", position: "64% 50%" },
+        { event: "WFS Diamond", date: "25-26 sierpnia 2026", place: "Hotel Jakubus", role: "Prelegent: Neurobiologia przywództwa", image: "/images/scena-4.webp", position: "45% 30%" },
+        { event: "Liderzy Jutra", place: "Konferencja dla młodzieży", role: "Prelegent", image: "/images/ev-liderzy-jutra.webp", position: "78% 50%" },
+        { event: "Akademia Wojsk Lądowych", place: "Wrocław", role: "Wykład dla studentów", image: "/images/scena-3.webp", position: "70% 30%" },
+        { event: "Toastmasters International", place: "Confident Voices, Wilno", role: "Power speech", image: "/images/scena-7.webp", position: "55% 30%" },
+      ],
+    },
     moderation: {
       title: "Prowadzenie konferencji",
       body: "Moderuję panele i prowadzę całe wydarzenia branżowe, m.in. Self-Storage Summit Poland 2026. Pilnuję czasu, pytam o konkrety i dbam o to, żeby sala nie zasnęła po obiedzie.",
+    },
+    stages: {
+      title: "Występowałem m.in. na",
+      items: ["TEDx Nikiszowiec Women", "CEO Performance", "Lider bez Ograniczeń", "WFS Diamond", "Mikro Może (Więcej)", "Self-Storage Summit Poland", "Krynica Forum", "Liderzy Jutra", "Akademia Wojsk Lądowych", "Toastmasters International", "LinkedIn Local"],
     },
     credentials: {
       title: "Dlaczego mogę stanąć na Waszej scenie",
@@ -319,6 +363,74 @@ export const pl: Content = {
         "W Toastmasters International od 2018 roku, były Dyrektor Dystryktu 108.",
         "Wystąpienia po polsku i angielsku.",
       ],
+    },
+    booking: {
+      title: "Jak zarezerwować wystąpienie",
+      body: "Napisz, kiedy i dla kogo jest wydarzenie, ile osób będzie na sali i ile czasu mam na scenie. Odpowiem z propozycją tematu i dostępnością.",
+      email: "E-mail",
+      phone: "Telefon",
+      calendar: "Rozmowa online",
+    },
+  },
+  media: {
+    intro: {
+      title: "Media i materiały dla organizatorów",
+      lede: "Bio, zdjęcia do pobrania i galeria z wydarzeń. Wszystko, czego potrzebujesz do zapowiedzi, programu konferencji albo artykułu.",
+    },
+    bio: {
+      title: "Bio do zapowiedzi",
+      shortLabel: "Krótkie",
+      short: "Łukasz Chomicz - mentor, trener i mówca. Ponad 20 lat w logistyce i branży KEP, z czego 15 na stanowiskach kierowniczych. Były Dyrektor Dystryktu 108 Toastmasters International, współautor czterech książek, m.in. z Brianem Tracym. Pracuje z menedżerami i właścicielami firm w ramach Linkaris.",
+      longLabel: "Dłuższe",
+      long: [
+        "Łukasz Chomicz jest mentorem, trenerem i mówcą. Przez ponad 20 lat pracował w logistyce i branży KEP, z czego 15 lat jako menedżer odpowiedzialny za zespoły i wyniki operacyjne.",
+        "Dziś pracuje z menedżerami, prezesami i właścicielami firm. Prowadzi autorski program mentoringowy Menedżer 2.0, oparty na metodzie W.I.Z.J.A., szkolenia dla zarządów i zespołów oraz wystąpienia o przywództwie, komunikacji i decyzjach. Mentorował ponad 70 osób.",
+        "Od 2018 roku działa w Toastmasters International. Był Dyrektorem Dystryktu 108, który obejmuje 7 państw, około 2000 członków i 100 klubów. Jest certyfikowanym Zawodowym Mówcą, współautorem czterech książek o rozwoju i przywództwie, m.in. z Brianem Tracym, oraz mentorem prelegentów TEDx Nikiszowiec Women 2026.",
+        "Prowadzi firmę Linkaris Sp. z o.o. i zabiera przedsiębiorców na wspólne wyjścia w Beskidy.",
+      ],
+      copy: "Kopiuj",
+      copied: "Skopiowano",
+    },
+    photos: {
+      title: "Zdjęcia portretowe",
+      body: "Możesz ich używać w zapowiedziach, programach wydarzeń i publikacjach o moich wystąpieniach.",
+      download: "Pobierz JPG",
+      items: [
+        { file: "/media/lukasz-chomicz-portret-1.jpg", preview: "/images/mentoring.webp", label: "Portret, jasne tło", size: "2000 × 3000 px" },
+        { file: "/media/lukasz-chomicz-portret-2.jpg", preview: "/images/portret-jasne-2.webp", label: "Portret, jasne tło", size: "2000 × 3000 px" },
+        { file: "/media/lukasz-chomicz-portret-3.jpg", preview: "/images/portret.webp", label: "Portret, ciemne tło", size: "933 × 1400 px" },
+        { file: "/media/lukasz-chomicz-portret-4.jpg", preview: "/images/portret2.webp", label: "Portret, ciemne tło", size: "933 × 1400 px" },
+        { file: "/media/lukasz-chomicz-portret-5.jpg", preview: "/images/portret3.webp", label: "Portret, ciemne tło", size: "933 × 1400 px" },
+        { file: "/media/lukasz-chomicz-portret-6.jpg", preview: "/images/portret4.webp", label: "Portret, ciemne tło", size: "933 × 1400 px" },
+      ],
+    },
+    gallery: {
+      title: "Z wydarzeń",
+      body: "Sceny, na których występowałem, które prowadziłem albo w których byłem mentorem.",
+      credit: "Zdjęcia z TEDx Nikiszowiec Women: europerspektywy.eu",
+      items: [
+        { image: "/images/ev-tedx-scena.webp", caption: "TEDx Nikiszowiec Women, Katowice, 24.10.2026. Mentor prelegentów." },
+        { image: "/images/ev-ceo-performance.webp", caption: "CEO Performance, Bielsko-Biała, 29.10.2026. Prelegent.", position: "50% 15%" },
+        { image: "/images/ev-mikromoze.webp", caption: "Mikro Może (Więcej), Bielsko-Biała, 13.10.2026. Panel o networkingu.", position: "50% 60%" },
+        { image: "/images/ev-liderzy-jutra.webp", caption: "Liderzy Jutra. Wystąpienie dla młodzieży.", position: "70% 50%" },
+        { image: "/images/scena-6.webp", caption: "WFS Diamond, Hotel Jakubus, sierpień 2026. Neurobiologia przywództwa." },
+        { image: "/images/ev-tedx-rozmowa.webp", caption: "TEDx Nikiszowiec Women, Katowice, 2026. Rozmowy w kuluarach." },
+        { image: "/images/szkolenia-warsztat.webp", caption: "WFS Diamond, 2026. Warsztat dla właścicieli firm." },
+        { image: "/images/scena-2.webp", caption: "Akademia Wojsk Lądowych. Wykład." },
+        { image: "/images/scena-7.webp", caption: "Toastmasters International, Confident Voices, Wilno. Power speech." },
+        { image: "/images/toastmasters.webp", caption: "Toastmasters International. Wystąpienie na scenie dystryktu." },
+        { image: "/images/linkedin-local.webp", caption: "LinkedIn Local. Prelekcja.", position: "50% 30%" },
+        { image: "/images/ev-tedx-x.webp", caption: "TEDx Nikiszowiec Women, Katowice, 2026.", position: "50% 25%" },
+      ],
+    },
+    recordings: {
+      title: "Nagrania i wywiady",
+      body: "Wkrótce dodam tu nagrania wystąpień, podcasty i wywiady.",
+    },
+    contact: {
+      title: "Kontakt dla mediów i organizatorów",
+      body: "Wywiad, komentarz ekspercki, podcast albo wystąpienie na Twoim wydarzeniu. Napisz albo zadzwoń.",
+      mailSubject: "Media - zapytanie",
     },
   },
   networking: {

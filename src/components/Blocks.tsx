@@ -1,4 +1,4 @@
-import type { Content, IconName, Item, Offer, Step, Testimonial } from "@/content/types";
+import type { Appearance, Content, Faq, IconName, Item, MediaPhoto, Offer, Step, Talk, Testimonial } from "@/content/types";
 import { site, mailto } from "@/content/site";
 import { Icon } from "./Icon";
 
@@ -16,12 +16,14 @@ export function PageHead({
   position,
   title,
   lede,
+  children,
 }: {
   icon?: IconName;
   image?: string;
   position?: string;
   title: string;
   lede: string;
+  children?: React.ReactNode;
 }) {
   return (
     <section className={`page-head${image ? "" : " page-head--plain"}`}>
@@ -38,6 +40,7 @@ export function PageHead({
         </div>
         <span className="accent-bar" />
         <p className="lede">{lede}</p>
+        {children && <div className="cta-row on-dark page-head__actions">{children}</div>}
       </div>
     </section>
   );
@@ -176,5 +179,104 @@ export function CtaBand({ c, stage }: { c: Content; stage?: string }) {
         </div>
       </div>
     </section>
+  );
+}
+
+export function Talks({ items }: { items: Talk[] }) {
+  return (
+    <ul className="talks">
+      {items.map((t) => (
+        <li key={t.title} className="talk">
+          <div className="talk__img">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={t.image} alt="" loading="lazy" style={t.position ? { objectPosition: t.position } : undefined} />
+          </div>
+          <div className="talk__body">
+            <h3>{t.title}</h3>
+            <p>{t.body}</p>
+            <p className="talk__where">{t.where}</p>
+          </div>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+export function Appearances({ items }: { items: Appearance[] }) {
+  return (
+    <ul className="appearances">
+      {items.map((a) => (
+        <li key={a.event + a.place}>
+          <figure className="appearance">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={a.image} alt={a.event} loading="lazy" style={a.position ? { objectPosition: a.position } : undefined} />
+            <figcaption>
+              {a.date && <span className="appearance__date">{a.date}</span>}
+              <strong>{a.event}</strong>
+              <span>{a.place}</span>
+              <span className="appearance__role">{a.role}</span>
+            </figcaption>
+          </figure>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+export function StageList({ title, items }: { title: string; items: string[] }) {
+  return (
+    <div className="stagelist">
+      <p className="stagelist__title">{title}</p>
+      <ul>
+        {items.map((x) => (
+          <li key={x}>{x}</li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+export function Gallery({ items }: { items: MediaPhoto[] }) {
+  return (
+    <ul className="mgallery">
+      {items.map((p) => (
+        <li key={p.image}>
+          <figure>
+            <a href={p.image} target="_blank" rel="noopener noreferrer">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={p.image} alt={p.caption} loading="lazy" style={p.position ? { objectPosition: p.position } : undefined} />
+            </a>
+            <figcaption>{p.caption}</figcaption>
+          </figure>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+export function FaqList({ items }: { items: Faq[] }) {
+  return (
+    <div className="faq">
+      {items.map((f) => (
+        <details key={f.q}>
+          <summary>{f.q}</summary>
+          <p>{f.a}</p>
+        </details>
+      ))}
+    </div>
+  );
+}
+
+export function IconItems({ items }: { items: (Item & { icon: IconName })[] }) {
+  return (
+    <ul className="icon-items">
+      {items.map((i) => (
+        <li key={i.title}>
+          <Icon name={i.icon} />
+          <h3>{i.title}</h3>
+          <p>{i.body}</p>
+        </li>
+      ))}
+    </ul>
   );
 }

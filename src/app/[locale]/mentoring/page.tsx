@@ -1,4 +1,4 @@
-import { BookButton, Bullets, CtaBand, Items, PageHead, SectionHeading, Steps } from "@/components/Blocks";
+import { BookButton, Bullets, CtaBand, FaqList, IconItems, Items, PageHead, Quotes, SectionHeading, Steps } from "@/components/Blocks";
 import { loadPage, pageMetadata, type PageProps } from "@/lib/page";
 
 export const generateMetadata = ({ params }: PageProps) =>
@@ -12,7 +12,12 @@ export default async function MentoringPage({ params }: PageProps) {
   const m = c.mentoring;
   return (
     <>
-      <PageHead icon="kierunek" image="/images/portret2.webp" title={m.intro.title} lede={m.intro.lede} />
+      <PageHead icon="kierunek" image="/images/portret2.webp" title={m.intro.title} lede={m.intro.lede}>
+        <BookButton c={c} variant="accent" />
+        <a href="#jak-pracujemy" className="btn btn--ghost-light">
+          {m.actions.more}
+        </a>
+      </PageHead>
 
       <section className="section section--dusk">
         <div className="wrap split">
@@ -41,13 +46,20 @@ export default async function MentoringPage({ params }: PageProps) {
       </section>
 
       <section className="section">
+        <div className="wrap">
+          <SectionHeading>{m.areas.title}</SectionHeading>
+          <IconItems items={m.areas.items} />
+        </div>
+      </section>
+
+      <section className="section section--lavender section--tight">
         <div className="wrap split">
           <SectionHeading>{m.forWhom.title}</SectionHeading>
           <Bullets points={m.forWhom.points} />
         </div>
       </section>
 
-      <section className="section section--lavender">
+      <section className="section">
         <div className="wrap stack">
           <SectionHeading>{m.tools.title}</SectionHeading>
           <div style={{ marginTop: 32 }}>
@@ -56,10 +68,26 @@ export default async function MentoringPage({ params }: PageProps) {
         </div>
       </section>
 
-      <section className="section">
+      <section className="section section--lavender" id="jak-pracujemy">
         <div className="wrap split">
           <SectionHeading>{m.steps.title}</SectionHeading>
           <Steps items={m.steps.items} />
+        </div>
+      </section>
+
+      <section className="section section--dusk">
+        <div className="wrap">
+          <div className="section-head">
+            <h2>{m.testimonialsTitle}</h2>
+          </div>
+          <Quotes items={c.testimonials} />
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="wrap split">
+          <SectionHeading>{m.faq.title}</SectionHeading>
+          <FaqList items={m.faq.items} />
         </div>
       </section>
 

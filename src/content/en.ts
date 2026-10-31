@@ -19,6 +19,7 @@ export const en: Content = {
     more: [
       { href: "/ksiazki", label: "Books" },
       { href: "/kursy", label: "Courses and tools" },
+      { href: "/media", label: "Media" },
       { href: "/linkaris", label: "Linkaris" },
       { href: "/kontakt", label: "Contact" },
     ],
@@ -140,6 +141,29 @@ export const en: Content = {
       title: "A mentor, not a consultant",
       body: "Mentoring is about how you lead people and yourself. If the company needs its processes sorted out, that's a separate advisory service, and I'll say so plainly on our first call.",
     },
+    actions: { more: "See how we work" },
+    areas: {
+      title: "What leaders come to me with",
+      items: [
+        { icon: "rozwoj", title: "Overload and burnout", body: "The results are there, but at the cost of sleep, health or family. We look for a way to keep the pace without burning out." },
+        { icon: "ludzie", title: "Delegation and the team", body: "You do too much yourself and the team waits for your decisions. You learn to hand over tasks and responsibility." },
+        { icon: "swiadomosc", title: "Talking to the board and owners", body: "How to talk about results, needs and boundaries so that people listen." },
+        { icon: "kierunek", title: "The next career step", body: "Promotion, a new company or your own business. We sort out what you really want and what is holding you back." },
+        { icon: "rezultaty", title: "Decisions at the top", body: "For CEOs and owners: priorities, strategy and the people you build the company with." },
+        { icon: "dzialanie", title: "From plan to action", body: "Goals that don't stay in your notes. Concrete steps between sessions and accountability for them." },
+      ],
+    },
+    testimonialsTitle: "What people I've worked with say",
+    faq: {
+      title: "Frequently asked questions",
+      items: [
+        { q: "Is the first call paid?", a: "No. The first 30 minutes are free. Afterwards you know whether and how I can help, and I prepare a proposal." },
+        { q: "How long does mentoring last?", a: "The Manager 2.0 programme lasts 16 weeks. For CEO mentoring we agree the scope and length individually." },
+        { q: "Do we meet online?", a: "Yes, most sessions take place online. If you prefer to meet in person, we meet in Bielsko-Biała." },
+        { q: "Can my company pay for mentoring?", a: "Yes. Invoices are issued by Linkaris Sp. z o.o., so mentoring can be a company expense." },
+        { q: "Does what we discuss stay between us?", a: "Yes. What you say in our sessions stays between us, also when your employer pays for the mentoring." },
+      ],
+    },
   },
   interim: {
     intro: {
@@ -190,6 +214,7 @@ export const en: Content = {
       title: "Training for boards and teams",
       lede: "I run workshops where people work on their own situations, not textbook examples. For boards, management teams and staff, at your office or off-site.",
     },
+      ask: { label: "Ask about training for your team", mailSubject: "Team training - enquiry" },
     programs: {
       title: "Proven programmes",
       lede: "Three workshops I have already delivered. I tailor each one to the company: length, examples and exercises are agreed after we talk about what should change.",
@@ -260,13 +285,14 @@ export const en: Content = {
       title: "Speaking and hosting",
       lede: "I speak to managers, business owners and teams. I tell stories from management and from mountain ultramarathons, and each one ends with something the audience can do on Monday.",
     },
+      ask: { label: "Ask about a date", mailSubject: "Speaking - date enquiry" },
     topics: {
       title: "Keynote topics",
       items: [
-        { title: "The neuroscience of leadership", body: "How the best leaders design decisions around the way their own brain works. Presented at WFS Diamond 2026, among others." },
-        { title: "CEO productivity: fewer actions, more impact", body: "For owners and CEOs: what to let go of to have more impact on the company. Presented at CEO Performance 2026 in Bielsko-Biała." },
-        { title: "Strategy and persistence on a mountain trail", body: "Lessons from races in the Beskids: Bieg 7 Dolin, Beskidzki Topór, Babia Góra. About the plan, the crisis on the course and what it has to do with running a company." },
-        { title: "A talk built for your event", body: "I prepare a talk around the conference theme and the audience. We start by talking about who will be listening." },
+        { title: "The neuroscience of leadership", body: "How the best leaders design decisions around the way their own brain works.", image: "/images/scena-6.webp", where: "WFS Diamond 2026 · Hotel Jakubus" },
+        { title: "A CEO who doesn't drown in operations", body: "How to build an organisation that runs well without your daily involvement and keeps growing.", image: "/images/ev-ceo-performance.webp", position: "50% 20%", where: "CEO Performance 2026 · Bielsko-Biała" },
+        { title: "Strategy and persistence on a mountain trail", body: "Lessons from races in the Beskids: Bieg 7 Dolin, Beskidzki Topór, Babia Góra. About the plan, the crisis on the course and what it has to do with running a company.", image: "/images/ev-lider-bez-ograniczen.webp", position: "50% 50%", where: "Lider bez Ograniczeń 2026 · Kielce, with Jacek Walkiewicz" },
+        { title: "A talk built for your event", body: "I prepare a talk around the conference theme and the audience, young people included. We start by talking about who will be listening.", image: "/images/ev-liderzy-jutra.webp", position: "50% 45%", where: "E.g. the Liderzy Jutra conference" },
       ],
     },
     powerSpeech: {
@@ -308,9 +334,27 @@ export const en: Content = {
         },
       ],
     },
+    appearances: {
+      title: "Where I've spoken recently",
+      lede: "A few recent stages. More photos to download are on the Media page.",
+      items: [
+        { event: "CEO Performance", date: "29 October 2026", place: "Bielsko-Biała, Hotel Qubus", role: "Speaker: A CEO who doesn't drown in operations", image: "/images/ev-ceo-performance.webp", position: "50% 15%" },
+        { event: "TEDx Nikiszowiec Women", date: "24 October 2026", place: "Katowice", role: "Speaker mentor", image: "/images/ev-tedx-scena.webp", position: "62% 30%" },
+        { event: "Mikro Może (Więcej)", date: "13 October 2026", place: "Bielsko-Biała, City Hall", role: "Panel: What does networking really give you?", image: "/images/ev-mikromoze.webp", position: "40% 60%" },
+        { event: "Lider bez Ograniczeń", date: "29 September 2026", place: "Kielce", role: "Speaker, alongside Jacek Walkiewicz", image: "/images/ev-lider-bez-ograniczen.webp", position: "64% 50%" },
+        { event: "WFS Diamond", date: "25-26 August 2026", place: "Hotel Jakubus", role: "Speaker: The neuroscience of leadership", image: "/images/scena-4.webp", position: "45% 30%" },
+        { event: "Liderzy Jutra", place: "Conference for young people", role: "Speaker", image: "/images/ev-liderzy-jutra.webp", position: "78% 50%" },
+        { event: "Military University of Land Forces", place: "Wrocław", role: "Lecture for students", image: "/images/scena-3.webp", position: "70% 30%" },
+        { event: "Toastmasters International", place: "Confident Voices, Vilnius", role: "Power speech", image: "/images/scena-7.webp", position: "55% 30%" },
+      ],
+    },
     moderation: {
       title: "Hosting conferences",
       body: "I moderate panels and host entire industry events, including Self-Storage Summit Poland 2026. I keep time, push for specifics and make sure the room stays awake after lunch.",
+    },
+    stages: {
+      title: "I've spoken at, among others",
+      items: ["TEDx Nikiszowiec Women", "CEO Performance", "Lider bez Ograniczeń", "WFS Diamond", "Mikro Może (Więcej)", "Self-Storage Summit Poland", "Krynica Forum", "Liderzy Jutra", "Military University of Land Forces", "Toastmasters International", "LinkedIn Local"],
     },
     credentials: {
       title: "Why I belong on your stage",
@@ -319,6 +363,74 @@ export const en: Content = {
         "Toastmasters International member since 2018, former District 108 Director.",
         "Talks in Polish and English.",
       ],
+    },
+    booking: {
+      title: "How to book a talk",
+      body: "Tell me when and for whom the event is, how many people will be in the room and how much stage time I have. I'll reply with a topic proposal and my availability.",
+      email: "Email",
+      phone: "Phone",
+      calendar: "Online call",
+    },
+  },
+  media: {
+    intro: {
+      title: "Media and materials for organisers",
+      lede: "Bio, photos to download and a gallery from events. Everything you need for an announcement, a conference programme or an article.",
+    },
+    bio: {
+      title: "Bio for announcements",
+      shortLabel: "Short",
+      short: "Łukasz Chomicz is a mentor, trainer and speaker. He spent over 20 years in logistics and courier services, 15 of them in management. Former District 108 Director at Toastmasters International and co-author of four books, including one with Brian Tracy. He works with managers and business owners through Linkaris.",
+      longLabel: "Longer",
+      long: [
+        "Łukasz Chomicz is a mentor, trainer and speaker. For over 20 years he worked in logistics and courier services, 15 of them as a manager responsible for teams and operational results.",
+        "Today he works with managers, CEOs and business owners. He runs his own mentoring programme, Manager 2.0, built on the W.I.Z.J.A. method, delivers training for boards and teams, and speaks about leadership, communication and decisions. He has mentored more than 70 people.",
+        "He has been active in Toastmasters International since 2018 and served as Director of District 108, which covers 7 countries, around 2000 members and 100 clubs. He is a certified Professional Speaker, co-author of four books on growth and leadership, including one with Brian Tracy, and a speaker mentor at TEDx Nikiszowiec Women 2026.",
+        "He runs Linkaris Sp. z o.o. and takes entrepreneurs hiking in the Beskid mountains.",
+      ],
+      copy: "Copy",
+      copied: "Copied",
+    },
+    photos: {
+      title: "Portrait photos",
+      body: "You can use them in announcements, event programmes and publications about my talks.",
+      download: "Download JPG",
+      items: [
+        { file: "/media/lukasz-chomicz-portret-1.jpg", preview: "/images/mentoring.webp", label: "Portrait, light background", size: "2000 × 3000 px" },
+        { file: "/media/lukasz-chomicz-portret-2.jpg", preview: "/images/portret-jasne-2.webp", label: "Portrait, light background", size: "2000 × 3000 px" },
+        { file: "/media/lukasz-chomicz-portret-3.jpg", preview: "/images/portret.webp", label: "Portrait, dark background", size: "933 × 1400 px" },
+        { file: "/media/lukasz-chomicz-portret-4.jpg", preview: "/images/portret2.webp", label: "Portrait, dark background", size: "933 × 1400 px" },
+        { file: "/media/lukasz-chomicz-portret-5.jpg", preview: "/images/portret3.webp", label: "Portrait, dark background", size: "933 × 1400 px" },
+        { file: "/media/lukasz-chomicz-portret-6.jpg", preview: "/images/portret4.webp", label: "Portrait, dark background", size: "933 × 1400 px" },
+      ],
+    },
+    gallery: {
+      title: "From events",
+      body: "Stages where I spoke, events I hosted and programmes where I mentored speakers.",
+      credit: "TEDx Nikiszowiec Women photos: europerspektywy.eu",
+      items: [
+        { image: "/images/ev-tedx-scena.webp", caption: "TEDx Nikiszowiec Women, Katowice, 24.10.2026. Speaker mentor." },
+        { image: "/images/ev-ceo-performance.webp", caption: "CEO Performance, Bielsko-Biała, 29.10.2026. Speaker.", position: "50% 15%" },
+        { image: "/images/ev-mikromoze.webp", caption: "Mikro Może (Więcej), Bielsko-Biała, 13.10.2026. Panel on networking.", position: "50% 60%" },
+        { image: "/images/ev-liderzy-jutra.webp", caption: "Liderzy Jutra. A talk for young people.", position: "70% 50%" },
+        { image: "/images/scena-6.webp", caption: "WFS Diamond, Hotel Jakubus, August 2026. The neuroscience of leadership." },
+        { image: "/images/ev-tedx-rozmowa.webp", caption: "TEDx Nikiszowiec Women, Katowice, 2026. Conversations backstage." },
+        { image: "/images/szkolenia-warsztat.webp", caption: "WFS Diamond, 2026. Workshop for business owners." },
+        { image: "/images/scena-2.webp", caption: "Military University of Land Forces. Lecture." },
+        { image: "/images/scena-7.webp", caption: "Toastmasters International, Confident Voices, Vilnius. Power speech." },
+        { image: "/images/toastmasters.webp", caption: "Toastmasters International. On the district stage." },
+        { image: "/images/linkedin-local.webp", caption: "LinkedIn Local. Talk.", position: "50% 30%" },
+        { image: "/images/ev-tedx-x.webp", caption: "TEDx Nikiszowiec Women, Katowice, 2026.", position: "50% 25%" },
+      ],
+    },
+    recordings: {
+      title: "Recordings and interviews",
+      body: "Recordings of talks, podcasts and interviews will be added here soon.",
+    },
+    contact: {
+      title: "Contact for media and organisers",
+      body: "An interview, expert comment, podcast or a talk at your event. Write or call.",
+      mailSubject: "Media - enquiry",
     },
   },
   networking: {
