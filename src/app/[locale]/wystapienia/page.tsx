@@ -1,4 +1,4 @@
-import { Appearances, Bullets, CtaBand, IconItems, Offers, PageHead, SectionHeading, StageList, Steps, Talks } from "@/components/Blocks";
+import { Appearances, Bullets, CtaBand, IconItems, Offers, PageHead, Photo, SectionHeading, StageList, Steps, Talks } from "@/components/Blocks";
 import { mailto, site } from "@/content/site";
 import { loadPage, pageMetadata, type PageProps } from "@/lib/page";
 
@@ -52,10 +52,17 @@ export default async function SpeakingPage({ params }: PageProps) {
         </div>
       </section>
 
-      <section className="section section--tight">
-        <div className="wrap split">
-          <h2>{s.moderation.title}</h2>
-          <p>{s.moderation.body}</p>
+      <section className="section">
+        <div className="wrap split split--center">
+          <Photo src={s.moderation.image} alt={s.moderation.imageAlt} shape="wide" />
+          <div className="stack">
+            <h2>{s.moderation.title}</h2>
+            <span className="accent-bar" />
+            <p>{s.moderation.body}</p>
+            <div style={{ marginTop: 8 }}>
+              <Bullets points={s.moderation.points} />
+            </div>
+          </div>
         </div>
       </section>
 

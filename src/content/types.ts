@@ -146,7 +146,7 @@ export type Content = {
     topics: { title: string; items: Talk[] };
     powerSpeech: { title: string; lede: string; items: Offer[] };
     appearances: { title: string; lede: string; items: Appearance[] };
-    moderation: { title: string; body: string };
+    moderation: { title: string; body: string; points: string[]; image: string; imageAlt: string };
     stages: { title: string; items: string[] };
     credentials: { title: string; points: string[] };
     booking: { title: string; body: string; email: string; phone: string; calendar: string };
