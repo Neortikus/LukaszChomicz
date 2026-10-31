@@ -1,4 +1,4 @@
-import { CtaBand, Offers, PageHead, SectionHeading, Steps } from "@/components/Blocks";
+import { Bullets, CtaBand, ExplainerBlock, Items, Offers, PageHead, SectionHeading, Steps } from "@/components/Blocks";
 import { loadPage, pageMetadata, type PageProps } from "@/lib/page";
 import { mailto } from "@/content/site";
 
@@ -28,6 +28,16 @@ export default async function TrainingPage({ params }: PageProps) {
       </section>
 
       <section className="section section--lavender">
+        <div className="wrap">
+          <ExplainerBlock e={t.explain} />
+          <div className="split" style={{ marginTop: "clamp(36px, 5vw, 56px)" }}>
+            <h3 className="compare-title">{t.signals.title}</h3>
+            <Bullets points={t.signals.points} />
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
         <div className="wrap split">
           <div className="stack">
             <SectionHeading>{t.custom.title}</SectionHeading>
@@ -38,6 +48,15 @@ export default async function TrainingPage({ params }: PageProps) {
               <li key={topic}>{topic}</li>
             ))}
           </ul>
+        </div>
+      </section>
+
+      <section className="section section--lavender">
+        <div className="wrap stack">
+          <SectionHeading>{t.formats.title}</SectionHeading>
+          <div style={{ marginTop: 32 }}>
+            <Items c={c} items={t.formats.items} />
+          </div>
         </div>
       </section>
 

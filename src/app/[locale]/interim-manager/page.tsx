@@ -1,4 +1,4 @@
-import { Bullets, CtaBand, Items, PageHead, Photo, SectionHeading, Steps } from "@/components/Blocks";
+import { Bullets, CompareBlock, CtaBand, ExplainerBlock, Items, PageHead, Photo, SectionHeading, Steps } from "@/components/Blocks";
 import { loadPage, pageMetadata, type PageProps } from "@/lib/page";
 import { mailto } from "@/content/site";
 
@@ -13,16 +13,23 @@ export default async function InterimPage({ params }: PageProps) {
   const m = c.interim;
   return (
     <>
-      <PageHead icon="rezultaty" image="/images/portret4.webp" title={m.intro.title} lede={m.intro.lede} />
+      <PageHead icon="rezultaty" image="/images/portret4.webp" position="50% 20%" portrait title={m.intro.title} lede={m.intro.lede} />
 
       <section className="section">
+        <div className="wrap">
+          <ExplainerBlock e={m.explain} />
+          <CompareBlock c={m.compare} />
+        </div>
+      </section>
+
+      <section className="section section--lavender">
         <div className="wrap split">
           <SectionHeading icon="kierunek">{m.when.title}</SectionHeading>
           <Bullets points={m.when.points} />
         </div>
       </section>
 
-      <section className="section section--lavender">
+      <section className="section">
         <div className="wrap stack">
           <SectionHeading icon="dzialanie">{m.what.title}</SectionHeading>
           <div style={{ marginTop: 32 }}>
@@ -31,7 +38,7 @@ export default async function InterimPage({ params }: PageProps) {
         </div>
       </section>
 
-      <section className="section">
+      <section className="section section--lavender">
         <div className="wrap split split--center">
           <Photo src="/images/scena-4.webp" alt={c.about.portraitAlt} shape="wide" />
           <div className="stack">

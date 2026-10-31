@@ -1,4 +1,4 @@
-import { Appearances, Bullets, CtaBand, Offers, PageHead, SectionHeading, StageList, Talks } from "@/components/Blocks";
+import { Appearances, Bullets, CtaBand, IconItems, Offers, PageHead, SectionHeading, StageList, Steps, Talks } from "@/components/Blocks";
 import { mailto, site } from "@/content/site";
 import { loadPage, pageMetadata, type PageProps } from "@/lib/page";
 
@@ -28,13 +28,20 @@ export default async function SpeakingPage({ params }: PageProps) {
 
       <section className="section section--lavender">
         <div className="wrap">
+          <SectionHeading>{s.occasions.title}</SectionHeading>
+          <IconItems items={s.occasions.items} compact />
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="wrap">
           <SectionHeading>{s.powerSpeech.title}</SectionHeading>
           <p className="section-lede">{s.powerSpeech.lede}</p>
           <Offers items={s.powerSpeech.items} />
         </div>
       </section>
 
-      <section className="section">
+      <section className="section section--lavender">
         <div className="wrap">
           <SectionHeading>{s.appearances.title}</SectionHeading>
           <p className="section-lede">{s.appearances.lede}</p>
@@ -45,10 +52,17 @@ export default async function SpeakingPage({ params }: PageProps) {
         </div>
       </section>
 
-      <section className="section section--lavender section--tight">
+      <section className="section section--tight">
         <div className="wrap split">
           <h2>{s.moderation.title}</h2>
           <p>{s.moderation.body}</p>
+        </div>
+      </section>
+
+      <section className="section section--dusk">
+        <div className="wrap split">
+          <SectionHeading>{s.process.title}</SectionHeading>
+          <Steps items={s.process.items} />
         </div>
       </section>
 

@@ -32,6 +32,12 @@ export type Download = { file: string; preview: string; label: string; size: str
 
 export type Faq = { q: string; a: string };
 
+/** "What is it and when does it make sense" block: heading plus a few paragraphs. */
+export type Explainer = { title: string; body: string[] };
+
+/** Side-by-side comparison of similar services; `active` marks the one this page offers. */
+export type Compare = { title: string; items: (Item & { active?: boolean })[]; activeLabel: string };
+
 export type Trail = "red" | "blue" | "green" | "yellow" | "black";
 
 export type SignpostArm = { href: AppPathname; trail: Trail; label: string; detail: string };
@@ -102,6 +108,10 @@ export type Content = {
     steps: { title: string; items: Step[] };
     boundary: { title: string; body: string };
     actions: { more: string };
+    explain: Explainer;
+    compare: Compare;
+    benefits: { title: string; items: Item[] };
+    mentor: { title: string; body: string[]; points: string[] };
     areas: { title: string; items: (Item & { icon: IconName })[] };
     academic: { title: string; body: string; items: Item[] };
     testimonialsTitle: string;
@@ -109,6 +119,8 @@ export type Content = {
   };
   interim: {
     intro: PageIntro;
+    explain: Explainer;
+    compare: Compare;
     when: { title: string; points: string[] };
     what: { title: string; items: Item[] };
     why: { title: string; body: string[] };
@@ -118,6 +130,9 @@ export type Content = {
   training: {
     intro: PageIntro;
     ask: { label: string; mailSubject: string };
+    explain: Explainer;
+    signals: { title: string; points: string[] };
+    formats: { title: string; items: Item[] };
     programs: { title: string; lede: string; items: Offer[] };
     custom: { title: string; body: string; topics: string[] };
     process: { title: string; items: Step[] };
@@ -126,6 +141,8 @@ export type Content = {
   speaking: {
     intro: PageIntro;
     ask: { label: string; mailSubject: string };
+    occasions: { title: string; items: (Item & { icon: IconName })[] };
+    process: { title: string; items: Step[] };
     topics: { title: string; items: Talk[] };
     powerSpeech: { title: string; lede: string; items: Offer[] };
     appearances: { title: string; lede: string; items: Appearance[] };

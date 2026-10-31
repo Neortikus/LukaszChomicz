@@ -1020,3 +1020,25 @@ img { max-width: 100%; display: block; }
 
 .home-stages { margin-top: 48px; padding-top: 28px; border-top: 1px solid rgba(201, 192, 214, 0.2); }
 .section--dusk .stagelist li { color: var(--on-dark); }
+
+/* ---------- Explainer + compare ---------- */
+.explainer p { max-width: var(--measure); }
+.compare-wrap { margin-top: clamp(40px, 6vw, 64px); }
+.compare-title { font-size: 1.3rem; }
+.compare { list-style: none; margin: 22px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; }
+.compare li { position: relative; background: #fff; border: 1px solid #e3dbea; border-radius: var(--radius); padding: 22px 22px 24px; }
+.compare li.is-active { border: 2px solid var(--plum); box-shadow: 0 14px 34px -20px rgba(112, 64, 128, 0.55); }
+.compare h4 { font-family: var(--font-head); font-size: 1.1rem; }
+.compare p { margin-top: 8px; color: var(--text-soft); font-size: 0.95rem; }
+.compare__badge { position: absolute; top: -11px; left: 18px; background: var(--plum); color: #fff; font-family: var(--font-head); font-weight: 600; font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase; padding: 4px 10px; border-radius: 999px; }
+.subhead { margin-top: clamp(36px, 5vw, 56px); font-size: 1.3rem; }
+.icon-items--compact { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 28px 32px; }
+
+/* Portrait photo in the page head: right half, fading into the graphite background */
+.page-head--portrait .page-head__bg { left: auto; width: min(46%, 680px); }
+.page-head--portrait .page-head__bg::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, var(--graphite) 0%, rgba(33, 29, 41, 0) 45%); }
+.page-head--portrait::before { background: linear-gradient(90deg, rgba(33, 29, 41, 1) 0%, rgba(33, 29, 41, 0.92) 50%, rgba(33, 29, 41, 0.15) 100%); }
+@media (max-width: 860px) {
+  .page-head--portrait .page-head__bg { width: 100%; }
+  .page-head--portrait::before { background: linear-gradient(90deg, rgba(33, 29, 41, 0.95) 0%, rgba(33, 29, 41, 0.8) 60%, rgba(33, 29, 41, 0.55) 100%); }
+}

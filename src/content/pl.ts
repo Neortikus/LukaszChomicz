@@ -113,8 +113,10 @@ export const pl: Content = {
       ],
     },
     forWhom: {
-      title: "Dla kogo",
+      title: "Kiedy warto zacząć",
       points: [
+        "Dostałeś awans i z dobrego specjalisty stałeś się szefem byłych kolegów.",
+        "Prowadzisz firmę i coraz częściej czujesz, że wszystko stoi na Tobie.",
         "Jesteś menedżerem lub dyrektorem, masz zwykle 35-50 lat i kilka lat zarządzania za sobą.",
         "Robisz za dużo sam, bo szybciej, a zespół czeka na Twoje decyzje.",
         "Wyniki są, ale kosztem snu, zdrowia albo rodziny.",
@@ -152,7 +154,47 @@ export const pl: Content = {
         { icon: "rezultaty", title: "Decyzje na szczycie", body: "Dla CEO i właścicieli: priorytety, strategia, ludzie, z którymi budujesz firmę." },
         { icon: "dzialanie", title: "Od planu do działania", body: "Cele, które nie zostają w notatkach. Konkretne kroki między sesjami i rozliczanie się z nich." },
       ],
+    },    explain: {
+      title: "Czym jest mentoring",
+      body: [
+        "Mentoring to regularna praca jeden na jeden z kimś, kto przeszedł drogę, którą Ty właśnie idziesz. Mentor nie ma gotowej odpowiedzi na wszystko, ale może powiedzieć: byłem w podobnym miejscu, tak to wyglądało, to zadziałało, a tego dziś bym nie zrobił.",
+        "Przez 15 lat zarządzałem zespołami w logistyce, pod presją klienta, wyniku i zarządu. Dlatego rozmawiamy o Twoich prawdziwych sytuacjach: o człowieku, który nie dowozi, o rozmowie z prezesem, o tym, że od miesięcy nie masz wolnego weekendu.",
+        "Decyzje zostają po Twojej stronie. Moja rola to zadawać pytania, które porządkują myślenie, dzielić się doświadczeniem i pilnować, żeby ustalenia z sesji zamieniały się w działanie.",
+      ],
     },
+    compare: {
+      title: "Mentor, coach, trener czy konsultant?",
+      activeLabel: "Tym się zajmuję",
+      items: [
+        { title: "Mentor", body: "Dzieli się doświadczeniem z miejsca, w którym sam był. Pracuje z Tobą dłużej, na Twoich sytuacjach.", active: true },
+        { title: "Coach", body: "Prowadzi pytaniami do Twoich własnych odpowiedzi. Nie musi znać Twojej branży ani roli." },
+        { title: "Trener", body: "Uczy konkretnej umiejętności, zwykle całą grupę naraz i w określonym czasie." },
+        { title: "Konsultant", body: "Analizuje firmę i mówi, co zmienić. Często sam przygotowuje rozwiązanie." },
+      ],
+    },
+    benefits: {
+      title: "Co możesz wynieść z mentoringu",
+      items: [
+        { title: "Czas na to, co ważne", body: "Oddajesz zadania, które nie muszą przechodzić przez Ciebie, i odzyskujesz czas na myślenie i na ludzi." },
+        { title: "Spokojniejsze decyzje", body: "Masz z kim przegadać trudny wybór, zanim go ogłosisz zespołowi albo zarządowi." },
+        { title: "Zespół, który działa bez Ciebie", body: "Ludzie biorą odpowiedzialność, a Ty przestajesz być wąskim gardłem." },
+        { title: "Jasny następny krok", body: "Wiesz, dokąd zmierzasz w karierze albo w firmie i co zrobić w najbliższym kwartale." },
+      ],
+    },
+    mentor: {
+      title: "Kim jestem jako mentor",
+      body: [
+        "Nie przyszedłem do mentoringu z teorii. Najpierw przez lata prowadziłem zespoły w operacji, potem zacząłem uczyć innych, jak robić to mądrzej i z mniejszym kosztem dla siebie.",
+        "W mentoringu łączę doświadczenie menedżera z warsztatem, który zdobyłem w Akademii Certyfikowanych Mentorów i w Toastmasters International.",
+      ],
+      points: [
+        "15 lat na stanowiskach kierowniczych w logistyce i branży KEP",
+        "Ponad 70 osób w mentoringu, w tym 50 w Toastmasters International",
+        "Absolwent Akademii Certyfikowanych Mentorów",
+        "Mentor w programach Uniwersytetu Bielsko-Bialskiego, Uniwersytetu Wrocławskiego i TEDx Nikiszowiec Women",
+      ],
+    },
+
     academic: {
       title: "Mentoruję też studentów i prelegentów",
       body: "Poza pracą z menedżerami i właścicielami firm działam jako mentor w programach uczelni i wydarzeń.",
@@ -178,7 +220,23 @@ export const pl: Content = {
     intro: {
       title: "Interim manager",
       lede: "Wchodzę do firmy na określony czas jako menedżer, a nie doradca z boku. Biorę odpowiedzialność za zespół i wynik, a gdy cel jest osiągnięty, przekazuję stery stałemu kierownictwu.",
+    },    explain: {
+      title: "Czym jest interim management",
+      body: [
+        "Interim manager to menedżer zatrudniony na określony czas, żeby przeprowadzić firmę przez konkretną sytuację: odejście kluczowej osoby, budowę nowego działu albo naprawę wyników.",
+        "Nie zostawia raportu i nie wychodzi. Wchodzi w strukturę, dostaje uprawnienia i odpowiada za wynik. Od początku wiadomo, z czym i kiedy współpraca się kończy.",
+      ],
     },
+    compare: {
+      title: "Interim manager, konsultant czy nowy menedżer na etat?",
+      activeLabel: "Tym się zajmuję",
+      items: [
+        { title: "Interim manager", body: "Działa od pierwszego tygodnia, prowadzi zespół i odpowiada za wynik. Po zakończeniu przekazuje stery.", active: true },
+        { title: "Konsultant", body: "Diagnozuje i rekomenduje. Wdrożenie zostaje po stronie firmy." },
+        { title: "Menedżer na etat", body: "Rozwiązanie na lata, ale rekrutacja trwa miesiące, a pomyłka sporo kosztuje." },
+      ],
+    },
+
     when: {
       title: "Kiedy warto sięgnąć po interim managera",
       points: [
@@ -268,7 +326,33 @@ export const pl: Content = {
           note: { label: "Zrealizowane", body: "Pełny proces dla właściciela i zespołu firmy z branży fotowoltaicznej." },
         },
       ],
+    },    explain: {
+      title: "Kiedy szkolenie ma sens",
+      body: [
+        "Szkolenie działa wtedy, gdy kilka osób potrzebuje tej samej umiejętności albo wspólnego języka: jak dajemy sobie informację zwrotną, jak domykamy ustalenia, jak rozmawiamy, kiedy coś idzie źle.",
+        "Nie zawsze jest najlepszym rozwiązaniem. Jeśli problem dotyczy jednej osoby, zwykle lepiej sprawdzi się mentoring. Jeśli kuleje proces albo brakuje menedżera, warto pomyśleć o wsparciu interim. Mówię o tym wprost na pierwszej rozmowie.",
+      ],
     },
+    signals: {
+      title: "Sygnały, że zespołowi przyda się warsztat",
+      points: [
+        "Ustalenia ze spotkań giną, a te same tematy wracają co tydzień.",
+        "Działy grają przeciwko sobie zamiast ze sobą.",
+        "Nowi kierownicy awansowali ze stanowisk specjalistów i nikt nie przygotował ich do roli.",
+        "W zespole pracują różne pokolenia i coraz częściej się nie rozumieją.",
+        "Firma urosła, a sposób zarządzania został z czasów, gdy było Was dziesięcioro.",
+      ],
+    },
+    formats: {
+      title: "Formy pracy",
+      items: [
+        { title: "Warsztat w firmie", body: "Od dwóch godzin do całego dnia, u Was na miejscu." },
+        { title: "Wyjazd szkoleniowy", body: "Kilka dni poza biurem, z czasem na pracę i na integrację zespołu, także w górach." },
+        { title: "Cykl spotkań", body: "Kilka warsztatów rozłożonych na miesiące, z zadaniami wdrożeniowymi między nimi." },
+        { title: "Online", body: "Krótsze moduły dla zespołów pracujących w różnych miejscach." },
+      ],
+    },
+
     custom: {
       title: "Tematy na zamówienie",
       body: "Program układam pod zespół, jego problemy i czas, jakim dysponujecie. Najczęściej pracujemy nad tymi obszarami:",
@@ -303,7 +387,26 @@ export const pl: Content = {
         { title: "Strategia i konsekwencja na górskim szlaku", body: "Lekcje z biegów w Beskidach: Bieg 7 Dolin, Beskidzki Topór, Babia Góra. O planie, kryzysie na trasie i o tym, co to ma wspólnego z prowadzeniem firmy.", image: "/images/ev-lider-bez-ograniczen.webp", position: "50% 50%", where: "Lider bez Ograniczeń 2026 · Kielce, z Jackiem Walkiewiczem" },
         { title: "Temat pod wydarzenie", body: "Przygotowuję wystąpienie pod temat konferencji i salę, także dla młodzieży. Zaczynamy od rozmowy o tym, kto będzie słuchał.", image: "/images/ev-liderzy-jutra.webp", position: "50% 45%", where: "Np. konferencja Liderzy Jutra" },
       ],
+    },    occasions: {
+      title: "Kiedy zaprosić mnie na scenę",
+      items: [
+        { icon: "swiadomosc", title: "Konferencje biznesowe i branżowe", body: "Keynote albo prelekcja w programie. Temat dopasowuję do hasła konferencji i do sali." },
+        { icon: "ludzie", title: "Wydarzenia firmowe", body: "Kick-off, spotkanie kadry, wyjazd integracyjny. Wystąpienie, które daje energię i coś do zrobienia w poniedziałek." },
+        { icon: "dzialanie", title: "Spotkania dla klientów i partnerów", body: "Wartość dla Waszych gości i dobry powód do rozmów w przerwie." },
+        { icon: "rozwoj", title: "Uczelnie i młodzież", body: "O marzeniach, decyzjach i pierwszych krokach w karierze. Także w programach mentoringowych." },
+        { icon: "kierunek", title: "Panele i moderacja", body: "Prowadzę rozmowę z gośćmi albo całe wydarzenie od otwarcia do zamknięcia." },
+      ],
     },
+    process: {
+      title: "Jak wygląda współpraca",
+      items: [
+        { title: "Rozmowa o wydarzeniu", body: "Kto będzie na sali, jaki jest cel wydarzenia i ile mam czasu na scenie." },
+        { title: "Propozycja tematu", body: "Dostajecie tytuł i opis do programu oraz bio i zdjęcia z zakładki Media." },
+        { title: "Przygotowanie", body: "Ustalamy z organizatorem scenariusz, technikę i moment wejścia na scenę." },
+        { title: "Wystąpienie i po nim", body: "Po wystąpieniu mogę zostać na pytania albo poprowadzić krótki warsztat dla chętnych." },
+      ],
+    },
+
     powerSpeech: {
       title: "Power Speech",
       lede: "Krótkie, konkretne wystąpienia na konferencje, spotkania firmowe i wydarzenia dla klientów. Każde ma trzy części i kończy się czymś, co słuchacze mogą zastosować od razu.",

@@ -113,8 +113,10 @@ export const en: Content = {
       ],
     },
     forWhom: {
-      title: "Who it's for",
+      title: "When it's worth starting",
       points: [
+        "You've been promoted and gone from a strong specialist to the boss of your former colleagues.",
+        "You run a company and increasingly feel that everything rests on you.",
         "You're a manager or director, usually 35-50, with several years of leading people behind you.",
         "You do too much yourself because it's faster, and the team waits for your decisions.",
         "The results are there, but they cost you sleep, health or family time.",
@@ -152,7 +154,47 @@ export const en: Content = {
         { icon: "rezultaty", title: "Decisions at the top", body: "For CEOs and owners: priorities, strategy and the people you build the company with." },
         { icon: "dzialanie", title: "From plan to action", body: "Goals that don't stay in your notes. Concrete steps between sessions and accountability for them." },
       ],
+    },    explain: {
+      title: "What mentoring is",
+      body: [
+        "Mentoring is regular one-to-one work with someone who has walked the road you are on now. A mentor doesn't have a ready answer for everything, but can say: I was in a similar place, this is what it looked like, this worked, and this I wouldn't do again.",
+        "For 15 years I managed teams in logistics, under pressure from clients, results and the board. So we talk about your real situations: the person who doesn't deliver, the conversation with the CEO, the fact that you haven't had a free weekend in months.",
+        "The decisions stay with you. My role is to ask questions that clear your thinking, share my experience and make sure what we agree in a session turns into action.",
+      ],
     },
+    compare: {
+      title: "Mentor, coach, trainer or consultant?",
+      activeLabel: "What I do",
+      items: [
+        { title: "Mentor", body: "Shares experience from a place they have been themselves. Works with you longer, on your real situations.", active: true },
+        { title: "Coach", body: "Leads you with questions to your own answers. Doesn't need to know your industry or role." },
+        { title: "Trainer", body: "Teaches a specific skill, usually to a whole group at once and within a set time." },
+        { title: "Consultant", body: "Analyses the company and tells you what to change. Often prepares the solution themselves." },
+      ],
+    },
+    benefits: {
+      title: "What you can take away from mentoring",
+      items: [
+        { title: "Time for what matters", body: "You hand over tasks that don't need to go through you and win back time for thinking and for people." },
+        { title: "Calmer decisions", body: "You have someone to talk a hard choice through with before you announce it to the team or the board." },
+        { title: "A team that works without you", body: "People take responsibility and you stop being the bottleneck." },
+        { title: "A clear next step", body: "You know where you are heading in your career or company and what to do in the next quarter." },
+      ],
+    },
+    mentor: {
+      title: "Who I am as a mentor",
+      body: [
+        "I didn't come to mentoring from theory. For years I led teams in operations, and only then started teaching others how to do it more wisely and at a lower personal cost.",
+        "In mentoring I combine a manager's experience with the craft I gained at the Akademia Certyfikowanych Mentorów and in Toastmasters International.",
+      ],
+      points: [
+        "15 years in management roles in logistics and courier services",
+        "More than 70 people mentored, 50 of them in Toastmasters International",
+        "Graduate of the Akademia Certyfikowanych Mentorów (Certified Mentors Academy)",
+        "Mentor in programmes at the University of Bielsko-Biala, the University of Wrocław and TEDx Nikiszowiec Women",
+      ],
+    },
+
     academic: {
       title: "I also mentor students and speakers",
       body: "Alongside my work with managers and business owners, I mentor in university and event programmes.",
@@ -178,7 +220,23 @@ export const en: Content = {
     intro: {
       title: "Interim manager",
       lede: "I join a company for a set period as a manager, not an adviser on the sidelines. I take responsibility for the team and the result, and once the goal is reached I hand over to permanent leadership.",
+    },    explain: {
+      title: "What interim management is",
+      body: [
+        "An interim manager is hired for a set period to take a company through a specific situation: a key person leaving, building a new department or turning results around.",
+        "They don't leave a report and walk away. They step into the structure, get the authority and answer for the result. From the start everyone knows what the engagement covers and when it ends.",
+      ],
     },
+    compare: {
+      title: "Interim manager, consultant or a new permanent hire?",
+      activeLabel: "What I do",
+      items: [
+        { title: "Interim manager", body: "Acts from the first week, leads the team and answers for the result. Hands over at the end.", active: true },
+        { title: "Consultant", body: "Diagnoses and recommends. Implementation stays with the company." },
+        { title: "Permanent manager", body: "A solution for years, but hiring takes months and a mistake is costly." },
+      ],
+    },
+
     when: {
       title: "When an interim manager makes sense",
       points: [
@@ -268,7 +326,33 @@ export const en: Content = {
           note: { label: "Delivered", body: "Full process for the owner and team of a photovoltaics company." },
         },
       ],
+    },    explain: {
+      title: "When training makes sense",
+      body: [
+        "Training works when several people need the same skill or a shared language: how we give each other feedback, how we close agreements, how we talk when something goes wrong.",
+        "It isn't always the best answer. If the problem concerns one person, mentoring usually works better. If a process is broken or a manager is missing, interim support is worth considering. I say so openly in our first conversation.",
+      ],
     },
+    signals: {
+      title: "Signs your team would benefit from a workshop",
+      points: [
+        "Agreements from meetings get lost and the same topics come back every week.",
+        "Departments play against each other instead of together.",
+        "New team leads were promoted from specialist roles and nobody prepared them for it.",
+        "Several generations work in the team and misunderstand each other more and more often.",
+        "The company has grown, but the way it's managed dates from when there were ten of you.",
+      ],
+    },
+    formats: {
+      title: "Formats",
+      items: [
+        { title: "Workshop at your office", body: "From two hours to a full day, on site." },
+        { title: "Training retreat", body: "A few days away from the office, with time for work and team building, including in the mountains." },
+        { title: "A series of sessions", body: "Several workshops spread over months, with implementation tasks in between." },
+        { title: "Online", body: "Shorter modules for teams working in different places." },
+      ],
+    },
+
     custom: {
       title: "Tailored topics",
       body: "I build the programme around your team, its problems and the time you have. These are the areas we work on most often:",
@@ -303,7 +387,26 @@ export const en: Content = {
         { title: "Strategy and persistence on a mountain trail", body: "Lessons from races in the Beskids: Bieg 7 Dolin, Beskidzki Topór, Babia Góra. About the plan, the crisis on the course and what it has to do with running a company.", image: "/images/ev-lider-bez-ograniczen.webp", position: "50% 50%", where: "Lider bez Ograniczeń 2026 · Kielce, with Jacek Walkiewicz" },
         { title: "A talk built for your event", body: "I prepare a talk around the conference theme and the audience, young people included. We start by talking about who will be listening.", image: "/images/ev-liderzy-jutra.webp", position: "50% 45%", where: "E.g. the Liderzy Jutra conference" },
       ],
+    },    occasions: {
+      title: "When to invite me on stage",
+      items: [
+        { icon: "swiadomosc", title: "Business and industry conferences", body: "A keynote or a talk in the programme. I tailor the topic to the conference theme and the audience." },
+        { icon: "ludzie", title: "Company events", body: "Kick-offs, management meetings, team retreats. A talk that gives energy and something to do on Monday." },
+        { icon: "dzialanie", title: "Client and partner events", body: "Value for your guests and a good reason to talk during the break." },
+        { icon: "rozwoj", title: "Universities and young people", body: "About dreams, decisions and first steps in a career. Also within mentoring programmes." },
+        { icon: "kierunek", title: "Panels and hosting", body: "I lead the conversation with guests or host the whole event from opening to close." },
+      ],
     },
+    process: {
+      title: "How we work together",
+      items: [
+        { title: "A call about the event", body: "Who will be in the room, what the event is for and how much stage time I have." },
+        { title: "Topic proposal", body: "You get a title and description for the programme, plus a bio and photos from the Media page." },
+        { title: "Preparation", body: "We agree the running order, tech and my cue with the organiser." },
+        { title: "The talk and after", body: "After the talk I can stay for questions or run a short workshop for those interested." },
+      ],
+    },
+
     powerSpeech: {
       title: "Power Speech",
       lede: "Short, practical talks for conferences, company meetings and client events. Each has three parts and ends with something the audience can use straight away.",

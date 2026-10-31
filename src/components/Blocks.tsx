@@ -1,4 +1,4 @@
-import type { Appearance, Content, Faq, IconName, Item, MediaPhoto, Offer, Step, Talk, Testimonial } from "@/content/types";
+import type { Appearance, Compare, Content, Explainer, Faq, IconName, Item, MediaPhoto, Offer, Step, Talk, Testimonial } from "@/content/types";
 import { site, mailto } from "@/content/site";
 import { Icon } from "./Icon";
 
@@ -14,6 +14,7 @@ export function PageHead({
   icon,
   image,
   position,
+  portrait,
   title,
   lede,
   children,
@@ -21,12 +22,14 @@ export function PageHead({
   icon?: IconName;
   image?: string;
   position?: string;
+  /** Portrait photo: shown on the right half instead of across the whole strip. */
+  portrait?: boolean;
   title: string;
   lede: string;
   children?: React.ReactNode;
 }) {
   return (
-    <section className={`page-head${image ? "" : " page-head--plain"}`}>
+    <section className={`page-head${image ? "" : " page-head--plain"}${portrait ? " page-head--portrait" : ""}`}>
       {image && (
         <div className="page-head__bg">
           {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -267,9 +270,9 @@ export function FaqList({ items }: { items: Faq[] }) {
   );
 }
 
-export function IconItems({ items }: { items: (Item & { icon: IconName })[] }) {
+export function IconItems({ items, compact }: { items: (Item & { icon: IconName })[]; compact?: boolean }) {
   return (
-    <ul className="icon-items">
+    <ul className={`icon-items${compact ? " icon-items--compact" : ""}`}>
       {items.map((i) => (
         <li key={i.title}>
           <Icon name={i.icon} />
@@ -278,5 +281,35 @@ export function IconItems({ items }: { items: (Item & { icon: IconName })[] }) {
         </li>
       ))}
     </ul>
+  );
+}
+
+export function ExplainerBlock({ e }: { e: Explainer }) {
+  return (
+    <div className="split">
+      <h2>{e.title}</h2>
+      <div className="stack explainer">
+        {e.body.map((p) => (
+          <p key={p}>{p}</p>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+export function CompareBlock({ c }: { c: Compare }) {
+  return (
+    <div className="compare-wrap">
+      <h3 className="compare-title">{c.title}</h3>
+      <ul className="compare">
+        {c.items.map((i) => (
+          <li key={i.title} className={i.active ? "is-active" : undefined}>
+            {i.active && <span className="compare__badge">{c.activeLabel}</span>}
+            <h4>{i.title}</h4>
+            <p>{i.body}</p>
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 }
