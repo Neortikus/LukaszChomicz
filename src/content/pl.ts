@@ -4,7 +4,7 @@ export const pl: Content = {
   meta: {
     title: "Łukasz Chomicz - mentoring i leadership. Zaufanie. Kierunek. Działanie.",
     description:
-      "Mentor, trener i mówca. Ponad 20 lat zarządzania zespołami w logistyce. Mentoring dla menedżerów, szkolenia dla firm, wystąpienia, networking w górach i książki.",
+      "Mentor, trener i mówca. Ponad 20 lat zarządzania zespołami w logistyce. Mentoring dla menedżerów i CEO, szkolenia dla firm, wystąpienia, networking w górach i książki.",
   },
   nav: {
     items: [
@@ -65,7 +65,7 @@ export const pl: Content = {
       legend: "Kolory to prawdziwe oznaczenia szlaków górskich.",
       summit: "Twój cel",
       arms: [
-        { href: "/mentoring", trail: "red", label: "Mentoring", detail: "indywidualna praca z liderem" },
+        { href: "/mentoring", trail: "red", label: "Mentoring", detail: "dla menedżerów i CEO" },
         { href: "/interim-manager", trail: "black", label: "Interim manager", detail: "przejmuję zarządzanie na czas zmiany" },
         { href: "/szkolenia", trail: "blue", label: "Szkolenia dla firm", detail: "warsztaty dla zespołów i kadry" },
         { href: "/wystapienia", trail: "green", label: "Wystąpienia", detail: "keynote i prowadzenie konferencji" },
@@ -76,7 +76,7 @@ export const pl: Content = {
     railLabel: "Twoja droga przez stronę",
     pathsTitle: "Jak mogę pomóc",
     paths: [
-      { href: "/mentoring", icon: "kierunek", image: "/images/portret2.webp", title: "Mentoring", body: "Menedżer 2.0 - z wypalenia do wpływu. Indywidualna praca z liderem na autorskiej metodzie W.I.Z.J.A.", link: "Program mentoringu" },
+      { href: "/mentoring", icon: "kierunek", image: "/images/mentoring.webp", title: "Mentoring", body: "Dla menedżerów program Menedżer 2.0, dla CEO i właścicieli firm mentoring na szczycie. Indywidualnie, na autorskiej metodzie W.I.Z.J.A.", link: "Program mentoringu" },
       { href: "/szkolenia", icon: "ludzie", image: "/images/scena-6.webp", title: "Szkolenia dla firm", body: "Komunikacja, odpowiedzialność, talenty, delegowanie. Warsztaty szyte pod Wasz zespół.", link: "Programy szkoleń" },
       { href: "/wystapienia", icon: "swiadomosc", image: "/images/scena-1.webp", title: "Wystąpienia", body: "Keynote, prelekcje i moderacja konferencji. Neurobiologia przywództwa, strategia na górskim szlaku.", link: "Tematy wystąpień" },
       { href: "/networking-w-gorach", icon: "rozwoj", image: "/images/gory-grupa.webp", title: "Networking w górach", body: "Zabieram przedsiębiorców w Beskidy: Pilsko, Barania Góra, Skrzyczne, Babia Góra.", link: "Najbliższe wyjścia" },
@@ -94,7 +94,7 @@ export const pl: Content = {
   ],
   mentoring: {
     intro: {
-      title: "Mentoring dla menedżerów",
+      title: "Mentoring dla menedżerów i CEO",
       lede: "Dla liderów, którzy mają wyniki, ale coraz mniej siły, żeby je utrzymać. Pracujemy nad Tobą jako liderem, a nie nad naprawianiem firmy za Ciebie.",
     },
     program: {
@@ -102,6 +102,13 @@ export const pl: Content = {
       body: [
         "To 16-tygodniowy program pracy indywidualnej. Spotykamy się regularnie, między sesjami masz konkretne zadania do przetestowania w swoim zespole, a ja jestem dostępny, kiedy coś się sypie.",
         "Program opiera się na mojej autorskiej metodzie W.I.Z.J.A. Uzupełniają ją profil DISC i Gallup CliftonStrengths, żebyśmy od początku wiedzieli, na jakich mocnych stronach budujesz.",
+      ],
+    },
+    ceo: {
+      title: "Mentoring dla CEO i właścicieli firm",
+      body: [
+        "Na szczycie firmy rzadko jest ktoś, z kim można szczerze porozmawiać o decyzjach, ludziach i własnym zmęczeniu. Pracuję z prezesami i właścicielami jako partner do myślenia: porządkujemy priorytety, układamy relacje z zarządem i zespołem, budujemy firmę, która nie staje, kiedy Ciebie nie ma.",
+        "Zakres i rytm spotkań ustalamy indywidualnie, pod etap firmy i to, z czym przychodzisz.",
       ],
     },
     forWhom: {

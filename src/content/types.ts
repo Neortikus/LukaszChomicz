@@ -75,6 +75,7 @@ export type Content = {
   mentoring: {
     intro: PageIntro;
     program: { name: string; body: string[] };
+    ceo: { title: string; body: string[] };
     forWhom: { title: string; points: string[] };
     tools: { title: string; items: Item[] };
     steps: { title: string; items: Step[] };

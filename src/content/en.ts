@@ -65,7 +65,7 @@ export const en: Content = {
       legend: "The colours are real Polish mountain trail markings.",
       summit: "Your goal",
       arms: [
-        { href: "/mentoring", trail: "red", label: "Mentoring", detail: "individual work with a leader" },
+        { href: "/mentoring", trail: "red", label: "Mentoring", detail: "for managers and CEOs" },
         { href: "/interim-manager", trail: "black", label: "Interim manager", detail: "I take over management for a time of change" },
         { href: "/szkolenia", trail: "blue", label: "Company training", detail: "workshops for teams and leadership" },
         { href: "/wystapienia", trail: "green", label: "Speaking", detail: "keynotes and conference hosting" },
@@ -76,7 +76,7 @@ export const en: Content = {
     railLabel: "Your route through the page",
     pathsTitle: "How I can help",
     paths: [
-      { href: "/mentoring", icon: "kierunek", image: "/images/portret2.webp", title: "Mentoring", body: "Manager 2.0 - from burnout to influence. Individual work with a leader using my own W.I.Z.J.A. method.", link: "The programme" },
+      { href: "/mentoring", icon: "kierunek", image: "/images/mentoring.webp", title: "Mentoring", body: "Manager 2.0 for managers, and mentoring at the top for CEOs and business owners. One-to-one, built on my own W.I.Z.J.A. method.", link: "The programme" },
       { href: "/szkolenia", icon: "ludzie", image: "/images/scena-6.webp", title: "Company training", body: "Communication, accountability, talent, delegation. Workshops built around your team.", link: "Training programmes" },
       { href: "/wystapienia", icon: "swiadomosc", image: "/images/scena-1.webp", title: "Speaking", body: "Keynotes, talks and conference hosting. The neuroscience of leadership, strategy on a mountain trail.", link: "Talk topics" },
       { href: "/networking-w-gorach", icon: "rozwoj", image: "/images/gory-grupa.webp", title: "Mountain networking", body: "I take entrepreneurs into the Beskid mountains: Pilsko, Barania Góra, Skrzyczne, Babia Góra.", link: "Upcoming hikes" },
@@ -94,7 +94,7 @@ export const en: Content = {
   ],
   mentoring: {
     intro: {
-      title: "Mentoring for managers",
+      title: "Mentoring for managers and CEOs",
       lede: "For leaders who deliver results but have less and less strength to keep it up. We work on you as a leader, not on fixing the company for you.",
     },
     program: {
@@ -102,6 +102,13 @@ export const en: Content = {
       body: [
         "A 16-week individual programme. We meet regularly, between sessions you have specific things to try with your team, and I'm available when something falls apart.",
         "The programme is built on my own W.I.Z.J.A. method, supported by DISC and Gallup CliftonStrengths, so we know from the start which strengths you're building on.",
+      ],
+    },
+    ceo: {
+      title: "Mentoring for CEOs and business owners",
+      body: [
+        "At the top of a company there is rarely anyone you can talk to openly about decisions, people and your own fatigue. I work with CEOs and owners as a thinking partner: we sort out priorities, shape relationships with the board and the team, and build a company that doesn't stop when you're away.",
+        "We agree the scope and rhythm of our meetings individually, based on the stage of your company and what you come with.",
       ],
     },
     forWhom: {

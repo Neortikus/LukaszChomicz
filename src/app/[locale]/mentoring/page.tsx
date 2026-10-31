@@ -29,6 +29,17 @@ export default async function MentoringPage({ params }: PageProps) {
         </div>
       </section>
 
+      <section className="section section--lavender section--tight">
+        <div className="wrap split">
+          <h2>{m.ceo.title}</h2>
+          <div className="stack">
+            {m.ceo.body.map((p) => (
+              <p key={p}>{p}</p>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="section">
         <div className="wrap split">
           <SectionHeading>{m.forWhom.title}</SectionHeading>
