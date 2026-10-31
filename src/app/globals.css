@@ -24,7 +24,6 @@
 
   --font-head: "Montserrat Variable", "Montserrat", system-ui, sans-serif;
   --font-body: "Manrope Variable", "Manrope", system-ui, sans-serif;
-  --font-script: "Allura", cursive;
 
   --measure: 64ch;
   --wrap: 1240px;
@@ -125,10 +124,11 @@ img { max-width: 100%; display: block; }
   border-radius: 2px;
 }
 .script {
-  font-family: var(--font-script);
-  font-weight: 400;
-  line-height: 1;
-  letter-spacing: 0;
+  font-family: var(--font-head);
+  font-weight: 600;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 0.32em;
 }
 
 /* ---------- Buttons ---------- */
@@ -727,7 +727,8 @@ img { max-width: 100%; display: block; }
 .cta-band .cta-note { color: rgba(255, 255, 255, 0.85); }
 .cta-band .btn { background: var(--graphite); border-color: var(--graphite); color: #fff; }
 .cta-band .btn:hover { background: var(--graphite-2); border-color: var(--graphite-2); }
-.cta-band .script { font-size: clamp(2.6rem, 5vw, 4rem); color: #fff; display: block; margin-top: 18px; transform: rotate(-5deg); transform-origin: left; }
+.cta-band .script { font-size: 0.85rem; color: rgba(255, 255, 255, 0.85); display: flex; align-items: center; gap: 14px; margin-top: 26px; }
+.cta-band .script::before { content: ""; width: 36px; height: 2px; background: currentColor; opacity: 0.7; }
 @media (max-width: 860px) { .cta-band__grid { grid-template-columns: 1fr; } }
 
 /* ---------- Contact ---------- */
@@ -753,7 +754,7 @@ img { max-width: 100%; display: block; }
 .site-footer__grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 4fr) minmax(0, 3fr); gap: 32px; }
 .site-footer__brand { font-family: var(--font-head); font-weight: 800; font-size: 1.5rem; color: var(--on-dark); line-height: 1.1; }
 .site-footer .roles { font-size: 0.75rem; margin-top: 10px; color: var(--on-dark-soft); }
-.site-footer .script { font-size: 2.2rem; color: var(--on-dark); margin-top: 20px; display: block; }
+.site-footer .script { font-size: 0.75rem; color: var(--on-dark-soft); margin-top: 20px; display: block; }
 .site-footer ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
 .site-footer__nav ul { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .site-footer__bottom {
@@ -823,7 +824,7 @@ img { max-width: 100%; display: block; }
 .jroute--green { --c: #45c97c; }
 .jroute { transition: opacity 0.25s ease; }
 .jsummit__dot { fill: #fff; }
-.jsummit__label { font-family: var(--font-script); font-size: 44px; fill: var(--white); opacity: 0.95; }
+.jsummit__label { font-family: var(--font-head); font-weight: 600; font-size: 20px; letter-spacing: 0.3em; text-transform: uppercase; fill: var(--white); opacity: 0.9; }
 @media (prefers-reduced-motion: no-preference) {
   .jsummit__halo { animation: halo 3.2s ease-in-out infinite; transform-origin: 1436px 322px; transform-box: view-box; }
   .jroute__line { stroke-dasharray: 1; stroke-dashoffset: 0; animation: route-draw 2.6s cubic-bezier(0.45, 0, 0.2, 1) both; }

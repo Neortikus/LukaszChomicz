@@ -1,7 +1,5 @@
 import "@fontsource-variable/montserrat/wght.css";
 import "@fontsource-variable/manrope/wght.css";
-import "@fontsource/allura/latin-ext-400.css";
-import "@fontsource/allura/latin-400.css";
 import "../globals.css";
 
 import type { Metadata, Viewport } from "next";

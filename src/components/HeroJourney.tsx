@@ -67,7 +67,7 @@ export function HeroJourney({ arms, summit }: { arms: SignpostArm[]; summit: str
 
       <circle cx={SUMMIT.x} cy={SUMMIT.y} r="40" fill="url(#j-summit)" className="jsummit__halo" />
       <circle cx={SUMMIT.x} cy={SUMMIT.y} r="5" className="jsummit__dot" />
-      <text x={SUMMIT.x + 26} y={SUMMIT.y - 22} className="jsummit__label">
+      <text x={SUMMIT.x + 18} y={SUMMIT.y - 16} className="jsummit__label">
         {summit}
       </text>
 
