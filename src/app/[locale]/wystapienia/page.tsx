@@ -12,7 +12,7 @@ export default async function SpeakingPage({ params }: PageProps) {
   const s = c.speaking;
   return (
     <>
-      <PageHead icon="swiadomosc" image="/images/scena-1.webp" title={s.intro.title} lede={s.intro.lede} />
+      <PageHead icon="swiadomosc" image="/images/scena-2.webp" position="70% 30%" title={s.intro.title} lede={s.intro.lede} />
 
       <section className="section section--tight">
         <div className="wrap stack">
