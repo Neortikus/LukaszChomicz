@@ -1,4 +1,4 @@
-import { Appearances, Bullets, CtaBand, IconItems, Offers, PageHead, Photo, SectionHeading, StageList, Steps, Talks } from "@/components/Blocks";
+import { Appearances, Bullets, CtaBand, IconItems, Offers, PageHead, Photo, Quotes, SectionHeading, StageList, Steps, Talks } from "@/components/Blocks";
 import { mailto, site } from "@/content/site";
 import { loadPage, pageMetadata, type PageProps } from "@/lib/page";
 
@@ -52,6 +52,15 @@ export default async function SpeakingPage({ params }: PageProps) {
         </div>
       </section>
 
+      <section className="section section--dusk">
+        <div className="wrap">
+          <div className="section-head">
+            <h2>{s.testimonialsTitle}</h2>
+          </div>
+          <Quotes items={c.testimonials.speaking} more={c.testimonials.more} />
+        </div>
+      </section>
+
       <section className="section">
         <div className="wrap split split--center">
           <Photo src={s.moderation.image} alt={s.moderation.imageAlt} shape="wide" />
@@ -66,7 +75,7 @@ export default async function SpeakingPage({ params }: PageProps) {
         </div>
       </section>
 
-      <section className="section section--dusk">
+      <section className="section section--lavender">
         <div className="wrap split">
           <SectionHeading>{s.process.title}</SectionHeading>
           <Steps items={s.process.items} />

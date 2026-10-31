@@ -1,4 +1,4 @@
-import { Bullets, CompareBlock, CtaBand, ExplainerBlock, Items, PageHead, Photo, SectionHeading, Steps } from "@/components/Blocks";
+import { Bullets, CompareBlock, CtaBand, ExplainerBlock, Items, PageHead, Photo, Quotes, SectionHeading, Steps } from "@/components/Blocks";
 import { loadPage, pageMetadata, type PageProps } from "@/lib/page";
 import { mailto } from "@/content/site";
 
@@ -52,13 +52,22 @@ export default async function InterimPage({ params }: PageProps) {
       </section>
 
       <section className="section section--dusk">
+        <div className="wrap">
+          <div className="section-head">
+            <h2>{m.testimonialsTitle}</h2>
+          </div>
+          <Quotes items={c.testimonials.management} more={c.testimonials.more} />
+        </div>
+      </section>
+
+      <section className="section">
         <div className="wrap split">
           <SectionHeading icon="ludzie">{m.how.title}</SectionHeading>
           <Steps items={m.how.items} />
         </div>
       </section>
 
-      <section className="section section--tight">
+      <section className="section section--lavender section--tight">
         <div className="wrap split split--center">
           <h2>{m.contact.title}</h2>
           <div className="stack">

@@ -122,7 +122,7 @@ export default async function MentoringPage({ params }: PageProps) {
           <div className="section-head">
             <h2>{m.testimonialsTitle}</h2>
           </div>
-          <Quotes items={c.testimonials} />
+          <Quotes items={c.testimonials.mentoring} more={c.testimonials.more} />
         </div>
       </section>
 

@@ -1042,3 +1042,6 @@ img { max-width: 100%; display: block; }
   .page-head--portrait .page-head__bg { width: 100%; }
   .page-head--portrait::before { background: linear-gradient(90deg, rgba(33, 29, 41, 0.95) 0%, rgba(33, 29, 41, 0.8) 60%, rgba(33, 29, 41, 0.55) 100%); }
 }
+.quote__context { margin-top: 6px; font-size: 0.78rem !important; letter-spacing: 0.04em; color: var(--accent) !important; }
+.quotes__more { margin-top: 32px; }
+.section--dusk .quotes__more .text-link { color: var(--on-dark); }

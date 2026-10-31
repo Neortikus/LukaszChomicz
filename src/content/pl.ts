@@ -88,11 +88,32 @@ export const pl: Content = {
     eventsTitle: "Najbliższe wydarzenia",
     eventsLink: "Wszystkie wydarzenia",
   },
-  testimonials: [
-    { quote: "Łukasz to profesjonalny mówca i szkoleniowiec. Gwarantuje solidne podejście do prezentowanych tematów biznesowych.", name: "Artur Pezda", role: "Dyrektor, ByteFine" },
-    { quote: "To mówca przygotowany. To wreszcie ktoś, kto wierzy w człowieka, nie ocenia, nie przekreśla.", name: "Ryszard Kosowicz", role: "Logistyk Informacji" },
-    { quote: "Wykłady Łukasza koncentrują się na dostarczaniu praktycznych wskazówek, inspiracji i motywacji.", name: "dr Piotr Janulek", role: "Przedsiębiorca i edukator, redaktor naczelny Coach's Workshop" },
-  ],
+  testimonials: {
+    more: "Wszystkie rekomendacje na LinkedIn",
+    home: [
+      { quote: "Miałam szczęście poznać Łukasza w jednym z najważniejszych momentów mojej kariery zawodowej. Dziś z pełnym przekonaniem mogę powiedzieć, że współpraca z nim była jedną z najlepszych inwestycji w mój rozwój.", name: "Patrycja Stępel", role: "Liderka transformacji organizacji i ludzi", context: "Mentoring, 2026" },
+      { quote: "Łukasz pomaga mi spojrzeć na biznes z nowej perspektywy, uporządkować najważniejsze procesy oraz stworzyć solidne podstawy do dalszego rozwoju i skalowania działalności.", name: "Adam Gajewski", role: "Przedsiębiorca, audyty BHP i certyfikacja CE", context: "Mentoring dla właściciela firmy, 2026" },
+      { quote: "Łukasz to mówca przygotowany. To mówca, który mnie rozprasza, rozpędzając moje myśli w wielu kierunkach, przez wariantowość spojrzeń i empatyczność wywodów.", name: "dr Piotr Janulek", role: "Edukator, przedsiębiorca, naukowiec", context: "Wystąpienia, 2023" },
+    ],
+    mentoring: [
+      { quote: "Łukasz nie ogranicza się do klasycznego mentoringu. Pomógł mi najpierw świadomie określić kierunek zawodowy. Przez kolejne miesiące wspierał mnie we wdrożeniu do nowej roli, pomagając przejść od myślenia operacyjnego do strategicznego.", name: "Patrycja Stępel", role: "Liderka transformacji organizacji i ludzi", context: "Mentoring kariery i wdrożenie w nową rolę, 2026" },
+      { quote: "Łukasz pomaga mi spojrzeć na biznes z nowej perspektywy, uporządkować najważniejsze procesy oraz stworzyć solidne podstawy do dalszego rozwoju. Potrafi zadawać właściwe pytania, wskazywać konkretne rozwiązania i motywować do konsekwentnego działania.", name: "Adam Gajewski", role: "Przedsiębiorca, audyty BHP i certyfikacja CE", context: "Mentoring dla właściciela firmy, 2026" },
+      { quote: "Łukasz jako mój mentor w Odyssey Project był dla mnie przełomem. Od tamtej pory zrobiłam postępy, które przerosły moje oczekiwania, a niedawno wyszłam na scenę przed dużą publicznością w sali konferencyjnej.", name: "Katerina Zitta", role: "Program and Delivery Manager", context: "Odyssey Project, Toastmasters, 2023 (tłum. z angielskiego)" },
+      { quote: "Bardzo zaangażowany, z wachlarzem wiedzy w różnych obszarach. Kiedy było trzeba, zmotywował, zadał odpowiednio wnikliwe pytanie albo podsunął pomysł.", name: "Aleksandra Lewandowska", role: "Mówczyni, tłumaczka konferencyjna", context: "Odyssey Project, Toastmasters, 2023" },
+      { quote: "Świetny mówca i znakomity mentor z dużą wiedzą i doświadczeniem. Cieszę się, że byłam jego mentee.", name: "Moldir Baimagambetova", role: "Cloud & DC Solution Designer, Luminus", context: "Odyssey Project, Toastmasters, 2023 (tłum. z angielskiego)" },
+    ],
+    speaking: [
+      { quote: "Łukasz to mówca przygotowany. To mówca, który mnie rozprasza, rozpędzając moje myśli w wielu kierunkach, przez wariantowość spojrzeń i empatyczność wywodów. To wreszcie ktoś, kto wierzy w człowieka, nie ocenia, nie przekreśla.", name: "dr Piotr Janulek", role: "Edukator, przedsiębiorca, naukowiec", context: "Wystąpienia, 2023" },
+      { quote: "Mieliśmy okazję współpracować w kontekście przemawiania publicznego i polecam wiedzę, warsztaty Łukasza. Jego analityczne spojrzenie i doświadczenie w biznesie powoduje, że dla mnie to była duża wartość.", name: "Wojciech Wrociński", role: "ReklamowyGadzet.pl", context: "Wystąpienia publiczne, 2023" },
+      { quote: "Łukasz to profesjonalny mówca i szkoleniowiec. Gwarantuje solidne podejście do prezentowanych tematów biznesowych.", name: "Artur Pezda", role: "Dyrektor, ByteFine" },
+    ],
+    management: [
+      { quote: "Jako manager rozumie emocje zespołu i potrafi zachować zimną krew w obliczu konfliktu. Łukasz sprawia, że zespoły są zmotywowane i zainspirowane do ukończenia projektu, wychodzą z inicjatywą i dają z siebie więcej, niż można by oczekiwać.", name: "Ryszard Kosowicz", role: "Konsultant zarządzania procesami i komunikacją", context: "Wspólna praca w zespole, 2020" },
+      { quote: "Zawsze ceniłem sobie jego niesamowite zaangażowanie w każdy projekt. Wykracza swoją postawą i zaangażowaniem ponad wyznaczone pierwotnie ramy, chcąc znaleźć jeszcze bardziej optymalne rozwiązania.", name: "Rafał Jakubów", role: "Senior Regional Depot Manager, Allegro", context: "Przełożony, 2020" },
+      { quote: "Pamiętam, jak zaczynał w Toastmasters, będąc już kompetentnym managerem w swojej pracy. Nie mogę wyjść z podziwu, dokąd jasno postawione cele i determinacja mogą nas zaprowadzić.", name: "Beata Wita", role: "Scrum Master, Agile MasterMind", context: "Toastmasters, 2022" },
+    ],
+  },
+
   mentoring: {
     intro: {
       title: "Mentoring dla menedżerów i CEO",
@@ -205,7 +226,7 @@ export const pl: Content = {
         { title: "TEDx Nikiszowiec Women 2026", body: "Mentor prelegentów przygotowujących wystąpienia na scenę TEDx w Katowicach." },
       ],
     },
-    testimonialsTitle: "Co mówią ludzie, z którymi pracowałem",
+    testimonialsTitle: "Co mówią osoby, które mentorowałem",
     faq: {
       title: "Najczęstsze pytania",
       items: [
@@ -227,7 +248,8 @@ export const pl: Content = {
         "Interim manager to menedżer zatrudniony na określony czas, żeby przeprowadzić firmę przez konkretną sytuację: odejście kluczowej osoby, budowę nowego działu albo naprawę wyników.",
         "Nie zostawia raportu i nie wychodzi. Wchodzi w strukturę, dostaje uprawnienia i odpowiada za wynik. Od początku wiadomo, z czym i kiedy współpraca się kończy.",
       ],
-    },
+    },    testimonialsTitle: "Jak pracowałem jako menedżer",
+
     compare: {
       title: "Interim manager, konsultant czy nowy menedżer na etat?",
       activeLabel: "Tym się zajmuję",
@@ -380,6 +402,7 @@ export const pl: Content = {
       lede: "Mówię do menedżerów, właścicieli firm i zespołów. Opowiadam historie z zarządzania i z górskich ultramaratonów, a z każdej wynika coś, co słuchacze mogą zrobić w poniedziałek.",
     },
       ask: { label: "Zapytaj o wolny termin", mailSubject: "Wystąpienie - zapytanie o termin" },
+    testimonialsTitle: "Co mówią słuchacze i współpracownicy",
     topics: {
       title: "Tematy keynote",
       items: [

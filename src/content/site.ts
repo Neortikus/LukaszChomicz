@@ -7,6 +7,7 @@ export const site = {
   email: "biuro@lukaszchomicz.pl",
   calendly: "https://calendly.com/lchomicz/30min",
   company: "Linkaris Sp. z o.o.",
+  recommendations: "https://www.linkedin.com/in/lukaszchomicz/details/recommendations/",
   social: [
     { label: "LinkedIn", href: "https://www.linkedin.com/in/lukaszchomicz/" },
     { label: "YouTube", href: "https://www.youtube.com/@Neortikus" },

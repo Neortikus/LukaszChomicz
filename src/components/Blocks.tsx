@@ -136,8 +136,9 @@ export function Photo({ src, alt, shape = "wide" }: { src: string; alt: string; 
   );
 }
 
-export function Quotes({ items }: { items: Testimonial[] }) {
+export function Quotes({ items, more }: { items: Testimonial[]; more?: string }) {
   return (
+    <>
     <ul className="quotes">
       {items.map((t) => (
         <li key={t.name}>
@@ -146,11 +147,20 @@ export function Quotes({ items }: { items: Testimonial[] }) {
             <figcaption>
               <strong>{t.name}</strong>
               <span>{t.role}</span>
+              {t.context && <span className="quote__context">{t.context}</span>}
             </figcaption>
           </figure>
         </li>
       ))}
     </ul>
+    {more && (
+      <p className="quotes__more">
+        <a className="text-link" href={site.recommendations} target="_blank" rel="noopener noreferrer">
+          {more}
+        </a>
+      </p>
+    )}
+    </>
   );
 }
 

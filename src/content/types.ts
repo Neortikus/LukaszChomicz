@@ -51,7 +51,7 @@ export type Path = {
   link: string;
 };
 
-export type Testimonial = { quote: string; name: string; role: string };
+export type Testimonial = { quote: string; name: string; role: string; context?: string };
 
 export type EventInfo = {
   slug: string;
@@ -98,7 +98,13 @@ export type Content = {
     eventsTitle: string;
     eventsLink: string;
   };
-  testimonials: Testimonial[];
+  testimonials: {
+    more: string;
+    home: Testimonial[];
+    mentoring: Testimonial[];
+    speaking: Testimonial[];
+    management: Testimonial[];
+  };
   mentoring: {
     intro: PageIntro;
     program: { name: string; body: string[] };
@@ -119,6 +125,7 @@ export type Content = {
   };
   interim: {
     intro: PageIntro;
+    testimonialsTitle: string;
     explain: Explainer;
     compare: Compare;
     when: { title: string; points: string[] };
@@ -141,6 +148,7 @@ export type Content = {
   speaking: {
     intro: PageIntro;
     ask: { label: string; mailSubject: string };
+    testimonialsTitle: string;
     occasions: { title: string; items: (Item & { icon: IconName })[] };
     process: { title: string; items: Step[] };
     topics: { title: string; items: Talk[] };

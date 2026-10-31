@@ -154,7 +154,7 @@ export default async function HomePage({ params }: PageProps) {
             <Stage n={3} label={h.stages[2]} />
             <h2 id="quotes">{h.testimonialsTitle}</h2>
           </div>
-          <Quotes items={c.testimonials} />
+          <Quotes items={c.testimonials.home} more={c.testimonials.more} />
           <div className="home-stages">
             <StageList title={c.speaking.stages.title} items={c.speaking.stages.items} />
           </div>

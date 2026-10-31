@@ -88,11 +88,32 @@ export const en: Content = {
     eventsTitle: "Upcoming events",
     eventsLink: "All events",
   },
-  testimonials: [
-    { quote: "Łukasz is a professional speaker and trainer. He guarantees a solid approach to the business topics he presents.", name: "Artur Pezda", role: "Director, ByteFine" },
-    { quote: "A well-prepared speaker. At last someone who believes in people, doesn't judge and doesn't write anyone off.", name: "Ryszard Kosowicz", role: "Information logistician" },
-    { quote: "Łukasz's talks focus on delivering practical advice, inspiration and motivation.", name: "Dr Piotr Janulek", role: "Entrepreneur and educator, editor-in-chief of Coach's Workshop" },
-  ],
+  testimonials: {
+    more: "All recommendations on LinkedIn",
+    home: [
+      { quote: "I was lucky to meet Łukasz at one of the most important moments of my career. Today I can say with full conviction that working with him was one of the best investments in my development.", name: "Patrycja Stępel", role: "Organisational and people transformation leader", context: "Mentoring, 2026 (translated from Polish)" },
+      { quote: "Łukasz helps me look at the business from a new perspective, organise the key processes and build solid foundations for further growth and scaling.", name: "Adam Gajewski", role: "Business owner, health & safety audits and CE certification", context: "Mentoring for a business owner, 2026 (translated)" },
+      { quote: "Łukasz is a well-prepared speaker. A speaker who sets my thoughts racing in many directions through the variety of his perspectives and the empathy of his arguments.", name: "Dr Piotr Janulek", role: "Educator, entrepreneur, scientist", context: "Speaking, 2023 (translated)" },
+    ],
+    mentoring: [
+      { quote: "Łukasz doesn't stop at classic mentoring. First he helped me consciously set my career direction. Over the following months he supported me in settling into the new role, helping me move from operational to strategic thinking.", name: "Patrycja Stępel", role: "Organisational and people transformation leader", context: "Career mentoring and onboarding into a new role, 2026 (translated)" },
+      { quote: "Łukasz helps me look at the business from a new perspective, organise the key processes and build solid foundations for growth. He asks the right questions, points to concrete solutions and motivates consistent action.", name: "Adam Gajewski", role: "Business owner, health & safety audits and CE certification", context: "Mentoring for a business owner, 2026 (translated)" },
+      { quote: "Lukasz as my mentor through the Odyssey Project for Toastmasters was the game-changer for me. Between then and now, I have improved so much, beyond my expectations.", name: "Katerina Zitta", role: "Program and Delivery Manager", context: "Odyssey Project, Toastmasters, 2023" },
+      { quote: "Very committed, with a wide range of knowledge in different areas. When needed, he motivated me, asked a sharp question or suggested an idea.", name: "Aleksandra Lewandowska", role: "Speaker and conference interpreter", context: "Odyssey Project, Toastmasters, 2023 (translated)" },
+      { quote: "He is an excellent speaker and brilliant mentor with great knowledge and experience, I am glad that I was his mentee.", name: "Moldir Baimagambetova", role: "Cloud & DC Solution Designer, Luminus", context: "Odyssey Project, Toastmasters, 2023" },
+    ],
+    speaking: [
+      { quote: "Łukasz is a well-prepared speaker. A speaker who sets my thoughts racing in many directions through the variety of his perspectives and the empathy of his arguments. Someone who believes in people, doesn't judge and doesn't write anyone off.", name: "Dr Piotr Janulek", role: "Educator, entrepreneur, scientist", context: "Speaking, 2023 (translated)" },
+      { quote: "We worked together on public speaking and I recommend Łukasz's knowledge and workshops. His analytical view and business experience made it very valuable for me.", name: "Wojciech Wrociński", role: "ReklamowyGadzet.pl", context: "Public speaking, 2023 (translated)" },
+      { quote: "Łukasz is a professional speaker and trainer. He guarantees a solid approach to the business topics he presents.", name: "Artur Pezda", role: "Director, ByteFine", context: "(translated)" },
+    ],
+    management: [
+      { quote: "As a manager he understands the team's emotions and keeps a cool head in conflict. Łukasz makes teams motivated and inspired to finish a project, take initiative and give more than you would expect.", name: "Ryszard Kosowicz", role: "Process and communication management consultant", context: "Worked in the same team, 2020 (translated)" },
+      { quote: "I always valued his tremendous commitment to every project. His attitude and commitment go beyond the original scope, always looking for even better solutions.", name: "Rafał Jakubów", role: "Senior Regional Depot Manager, Allegro", context: "Senior manager, 2020 (translated)" },
+      { quote: "I remember him starting in Toastmasters while already being a competent manager at work. I'm amazed where clear goals and determination can take us.", name: "Beata Wita", role: "Scrum Master, Agile MasterMind", context: "Toastmasters, 2022 (translated)" },
+    ],
+  },
+
   mentoring: {
     intro: {
       title: "Mentoring for managers and CEOs",
@@ -205,7 +226,7 @@ export const en: Content = {
         { title: "TEDx Nikiszowiec Women 2026", body: "Mentor to speakers preparing their talks for the TEDx stage in Katowice." },
       ],
     },
-    testimonialsTitle: "What people I've worked with say",
+    testimonialsTitle: "What people I've mentored say",
     faq: {
       title: "Frequently asked questions",
       items: [
@@ -227,7 +248,8 @@ export const en: Content = {
         "An interim manager is hired for a set period to take a company through a specific situation: a key person leaving, building a new department or turning results around.",
         "They don't leave a report and walk away. They step into the structure, get the authority and answer for the result. From the start everyone knows what the engagement covers and when it ends.",
       ],
-    },
+    },    testimonialsTitle: "What I was like as a manager",
+
     compare: {
       title: "Interim manager, consultant or a new permanent hire?",
       activeLabel: "What I do",
@@ -380,6 +402,7 @@ export const en: Content = {
       lede: "I speak to managers, business owners and teams. I tell stories from management and from mountain ultramarathons, and each one ends with something the audience can do on Monday.",
     },
       ask: { label: "Ask about a date", mailSubject: "Speaking - date enquiry" },
+    testimonialsTitle: "What listeners and colleagues say",
     topics: {
       title: "Keynote topics",
       items: [
