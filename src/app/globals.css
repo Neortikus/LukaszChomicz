@@ -963,7 +963,7 @@ img { max-width: 100%; display: block; }
 .talk__where { margin-top: auto !important; padding-top: 14px; font-family: var(--font-head); font-weight: 600; font-size: 0.72rem !important; letter-spacing: 0.14em; text-transform: uppercase; color: var(--plum) !important; }
 
 /* ---------- Appearances ---------- */
-.appearances { list-style: none; margin: 32px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(205px, 1fr)); gap: 22px; }
+.appearances { list-style: none; margin: 32px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 22px; }
 .appearance { margin: 0; position: relative; aspect-ratio: 3 / 4; border-radius: var(--radius); overflow: hidden; background: var(--graphite); isolation: isolate; }
 .appearance img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 25%; z-index: -2; transition: transform 0.5s ease; }
 .appearance::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(0deg, rgba(33, 29, 41, 0.96) 0%, rgba(33, 29, 41, 0.7) 32%, rgba(33, 29, 41, 0) 62%); }

@@ -394,7 +394,7 @@ export const en: Content = {
         { icon: "swiadomosc", title: "Business and industry conferences", body: "A keynote or a talk in the programme. I tailor the topic to the conference theme and the audience." },
         { icon: "ludzie", title: "Company events", body: "Kick-offs, management meetings, team retreats. A talk that gives energy and something to do on Monday." },
         { icon: "dzialanie", title: "Client and partner events", body: "Value for your guests and a good reason to talk during the break." },
-        { icon: "rozwoj", title: "Universities and young people", body: "About dreams, decisions and first steps in a career. Also within mentoring programmes." },
+        { icon: "rozwoj", title: "Universities and young people", body: "About dreams, decisions and first steps in a career. I also run communication and self-presentation workshops for student councils." },
         { icon: "kierunek", title: "Panels and hosting", body: "I lead the conversation with guests or host the whole event from opening to close." },
       ],
     },
@@ -459,6 +459,8 @@ export const en: Content = {
         { event: "WFS business club", place: "Bielsko-Biała", role: "Host of entrepreneurs' meetings", image: "/images/wfs-scena.webp", position: "35% 30%" },
         { event: "WFS Diamond", date: "25-26 August 2026", place: "Hotel Jakubus", role: "Speaker: The neuroscience of leadership", image: "/images/scena-4.webp", position: "45% 30%" },
         { event: "Liderzy Jutra", date: "September 2026", place: "Conference for young people", role: "Speaker", image: "/images/ev-liderzy-jutra.webp", position: "78% 50%" },
+        { event: "Student councils", place: "Czecz Palace, Kozy", role: "Workshop: communication and self-presentation for five schools", image: "/images/ev-kozy-palac.webp", position: "55% 40%" },
+        { event: "LinkedIn Local", place: "Cieszyn", role: "Speaker", image: "/images/ev-linkedin-local-cieszyn.webp", position: "55% 25%" },
         { event: "Military University of Land Forces", place: "Wrocław", role: "Lecture for students", image: "/images/scena-3.webp", position: "70% 30%" },
         { event: "Toastmasters International", place: "Confident Voices, Vilnius", role: "Power speech", image: "/images/scena-7.webp", position: "55% 30%" },
       ],
@@ -477,7 +479,7 @@ export const en: Content = {
 
     stages: {
       title: "I've spoken at, among others",
-      items: ["TEDx Nikiszowiec Women", "CEO Performance", "Lider bez Ograniczeń", "WFS Diamond", "Mikro Może (Więcej)", "Self-Storage Summit Poland", "WFS Bielsko-Biała", "Barter Klub", "Krynica Forum", "Liderzy Jutra", "Military University of Land Forces", "Toastmasters International", "LinkedIn Local"],
+      items: ["TEDx Nikiszowiec Women", "CEO Performance", "Lider bez Ograniczeń", "WFS Diamond", "Mikro Może (Więcej)", "Self-Storage Summit Poland", "WFS Bielsko-Biała", "Barter Klub", "Krynica Forum", "Liderzy Jutra", "Military University of Land Forces", "Toastmasters International", "LinkedIn Local Cieszyn"],
     },
     credentials: {
       title: "Why I belong on your stage",
@@ -547,7 +549,8 @@ export const en: Content = {
         { image: "/images/scena-2.webp", caption: "Military University of Land Forces. Lecture." },
         { image: "/images/scena-7.webp", caption: "Toastmasters International, Confident Voices, Vilnius. Power speech." },
         { image: "/images/toastmasters.webp", caption: "Toastmasters International. On the district stage." },
-        { image: "/images/linkedin-local.webp", caption: "LinkedIn Local. Talk.", position: "50% 30%" },
+        { image: "/images/ev-linkedin-local-cieszyn.webp", caption: "LinkedIn Local Cieszyn. Talk." },
+        { image: "/images/ev-kozy-palac.webp", caption: "Czecz Palace in Kozy. Communication and self-presentation workshop for student councils." },
         { image: "/images/ev-tedx-x.webp", caption: "TEDx Nikiszowiec Women, Katowice, 2026.", position: "50% 25%" },
       ],
     },

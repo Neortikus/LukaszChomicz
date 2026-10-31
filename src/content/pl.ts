@@ -394,7 +394,7 @@ export const pl: Content = {
         { icon: "swiadomosc", title: "Konferencje biznesowe i branżowe", body: "Keynote albo prelekcja w programie. Temat dopasowuję do hasła konferencji i do sali." },
         { icon: "ludzie", title: "Wydarzenia firmowe", body: "Kick-off, spotkanie kadry, wyjazd integracyjny. Wystąpienie, które daje energię i coś do zrobienia w poniedziałek." },
         { icon: "dzialanie", title: "Spotkania dla klientów i partnerów", body: "Wartość dla Waszych gości i dobry powód do rozmów w przerwie." },
-        { icon: "rozwoj", title: "Uczelnie i młodzież", body: "O marzeniach, decyzjach i pierwszych krokach w karierze. Także w programach mentoringowych." },
+        { icon: "rozwoj", title: "Uczelnie i młodzież", body: "O marzeniach, decyzjach i pierwszych krokach w karierze. Prowadzę też warsztaty z komunikacji i autoprezentacji dla samorządów uczniowskich." },
         { icon: "kierunek", title: "Panele i moderacja", body: "Prowadzę rozmowę z gośćmi albo całe wydarzenie od otwarcia do zamknięcia." },
       ],
     },
@@ -459,6 +459,8 @@ export const pl: Content = {
         { event: "Klub biznesu WFS", place: "Bielsko-Biała", role: "Prowadzący spotkania przedsiębiorców", image: "/images/wfs-scena.webp", position: "35% 30%" },
         { event: "WFS Diamond", date: "25-26 sierpnia 2026", place: "Hotel Jakubus", role: "Prelegent: Neurobiologia przywództwa", image: "/images/scena-4.webp", position: "45% 30%" },
         { event: "Liderzy Jutra", date: "Wrzesień 2026", place: "Konferencja dla młodzieży", role: "Prelegent", image: "/images/ev-liderzy-jutra.webp", position: "78% 50%" },
+        { event: "Samorządy uczniowskie", place: "Pałac Czeczów, Kozy", role: "Warsztat: komunikacja i autoprezentacja dla pięciu szkół", image: "/images/ev-kozy-palac.webp", position: "55% 40%" },
+        { event: "LinkedIn Local", place: "Cieszyn", role: "Prelegent", image: "/images/ev-linkedin-local-cieszyn.webp", position: "55% 25%" },
         { event: "Akademia Wojsk Lądowych", place: "Wrocław", role: "Wykład dla studentów", image: "/images/scena-3.webp", position: "70% 30%" },
         { event: "Toastmasters International", place: "Confident Voices, Wilno", role: "Power speech", image: "/images/scena-7.webp", position: "55% 30%" },
       ],
@@ -477,7 +479,7 @@ export const pl: Content = {
 
     stages: {
       title: "Występowałem m.in. na",
-      items: ["TEDx Nikiszowiec Women", "CEO Performance", "Lider bez Ograniczeń", "WFS Diamond", "Mikro Może (Więcej)", "Self-Storage Summit Poland", "WFS Bielsko-Biała", "Barter Klub", "Krynica Forum", "Liderzy Jutra", "Akademia Wojsk Lądowych", "Toastmasters International", "LinkedIn Local"],
+      items: ["TEDx Nikiszowiec Women", "CEO Performance", "Lider bez Ograniczeń", "WFS Diamond", "Mikro Może (Więcej)", "Self-Storage Summit Poland", "WFS Bielsko-Biała", "Barter Klub", "Krynica Forum", "Liderzy Jutra", "Akademia Wojsk Lądowych", "Toastmasters International", "LinkedIn Local Cieszyn"],
     },
     credentials: {
       title: "Dlaczego mogę stanąć na Waszej scenie",
@@ -547,7 +549,8 @@ export const pl: Content = {
         { image: "/images/scena-2.webp", caption: "Akademia Wojsk Lądowych. Wykład." },
         { image: "/images/scena-7.webp", caption: "Toastmasters International, Confident Voices, Wilno. Power speech." },
         { image: "/images/toastmasters.webp", caption: "Toastmasters International. Wystąpienie na scenie dystryktu." },
-        { image: "/images/linkedin-local.webp", caption: "LinkedIn Local. Prelekcja.", position: "50% 30%" },
+        { image: "/images/ev-linkedin-local-cieszyn.webp", caption: "LinkedIn Local Cieszyn. Prelekcja." },
+        { image: "/images/ev-kozy-palac.webp", caption: "Pałac Czeczów w Kozach. Warsztat z komunikacji i autoprezentacji dla samorządów uczniowskich." },
         { image: "/images/ev-tedx-x.webp", caption: "TEDx Nikiszowiec Women, Katowice, 2026.", position: "50% 25%" },
       ],
     },
