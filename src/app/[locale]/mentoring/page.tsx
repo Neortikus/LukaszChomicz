@@ -75,6 +75,16 @@ export default async function MentoringPage({ params }: PageProps) {
         </div>
       </section>
 
+      <section className="section">
+        <div className="wrap stack">
+          <SectionHeading>{m.academic.title}</SectionHeading>
+          <p className="section-lede">{m.academic.body}</p>
+          <div style={{ marginTop: 32 }}>
+            <Items c={c} items={m.academic.items} />
+          </div>
+        </div>
+      </section>
+
       <section className="section section--dusk">
         <div className="wrap">
           <div className="section-head">

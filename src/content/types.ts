@@ -103,6 +103,7 @@ export type Content = {
     boundary: { title: string; body: string };
     actions: { more: string };
     areas: { title: string; items: (Item & { icon: IconName })[] };
+    academic: { title: string; body: string; items: Item[] };
     testimonialsTitle: string;
     faq: { title: string; items: Faq[] };
   };
