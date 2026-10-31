@@ -935,8 +935,7 @@ img { max-width: 100%; display: block; }
 /* ---------- Offer cards (training programmes, power speeches) ---------- */
 
 .offers { list-style: none; margin: 36px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
-.offer { display: flex; flex-direction: column; background: var(--white); border-top: 3px solid var(--plum); border-radius: var(--radius); padding: 28px 26px 26px; box-shadow: 0 1px 2px rgba(33, 29, 41, 0.06), 0 12px 32px -18px rgba(33, 29, 41, 0.25); }
-.section--lavender .offer { background: #fff; }
+.offer { display: flex; flex-direction: column; background: #fff; border-top: 3px solid var(--plum); border-radius: var(--radius); padding: 28px 26px 26px; box-shadow: 0 1px 2px rgba(33, 29, 41, 0.06), 0 12px 32px -18px rgba(33, 29, 41, 0.25); }
 .offer__kicker { font-family: var(--font-head); font-weight: 600; font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--plum); }
 .offer h3 { margin-top: 10px; font-size: 1.35rem; }
 .offer__lead { margin-top: 12px; color: var(--text-soft); }
