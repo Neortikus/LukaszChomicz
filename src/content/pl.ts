@@ -77,8 +77,8 @@ export const pl: Content = {
     pathsTitle: "Jak mogę pomóc",
     paths: [
       { href: "/mentoring", icon: "kierunek", image: "/images/mentoring.webp", title: "Mentoring", body: "Dla menedżerów program Menedżer 2.0, dla CEO i właścicieli firm mentoring na szczycie. Indywidualnie, na autorskiej metodzie W.I.Z.J.A.", link: "Program mentoringu" },
-      { href: "/szkolenia", icon: "ludzie", image: "/images/scena-6.webp", title: "Szkolenia dla firm", body: "Komunikacja, odpowiedzialność, talenty, delegowanie. Warsztaty szyte pod Wasz zespół.", link: "Programy szkoleń" },
-      { href: "/wystapienia", icon: "swiadomosc", image: "/images/scena-1.webp", title: "Wystąpienia", body: "Keynote, prelekcje i moderacja konferencji. Neurobiologia przywództwa, strategia na górskim szlaku.", link: "Tematy wystąpień" },
+      { href: "/szkolenia", icon: "ludzie", image: "/images/scena-6.webp", title: "Szkolenia dla firm", body: "Dla zarządów, kadry kierowniczej i zespołów. Odpowiedzialność, domykanie tematów, współpraca, podział ról.", link: "Programy szkoleń" },
+      { href: "/wystapienia", icon: "swiadomosc", image: "/images/scena-1.webp", title: "Wystąpienia", body: "Keynote, power speech i moderacja konferencji. Neurobiologia przywództwa, komunikacja, talenty w zespole.", link: "Tematy wystąpień" },
       { href: "/networking-w-gorach", icon: "rozwoj", image: "/images/gory-grupa.webp", title: "Networking w górach", body: "Zabieram przedsiębiorców w Beskidy: Pilsko, Barania Góra, Skrzyczne, Babia Góra.", link: "Najbliższe wyjścia" },
       { href: "/interim-manager", icon: "rezultaty", image: "/images/portret4.webp", title: "Interim manager", body: "Wchodzę do firmy na określony czas: buduję dział, porządkuję operacje albo prowadzę zespół w okresie przejściowym.", link: "Jak pracuję jako interim" },
       { href: "/ksiazki", icon: "dzialanie", image: "/images/ksiazka-moc-slow.webp", title: "Książki", body: "Moc Słów, Wiedza Warta Miliony, Potęga Samodoskonalenia i Sztuka Inspirowania.", link: "Zobacz książki" },
@@ -187,15 +187,52 @@ export const pl: Content = {
   },
   training: {
     intro: {
-      title: "Szkolenia dla zespołów i kadry zarządzającej",
-      lede: "Prowadzę warsztaty, na których ludzie pracują na swoich sytuacjach, a nie na przykładach z podręcznika. Najczęściej dla kadry kierowniczej, działów i zespołów wielopokoleniowych.",
+      title: "Szkolenia dla zarządów i zespołów",
+      lede: "Prowadzę warsztaty, na których ludzie pracują na swoich sytuacjach, a nie na przykładach z podręcznika. Dla zarządów, kadry kierowniczej i zespołów, na miejscu w firmie albo na wyjeździe.",
     },
     programs: {
-      title: "Programy autorskie",
+      title: "Sprawdzone programy",
+      lede: "Trzy warsztaty, które już prowadziłem. Każdy dopasowuję do firmy: czas trwania, przykłady i ćwiczenia ustalamy po rozmowie o tym, co ma się zmienić.",
       items: [
-        { title: "Algorytm Talentu", body: "Jak odkryć ukryte talenty u siebie i w zespole oraz jak je rozwijać, żeby ludzie robili więcej tego, w czym są dobrzy." },
-        { title: "Komunikarium", body: "Komunikacja w pracy i poza nią. Skąd biorą się nieporozumienia, jak ich unikać i jak rozmawiać, kiedy jest trudno." },
-        { title: "Supermoce w zespole", body: "Każdy w zespole ma coś, czego inni nie mają. Uczymy się to zauważać i układać pracę tak, żeby z tego korzystać." },
+        {
+          title: "Zarząd, który domyka tematy",
+          kicker: "Zarząd i kadra kierownicza · od 2 godzin",
+          lead: "Dla zespołów zarządzających, w których ustalenia z poniedziałku wracają w piątek jako niezałatwione. Pracujemy na Waszych realnych sprawach.",
+          listTitle: "Nad czym pracujemy",
+          points: [
+            "komunikacja oczekiwań w zarządzie i w dół struktury",
+            "odpowiedzialność: kto jest właścicielem tematu i po czym to poznać",
+            "egzekwowanie ustaleń bez mikrozarządzania",
+            "domykanie tematów: decyzja, termin, właściciel",
+          ],
+          note: { label: "Zrealizowane", body: "Warsztat dla 20-osobowej kadry zarządzającej podczas wyjazdu firmowego w Arłamowie." },
+        },
+        {
+          title: "Współpraca w zespole wielopokoleniowym",
+          kicker: "Zespoły i działy · 4 godziny",
+          lead: "Kiedy w jednym zespole pracują ludzie z różnych pokoleń, ta sama wiadomość znaczy dla każdego coś innego. Pokazuję, skąd biorą się te różnice i jak przestać się o nie potykać.",
+          listTitle: "Nad czym pracujemy",
+          points: [
+            "style komunikacji i to, jak odbierają nas inni",
+            "oczekiwania wobec pracy, szefa i informacji zwrotnej",
+            "rozmowa, kiedy jest trudno: konflikt, krytyka, zmiana",
+            "wspólne zasady współpracy, które zespół spisuje sam",
+          ],
+          note: { label: "Zrealizowane", body: "Interaktywny warsztat dla 25-30 pracowników nadleśnictwa." },
+        },
+        {
+          title: "Zespół od środka: zaufanie i podział ról",
+          kicker: "Właściciel i zespół · audyt i dwa warsztaty",
+          lead: "Proces dla firm, w których ludzie wchodzą sobie w kompetencje, a część spraw nie ma właściciela. Zaczynam od rozmów z zespołem i audytu, potem prowadzę dwa warsztaty.",
+          listTitle: "Jak to wygląda",
+          points: [
+            "audyt: rozmowy z zespołem i poufny raport dla właściciela",
+            "warsztat 1: komunikacja i zaufanie na modelu piramidy Lencioniego",
+            "warsztat 2: podział ról, macierz RACI i wewnętrzne SLA",
+            "materiały: test stylu komunikacji, test ról zespołowych, karta RACI",
+          ],
+          note: { label: "Zrealizowane", body: "Pełny proces dla właściciela i zespołu firmy z branży fotowoltaicznej." },
+        },
       ],
     },
     custom: {
@@ -224,12 +261,51 @@ export const pl: Content = {
       lede: "Mówię do menedżerów, właścicieli firm i zespołów. Opowiadam historie z zarządzania i z górskich ultramaratonów, a z każdej wynika coś, co słuchacze mogą zrobić w poniedziałek.",
     },
     topics: {
-      title: "Tematy",
+      title: "Tematy keynote",
       items: [
         { title: "Neurobiologia przywództwa", body: "Jak najlepsi liderzy projektują decyzje pod to, jak działa ich własny mózg. Prezentowane m.in. na WFS Diamond 2026." },
+        { title: "Produktywność CEO: mniej działań, większy wpływ", body: "Dla właścicieli i prezesów: co odpuścić, żeby mieć większy wpływ na firmę. Prezentowane na CEO Performance 2026 w Bielsku-Białej." },
         { title: "Strategia i konsekwencja na górskim szlaku", body: "Lekcje z biegów w Beskidach: Bieg 7 Dolin, Beskidzki Topór, Babia Góra. O planie, kryzysie na trasie i o tym, co to ma wspólnego z prowadzeniem firmy." },
-        { title: "Supermoce w zespole", body: "Krótkie, energetyczne wystąpienie o tym, jak zauważać i wykorzystywać mocne strony ludzi w zespole." },
         { title: "Temat pod wydarzenie", body: "Przygotowuję wystąpienie pod temat konferencji i salę. Zaczynamy od rozmowy o tym, kto będzie słuchał." },
+      ],
+    },
+    powerSpeech: {
+      title: "Power Speech",
+      lede: "Krótkie, konkretne wystąpienia na konferencje, spotkania firmowe i wydarzenia dla klientów. Każde ma trzy części i kończy się czymś, co słuchacze mogą zastosować od razu.",
+      items: [
+        {
+          title: "Algorytm Talentu",
+          kicker: "Talenty u siebie i w zespole",
+          lead: "Jak bezpiecznie odnaleźć talenty ukryte w nas i w innych członkach zespołu, a potem rozwinąć je z korzyścią dla siebie i całej organizacji.",
+          listTitle: "Agenda",
+          points: [
+            "czym jest talent i jak odróżnić go od zainteresowania, pasji czy hobby",
+            "techniki odkrywania talentów i zarządzania nimi bez szkody dla pracy i życia prywatnego",
+            "jak menedżer wykorzystuje talenty ludzi w rozwoju organizacji",
+          ],
+        },
+        {
+          title: "Komunikarium",
+          kicker: "Komunikacja w biznesie i w życiu",
+          lead: "Jak budować mosty informacyjne i unikać błędów, stresu i nieporozumień, które kosztują obie strony.",
+          listTitle: "Agenda",
+          points: [
+            "jak informować o zmianach: nowe technologie, strategia, struktura organizacji",
+            "jak reagować na kryzys informacyjny, konflikt w zespole i nieoczekiwaną reakcję klienta",
+            "jak budować spójną narrację i kulturę wymiany informacji w czasie zmian",
+          ],
+        },
+        {
+          title: "Supermoce w zespole",
+          kicker: "Różnorodność jako przewaga",
+          lead: "Jak odkryć unikalne zdolności członków zespołu i zamienić je w przewagę całej firmy.",
+          listTitle: "Agenda",
+          points: [
+            "czym jest supermoc w biznesie i jak przełożyć ją na korzyści dla firmy",
+            "rola lidera w zespole zbudowanym na supermocach, także w konflikcie",
+            "kultura współpracy i wzajemnego wsparcia, która podnosi motywację",
+          ],
+        },
       ],
     },
     moderation: {

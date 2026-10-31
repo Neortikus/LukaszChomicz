@@ -1,4 +1,4 @@
-import { Bullets, CtaBand, Items, PageHead, SectionHeading } from "@/components/Blocks";
+import { Bullets, CtaBand, Items, Offers, PageHead, SectionHeading } from "@/components/Blocks";
 import { loadPage, pageMetadata, type PageProps } from "@/lib/page";
 
 export const generateMetadata = ({ params }: PageProps) =>
@@ -24,13 +24,21 @@ export default async function SpeakingPage({ params }: PageProps) {
       </section>
 
       <section className="section section--lavender">
+        <div className="wrap">
+          <SectionHeading>{s.powerSpeech.title}</SectionHeading>
+          <p className="section-lede">{s.powerSpeech.lede}</p>
+          <Offers items={s.powerSpeech.items} />
+        </div>
+      </section>
+
+      <section className="section">
         <div className="wrap split">
           <h2>{s.moderation.title}</h2>
           <p>{s.moderation.body}</p>
         </div>
       </section>
 
-      <section className="section">
+      <section className="section section--lavender section--tight">
         <div className="wrap split">
           <SectionHeading>{s.credentials.title}</SectionHeading>
           <Bullets points={s.credentials.points} />

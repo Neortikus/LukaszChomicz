@@ -9,6 +9,15 @@ export type Item = { title: string; body: string; note?: string };
 
 export type Step = { title: string; body: string };
 
+export type Offer = {
+  title: string;
+  kicker: string;
+  lead: string;
+  listTitle: string;
+  points: string[];
+  note?: { label: string; body: string };
+};
+
 export type PageIntro = { title: string; lede: string };
 
 export type Trail = "red" | "blue" | "green" | "yellow" | "black";
@@ -91,7 +100,7 @@ export type Content = {
   };
   training: {
     intro: PageIntro;
-    programs: { title: string; items: Item[] };
+    programs: { title: string; lede: string; items: Offer[] };
     custom: { title: string; body: string; topics: string[] };
     process: { title: string; items: Step[] };
     funding: { title: string; body: string; mailSubject: string };
@@ -99,6 +108,7 @@ export type Content = {
   speaking: {
     intro: PageIntro;
     topics: { title: string; items: Item[] };
+    powerSpeech: { title: string; lede: string; items: Offer[] };
     moderation: { title: string; body: string };
     credentials: { title: string; points: string[] };
   };

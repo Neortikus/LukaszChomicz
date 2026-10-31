@@ -1,4 +1,4 @@
-import type { Content, IconName, Item, Step, Testimonial } from "@/content/types";
+import type { Content, IconName, Item, Offer, Step, Testimonial } from "@/content/types";
 import { site, mailto } from "@/content/site";
 import { Icon } from "./Icon";
 
@@ -54,6 +54,32 @@ export function Items({ c, items }: { c: Content; items: Item[] }) {
             )}
           </h3>
           <p>{item.body}</p>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+export function Offers({ items }: { items: Offer[] }) {
+  return (
+    <ul className="offers">
+      {items.map((o) => (
+        <li key={o.title} className="offer">
+          <p className="offer__kicker">{o.kicker}</p>
+          <h3>{o.title}</h3>
+          <p className="offer__lead">{o.lead}</p>
+          <p className="offer__list-title">{o.listTitle}</p>
+          <ul className="offer__points">
+            {o.points.map((p) => (
+              <li key={p}>{p}</li>
+            ))}
+          </ul>
+          {o.note && (
+            <p className="offer__note">
+              <strong>{o.note.label}</strong>
+              {o.note.body}
+            </p>
+          )}
         </li>
       ))}
     </ul>

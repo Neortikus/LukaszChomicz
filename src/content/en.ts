@@ -77,8 +77,8 @@ export const en: Content = {
     pathsTitle: "How I can help",
     paths: [
       { href: "/mentoring", icon: "kierunek", image: "/images/mentoring.webp", title: "Mentoring", body: "Manager 2.0 for managers, and mentoring at the top for CEOs and business owners. One-to-one, built on my own W.I.Z.J.A. method.", link: "The programme" },
-      { href: "/szkolenia", icon: "ludzie", image: "/images/scena-6.webp", title: "Company training", body: "Communication, accountability, talent, delegation. Workshops built around your team.", link: "Training programmes" },
-      { href: "/wystapienia", icon: "swiadomosc", image: "/images/scena-1.webp", title: "Speaking", body: "Keynotes, talks and conference hosting. The neuroscience of leadership, strategy on a mountain trail.", link: "Talk topics" },
+      { href: "/szkolenia", icon: "ludzie", image: "/images/scena-6.webp", title: "Company training", body: "For boards, management teams and staff. Accountability, closing things out, collaboration, clear roles.", link: "Training programmes" },
+      { href: "/wystapienia", icon: "swiadomosc", image: "/images/scena-1.webp", title: "Speaking", body: "Keynotes, power speeches and conference hosting. The neuroscience of leadership, communication, talent in teams.", link: "Talk topics" },
       { href: "/networking-w-gorach", icon: "rozwoj", image: "/images/gory-grupa.webp", title: "Mountain networking", body: "I take entrepreneurs into the Beskid mountains: Pilsko, Barania Góra, Skrzyczne, Babia Góra.", link: "Upcoming hikes" },
       { href: "/interim-manager", icon: "rezultaty", image: "/images/portret4.webp", title: "Interim manager", body: "I join a company for a set period: building a department, sorting out operations or leading a team through a transition.", link: "How I work as an interim" },
       { href: "/ksiazki", icon: "dzialanie", image: "/images/ksiazka-moc-slow.webp", title: "Books", body: "Moc Słów, Wiedza Warta Miliony, Potęga Samodoskonalenia and Sztuka Inspirowania.", link: "See the books" },
@@ -187,15 +187,52 @@ export const en: Content = {
   },
   training: {
     intro: {
-      title: "Training for teams and leadership",
-      lede: "My workshops run on participants' real situations, not textbook cases. Most often for management teams, departments and multi-generational teams.",
+      title: "Training for boards and teams",
+      lede: "I run workshops where people work on their own situations, not textbook examples. For boards, management teams and staff, at your office or off-site.",
     },
     programs: {
-      title: "Signature programmes",
+      title: "Proven programmes",
+      lede: "Three workshops I have already delivered. I tailor each one to the company: length, examples and exercises are agreed after we talk about what should change.",
       items: [
-        { title: "Talent Algorithm", body: "How to find hidden talents in yourself and your team, and develop them so people do more of what they're good at." },
-        { title: "Komunikarium", body: "Communication at work and beyond. Where misunderstandings come from, how to avoid them and how to talk when things get hard." },
-        { title: "Superpowers in the team", body: "Everyone on a team has something the others don't. We learn to spot it and organise work to make use of it." },
+        {
+          title: "A board that closes things out",
+          kicker: "Board and management · from 2 hours",
+          lead: "For management teams where Monday's agreements come back on Friday still open. We work on your real issues.",
+          listTitle: "What we work on",
+          points: [
+            "communicating expectations within the board and down the structure",
+            "accountability: who owns a topic and how you can tell",
+            "following up on agreements without micromanaging",
+            "closing topics: decision, deadline, owner",
+          ],
+          note: { label: "Delivered", body: "Workshop for a 20-person management team during a company retreat in Arłamów." },
+        },
+        {
+          title: "Collaboration across generations",
+          kicker: "Teams and departments · 4 hours",
+          lead: "When several generations work in one team, the same message means something different to each person. I show where those differences come from and how to stop tripping over them.",
+          listTitle: "What we work on",
+          points: [
+            "communication styles and how others perceive us",
+            "expectations of work, managers and feedback",
+            "talking when it's hard: conflict, criticism, change",
+            "shared rules of collaboration the team writes itself",
+          ],
+          note: { label: "Delivered", body: "Interactive workshop for 25-30 employees of a forest district." },
+        },
+        {
+          title: "The team from the inside: trust and roles",
+          kicker: "Owner and team · audit and two workshops",
+          lead: "A process for companies where people step on each other's toes and some things have no owner. I start with team interviews and an audit, then run two workshops.",
+          listTitle: "How it works",
+          points: [
+            "audit: team interviews and a confidential report for the owner",
+            "workshop 1: communication and trust, based on Lencioni's pyramid",
+            "workshop 2: roles, a RACI matrix and internal SLAs",
+            "materials: communication style test, team roles test, RACI sheet",
+          ],
+          note: { label: "Delivered", body: "Full process for the owner and team of a photovoltaics company." },
+        },
       ],
     },
     custom: {
@@ -224,12 +261,51 @@ export const en: Content = {
       lede: "I speak to managers, business owners and teams. I tell stories from management and from mountain ultramarathons, and each one ends with something the audience can do on Monday.",
     },
     topics: {
-      title: "Topics",
+      title: "Keynote topics",
       items: [
         { title: "The neuroscience of leadership", body: "How the best leaders design decisions around the way their own brain works. Presented at WFS Diamond 2026, among others." },
-        { title: "Strategy and persistence on a mountain trail", body: "Lessons from races in the Beskid mountains: Bieg 7 Dolin, Beskidzki Topór, Babia Góra. About the plan, the crisis mid-race and what it has to do with running a company." },
-        { title: "Superpowers in the team", body: "A short, high-energy talk on noticing and using people's strengths in a team." },
-        { title: "A talk for your event", body: "I prepare a talk around your conference theme and audience. We start by talking about who will be listening." },
+        { title: "CEO productivity: fewer actions, more impact", body: "For owners and CEOs: what to let go of to have more impact on the company. Presented at CEO Performance 2026 in Bielsko-Biała." },
+        { title: "Strategy and persistence on a mountain trail", body: "Lessons from races in the Beskids: Bieg 7 Dolin, Beskidzki Topór, Babia Góra. About the plan, the crisis on the course and what it has to do with running a company." },
+        { title: "A talk built for your event", body: "I prepare a talk around the conference theme and the audience. We start by talking about who will be listening." },
+      ],
+    },
+    powerSpeech: {
+      title: "Power Speech",
+      lede: "Short, practical talks for conferences, company meetings and client events. Each has three parts and ends with something the audience can use straight away.",
+      items: [
+        {
+          title: "Algorytm Talentu (The Talent Algorithm)",
+          kicker: "Talent in yourself and your team",
+          lead: "How to safely find the talents hidden in ourselves and in other team members, and develop them for our own benefit and the whole organisation's.",
+          listTitle: "Agenda",
+          points: [
+            "what talent is and how it differs from an interest, passion or hobby",
+            "techniques for discovering and managing talent without harming work or private life",
+            "how a manager uses people's talents to develop the organisation",
+          ],
+        },
+        {
+          title: "Komunikarium",
+          kicker: "Communication in business and life",
+          lead: "How to build bridges of information and avoid the mistakes, stress and misunderstandings that cost both sides.",
+          listTitle: "Agenda",
+          points: [
+            "how to communicate change: new technology, strategy, organisational structure",
+            "how to respond to an information crisis, team conflict or an unexpected client reaction",
+            "how to build a consistent narrative and information-sharing culture during change",
+          ],
+        },
+        {
+          title: "Supermoce w zespole (Team superpowers)",
+          kicker: "Diversity as an advantage",
+          lead: "How to discover team members' unique abilities and turn them into an advantage for the whole company.",
+          listTitle: "Agenda",
+          points: [
+            "what a superpower is in business and how to turn it into value for the company",
+            "the leader's role in a team built on superpowers, including in conflict",
+            "a culture of collaboration and mutual support that lifts motivation",
+          ],
+        },
       ],
     },
     moderation: {

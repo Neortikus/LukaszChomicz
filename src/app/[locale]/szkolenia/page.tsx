@@ -1,4 +1,4 @@
-import { CtaBand, Items, PageHead, SectionHeading, Steps } from "@/components/Blocks";
+import { CtaBand, Offers, PageHead, SectionHeading, Steps } from "@/components/Blocks";
 import { loadPage, pageMetadata, type PageProps } from "@/lib/page";
 import { mailto } from "@/content/site";
 
@@ -18,9 +18,8 @@ export default async function TrainingPage({ params }: PageProps) {
       <section className="section section--tight">
         <div className="wrap stack">
           <SectionHeading>{t.programs.title}</SectionHeading>
-          <div style={{ marginTop: 32 }}>
-            <Items c={c} items={t.programs.items} />
-          </div>
+          <p className="section-lede">{t.programs.lede}</p>
+          <Offers items={t.programs.items} />
         </div>
       </section>
 
