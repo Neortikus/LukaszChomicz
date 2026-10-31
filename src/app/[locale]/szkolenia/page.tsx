@@ -13,7 +13,7 @@ export default async function TrainingPage({ params }: PageProps) {
   const t = c.training;
   return (
     <>
-      <PageHead icon="ludzie" image="/images/scena-6.webp" title={t.intro.title} lede={t.intro.lede} />
+      <PageHead icon="ludzie" image="/images/szkolenia-warsztat.webp" position="50% 18%" title={t.intro.title} lede={t.intro.lede} />
 
       <section className="section section--tight">
         <div className="wrap stack">

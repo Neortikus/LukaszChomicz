@@ -10,13 +10,25 @@ export function BookButton({ c, variant }: { c: Content; variant?: "accent" | "g
   );
 }
 
-export function PageHead({ icon, image, title, lede }: { icon?: IconName; image?: string; title: string; lede: string }) {
+export function PageHead({
+  icon,
+  image,
+  position,
+  title,
+  lede,
+}: {
+  icon?: IconName;
+  image?: string;
+  position?: string;
+  title: string;
+  lede: string;
+}) {
   return (
     <section className={`page-head${image ? "" : " page-head--plain"}`}>
       {image && (
         <div className="page-head__bg">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={image} alt="" />
+          <img src={image} alt="" style={position ? { objectPosition: position } : undefined} />
         </div>
       )}
       <div className="wrap">
