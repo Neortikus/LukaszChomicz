@@ -334,7 +334,6 @@ export const en: Content = {
       items: [
         {
           title: "A board that closes things out",
-          kicker: "Board and management · from 2 hours",
           lead: "For management teams where Monday's agreements come back on Friday still open. We work on your real issues.",
           listTitle: "What we work on",
           points: [
@@ -343,11 +342,9 @@ export const en: Content = {
             "following up on agreements without micromanaging",
             "closing topics: decision, deadline, owner",
           ],
-          note: { label: "Delivered", body: "Workshop for a 20-person management team during a company retreat in Arłamów." },
         },
         {
           title: "Collaboration across generations",
-          kicker: "Teams and departments · 4 hours",
           lead: "When several generations work in one team, the same message means something different to each person. I show where those differences come from and how to stop tripping over them.",
           listTitle: "What we work on",
           points: [
@@ -356,20 +353,17 @@ export const en: Content = {
             "talking when it's hard: conflict, criticism, change",
             "shared rules of collaboration the team writes itself",
           ],
-          note: { label: "Delivered", body: "Interactive workshop for 25-30 employees of a forest district." },
         },
         {
           title: "The team from the inside: trust and roles",
-          kicker: "Owner and team · audit and two workshops",
           lead: "A process for companies where people step on each other's toes and some things have no owner. I start with team interviews and an audit, then run two workshops.",
           listTitle: "How it works",
           points: [
-            "audit: team interviews and a confidential report for the owner",
+            "audit and team interviews",
             "workshop 1: communication and trust, based on Lencioni's pyramid",
             "workshop 2: roles, a RACI matrix and internal SLAs",
             "materials: communication style test, team roles test, RACI sheet",
           ],
-          note: { label: "Delivered", body: "Full process for the owner and team of a photovoltaics company." },
         },
       ],
     },    explain: {

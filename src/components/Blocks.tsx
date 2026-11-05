@@ -83,7 +83,7 @@ export function Offers({ items }: { items: Offer[] }) {
     <ul className="offers">
       {items.map((o) => (
         <li key={o.title} className="offer">
-          <p className="offer__kicker">{o.kicker}</p>
+          {o.kicker && <p className="offer__kicker">{o.kicker}</p>}
           <h3>{o.title}</h3>
           <p className="offer__lead">{o.lead}</p>
           <p className="offer__list-title">{o.listTitle}</p>

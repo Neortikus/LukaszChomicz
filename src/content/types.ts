@@ -11,7 +11,7 @@ export type Step = { title: string; body: string };
 
 export type Offer = {
   title: string;
-  kicker: string;
+  kicker?: string;
   lead: string;
   listTitle: string;
   points: string[];

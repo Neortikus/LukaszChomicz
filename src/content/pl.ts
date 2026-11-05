@@ -334,7 +334,6 @@ export const pl: Content = {
       items: [
         {
           title: "Zarząd, który domyka tematy",
-          kicker: "Zarząd i kadra kierownicza · od 2 godzin",
           lead: "Dla zespołów zarządzających, w których ustalenia z poniedziałku wracają w piątek jako niezałatwione. Pracujemy na Waszych realnych sprawach.",
           listTitle: "Nad czym pracujemy",
           points: [
@@ -343,11 +342,9 @@ export const pl: Content = {
             "egzekwowanie ustaleń bez mikrozarządzania",
             "domykanie tematów: decyzja, termin, właściciel",
           ],
-          note: { label: "Zrealizowane", body: "Warsztat dla 20-osobowej kadry zarządzającej podczas wyjazdu firmowego w Arłamowie." },
         },
         {
           title: "Współpraca w zespole wielopokoleniowym",
-          kicker: "Zespoły i działy · 4 godziny",
           lead: "Kiedy w jednym zespole pracują ludzie z różnych pokoleń, ta sama wiadomość znaczy dla każdego coś innego. Pokazuję, skąd biorą się te różnice i jak przestać się o nie potykać.",
           listTitle: "Nad czym pracujemy",
           points: [
@@ -356,20 +353,17 @@ export const pl: Content = {
             "rozmowa, kiedy jest trudno: konflikt, krytyka, zmiana",
             "wspólne zasady współpracy, które zespół spisuje sam",
           ],
-          note: { label: "Zrealizowane", body: "Interaktywny warsztat dla 25-30 pracowników nadleśnictwa." },
         },
         {
           title: "Zespół od środka: zaufanie i podział ról",
-          kicker: "Właściciel i zespół · audyt i dwa warsztaty",
           lead: "Proces dla firm, w których ludzie wchodzą sobie w kompetencje, a część spraw nie ma właściciela. Zaczynam od rozmów z zespołem i audytu, potem prowadzę dwa warsztaty.",
           listTitle: "Jak to wygląda",
           points: [
-            "audyt: rozmowy z zespołem i poufny raport dla właściciela",
+            "audyt i rozmowy z zespołem",
             "warsztat 1: komunikacja i zaufanie na modelu piramidy Lencioniego",
             "warsztat 2: podział ról, macierz RACI i wewnętrzne SLA",
             "materiały: test stylu komunikacji, test ról zespołowych, karta RACI",
           ],
-          note: { label: "Zrealizowane", body: "Pełny proces dla właściciela i zespołu firmy z branży fotowoltaicznej." },
         },
       ],
     },    explain: {
