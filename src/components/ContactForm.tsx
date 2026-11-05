@@ -9,7 +9,8 @@ import { site } from "@/content/site";
  * access key was created for. The key is public by design; set it in Vercel as
  * NEXT_PUBLIC_WEB3FORMS_KEY. Without it the form falls back to a mailto link.
  */
-const KEY = process.env.NEXT_PUBLIC_WEB3FORMS_KEY;
+// Public Web3Forms access key for biuro@lukaszchomicz.pl (safe to ship in the browser).
+const KEY = process.env.NEXT_PUBLIC_WEB3FORMS_KEY || "050a406a-c086-463f-b4f9-375041070cc8";
 
 type Status = "idle" | "sending" | "sent" | "error";
 
