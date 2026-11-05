@@ -1,4 +1,5 @@
 import { BookButton, PageHead } from "@/components/Blocks";
+import { ContactForm } from "@/components/ContactForm";
 import { loadPage, pageMetadata, type PageProps } from "@/lib/page";
 import { site } from "@/content/site";
 
@@ -56,6 +57,16 @@ export default async function ContactPage({ params }: PageProps) {
               {k.company}
             </p>
           </div>
+        </div>
+      </section>
+
+      <section className="section section--lavender" id="formularz">
+        <div className="wrap split">
+          <div className="stack">
+            <h2>{k.form.title}</h2>
+            <p>{k.form.body}</p>
+          </div>
+          <ContactForm f={k.form} />
         </div>
       </section>
     </>

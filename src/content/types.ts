@@ -208,6 +208,24 @@ export type Content = {
     intro: PageIntro;
     calendar: { title: string; body: string };
     direct: { title: string; phone: string; email: string };
+    form: {
+      title: string;
+      body: string;
+      name: string;
+      email: string;
+      phone: string;
+      topic: string;
+      topics: string[];
+      message: string;
+      messageHint: string;
+      consent: string;
+      submit: string;
+      sending: string;
+      sentTitle: string;
+      sentBody: string;
+      error: string;
+      subjectPrefix: string;
+    };
     social: { title: string };
     company: string;
   };
