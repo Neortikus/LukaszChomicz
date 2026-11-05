@@ -676,6 +676,20 @@ export const en: Content = {
         cta: { label: "Event details and sign-up", href: "https://fb.me/e/75D9mmFcO", external: true },
       },
       {
+        slug: "karkonosze-2027",
+        title: "Karkonosze: A company, not another job. A strategic retreat for business owners",
+        dates: "8-11 February 2027",
+        place: "Karpacz, Karkonosze mountains",
+        lede: "The next edition of the \"Firma, nie kolejny etat\" retreat. Four days of working on your own company in the mountains, away from the desk and day-to-day issues. Programme, price and registration are on the event page.",
+        facts: [
+          { label: "Dates", value: "8-11 February 2027, starts 8:00, ends 17:00" },
+          { label: "Venue", value: "Karpacz" },
+          { label: "For", value: "business owners and entrepreneurs" },
+        ],
+        points: [],
+        cta: { label: "See the event and register", href: "https://www.facebook.com/events/1620742119849704", external: true },
+      },
+      {
         slug: "lider-bez-blokad",
         title: "Leader Without Blocks. Attract, don't chase",
         dates: "19-20 February 2027",

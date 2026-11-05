@@ -21,9 +21,11 @@ export function EventCard({ e, full }: { e: EventInfo; full?: boolean }) {
                 </div>
               ))}
             </dl>
-            <div style={{ marginTop: 20 }}>
-              <Bullets points={e.points} />
-            </div>
+            {e.points.length > 0 && (
+              <div style={{ marginTop: 20 }}>
+                <Bullets points={e.points} />
+              </div>
+            )}
           </>
         )}
         <div className="cta-row">

@@ -676,6 +676,20 @@ export const pl: Content = {
         cta: { label: "Zobacz wydarzenie i zapisy", href: "https://fb.me/e/75D9mmFcO", external: true },
       },
       {
+        slug: "karkonosze-2027",
+        title: "Karkonosze: Firma, nie kolejny etat. Strategiczny wyjazd dla przedsiębiorców",
+        dates: "8-11 lutego 2027",
+        place: "Karpacz, Karkonosze",
+        lede: "Kolejna edycja wyjazdu „Firma, nie kolejny etat”. Cztery dni pracy nad własną firmą w górach, z dala od biurka i bieżących spraw. Program, cena i zapisy są na stronie wydarzenia.",
+        facts: [
+          { label: "Termin", value: "8-11 lutego 2027, start o 8:00, zakończenie o 17:00" },
+          { label: "Miejsce", value: "Karpacz" },
+          { label: "Dla kogo", value: "właściciele firm i przedsiębiorcy" },
+        ],
+        points: [],
+        cta: { label: "Zobacz wydarzenie i zapisy", href: "https://www.facebook.com/events/1620742119849704", external: true },
+      },
+      {
         slug: "lider-bez-blokad",
         title: "Lider bez blokad. Przyciągaj, a nie goń",
         dates: "19-20 lutego 2027",
