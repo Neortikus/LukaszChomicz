@@ -219,6 +219,7 @@ export type Content = {
       message: string;
       messageHint: string;
       consent: string;
+      privacy: string;
       submit: string;
       sending: string;
       sentTitle: string;
@@ -230,5 +231,12 @@ export type Content = {
     company: string;
   };
   footer: { tagline: string; rights: string };
+  legal: {
+    terms: string;
+    privacy: string;
+    newsletter: string;
+    note?: string;
+    updated: string;
+  };
   status: { soon: string; inProgress: string; free: string };
 };

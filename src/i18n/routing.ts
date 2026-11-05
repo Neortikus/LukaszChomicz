@@ -21,6 +21,9 @@ export const routing = defineRouting({
     "/linkaris": "/linkaris",
     "/o-mnie": { pl: "/o-mnie", en: "/about" },
     "/kontakt": { pl: "/kontakt", en: "/contact" },
+    "/regulamin": { pl: "/regulamin", en: "/terms" },
+    "/polityka-prywatnosci": { pl: "/polityka-prywatnosci", en: "/privacy-policy" },
+    "/regulamin-newslettera": { pl: "/regulamin-newslettera", en: "/newsletter-terms" },
   },
 });
 

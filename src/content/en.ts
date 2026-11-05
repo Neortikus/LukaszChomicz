@@ -825,6 +825,7 @@ export const en: Content = {
       message: "Message",
       messageHint: "E.g. who you are, what you need and by when",
       consent: "I agree to be contacted about my enquiry. The data controller is Linkaris Sp. z o.o.",
+      privacy: "Privacy policy",
       submit: "Send message",
       sending: "Sending...",
       sentTitle: "Thank you, your message has arrived.",
@@ -838,6 +839,13 @@ export const en: Content = {
   footer: {
     tagline: "Mentoring, training, talks and mountain networking.",
     rights: "All rights reserved.",
+  },
+  legal: {
+    terms: "Shop terms",
+    privacy: "Privacy policy",
+    newsletter: "Newsletter terms",
+    note: "This document is available in Polish only. If you need help understanding it, write to biuro@lukaszchomicz.pl.",
+    updated: "This document applies to the services and products of Linkaris Sp. z o.o.",
   },
   status: { soon: "coming soon", inProgress: "in progress", free: "free" },
 };

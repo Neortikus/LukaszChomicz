@@ -825,6 +825,7 @@ export const pl: Content = {
       message: "Wiadomość",
       messageHint: "Np. kim jesteś, czego potrzebujesz i na kiedy",
       consent: "Zgadzam się na kontakt w sprawie mojego zapytania. Administratorem danych jest Linkaris Sp. z o.o.",
+      privacy: "Polityka prywatności",
       submit: "Wyślij wiadomość",
       sending: "Wysyłam...",
       sentTitle: "Dziękuję, wiadomość dotarła.",
@@ -838,6 +839,12 @@ export const pl: Content = {
   footer: {
     tagline: "Mentoring, szkolenia, wystąpienia i networking w górach.",
     rights: "Wszelkie prawa zastrzeżone.",
+  },
+  legal: {
+    terms: "Regulamin sklepu",
+    privacy: "Polityka prywatności",
+    newsletter: "Regulamin newslettera",
+    updated: "Dokument obowiązuje dla usług i produktów Linkaris Sp. z o.o.",
   },
   status: { soon: "wkrótce", inProgress: "w przygotowaniu", free: "bezpłatnie" },
 };

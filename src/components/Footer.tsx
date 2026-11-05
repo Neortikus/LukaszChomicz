@@ -45,7 +45,11 @@ export function Footer({ c }: { c: Content }) {
           <span>
             © {year} {site.company}. {c.footer.rights}
           </span>
-          <span>{c.brand.tagline}</span>
+          <span className="site-footer__legal">
+            <Link href="/regulamin">{c.legal.terms}</Link>
+            <Link href="/polityka-prywatnosci">{c.legal.privacy}</Link>
+            <Link href="/regulamin-newslettera">{c.legal.newsletter}</Link>
+          </span>
         </div>
       </div>
     </footer>

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import type { Content } from "@/content/types";
 import { site } from "@/content/site";
+import { Link } from "@/i18n/navigation";
 
 /**
  * Sends the form through Web3Forms (https://web3forms.com) to the address the
@@ -93,7 +94,9 @@ export function ContactForm({ f }: { f: Content["contact"]["form"] }) {
       </label>
       <label className="cform__consent">
         <input type="checkbox" name="consent" value="tak" required />
-        <span>{f.consent}</span>
+        <span>
+          {f.consent} <Link href="/polityka-prywatnosci">{f.privacy}</Link>.
+        </span>
       </label>
       <div className="cta-row">
         <button type="submit" className="btn btn--accent" disabled={status === "sending"}>
