@@ -258,7 +258,29 @@ export const pl: Content = {
         { title: "Konsultant", body: "Diagnozuje i rekomenduje. Wdrożenie zostaje po stronie firmy." },
         { title: "Menedżer na etat", body: "Rozwiązanie na lata, ale rekrutacja trwa miesiące, a pomyłka sporo kosztuje." },
       ],
+    },    automation: {
+      title: "Automatyzacje, które odciążają zespół",
+      body: [
+        "Wchodząc do firmy jako interim, patrzę też na to, co zabiera ludziom czas, a nie wymaga ich głowy: ręczne raporty, przepisywanie danych między systemami, odpowiedzi na powtarzalne pytania, zbieranie informacji z kilku źródeł. Tam, gdzie to ma sens, układamy proste automatyzacje i asystentów AI, którzy przejmują tę pracę.",
+        "Na co dzień pracuję z Claude, ChatGPT i Make.com. Buduję asystentów AI do analiz, ofert i raportów, projektuję automatyzacje łączące arkusze, bazy danych i narzędzia, z których korzysta zespół, oraz tworzę proste aplikacje wspierające sprzedaż i rozwój liderów. Uczestniczę we wdrożeniu CRM Bitrix24 po stronie klienta.",
+        "Nie jestem programistą i nie sprzedaję wdrożeń IT. Moja rola polega na tym, żeby wskazać, co warto zautomatyzować, ułożyć proces i uruchomić rozwiązanie, które zespół rozumie i z którego faktycznie korzysta. Przy większych systemach współpracuję z dostawcą.",
+      ],
+      items: [
+        { title: "Raporty bez przepisywania", body: "Dane z kilku źródeł zbierane automatycznie, raport gotowy na spotkanie." },
+        { title: "Asystent dla zespołu", body: "Odpowiedzi na powtarzalne pytania, szablony ofert i maili, pierwsze wersje dokumentów." },
+        { title: "Porządek w CRM i procesach", body: "Jasne etapy, automatyczne przypomnienia, mniej zgubionych tematów." },
+      ],
     },
+    audit: {
+      title: "Audyt organizacji i procesów",
+      body: [
+        "Jeśli nie wiesz jeszcze, czy potrzebujesz interim managera, szkolenia czy mentoringu, zacznij od audytu. Przez kilka dni rozmawiam z zespołem i przyglądam się codziennej pracy.",
+        "Dostajesz poufny raport: co blokuje wyniki, jak podzielone są role, gdzie giną informacje i które zadania warto zautomatyzować. Do tego rekomendacje, co naprawić od razu, co w ciągu kwartału, a gdzie pomoże szkolenie, mentoring albo wsparcie interim.",
+      ],
+      action: "Zapytaj o audyt",
+      mailSubject: "Audyt organizacji - zapytanie",
+    },
+
 
     when: {
       title: "Kiedy warto sięgnąć po interim managera",
@@ -282,6 +304,7 @@ export const pl: Content = {
       body: [
         "Przez ponad 20 lat pracowałem w logistyce i branży kurierskiej, z czego 15 lat na stanowiskach kierowniczych. Prowadziłem zespoły w codziennej operacji, pod presją klienta i wyniku.",
         "Do tego dochodzi warsztat mentora i trenera. Nie tylko dowiozę wynik, ale zostawię zespół i następcę przygotowanych do dalszej pracy beze mnie.",
+        "Wnoszę też praktyczne doświadczenie z AI i automatyzacją, więc porządkowanie operacji obejmuje także narzędzia, które zdejmują z ludzi powtarzalną pracę.",
       ],
     },
     how: {
@@ -535,6 +558,7 @@ export const pl: Content = {
         "Dziś pracuje z menedżerami, prezesami i właścicielami firm. Prowadzi autorski program mentoringowy Menedżer 2.0, oparty na metodzie W.I.Z.J.A., szkolenia dla zarządów i zespołów oraz wystąpienia o przywództwie, komunikacji i decyzjach. Mentorował ponad 70 osób, także po angielsku i z wielu krajów, co daje ponad 500 godzin sesji.",
         "Jest mentorem studentów w programach mentoringowych Uniwersytetu Bielsko-Bialskiego i Uniwersytetu Wrocławskiego.",
         "Od 2018 roku działa w Toastmasters International. Był Dyrektorem Dystryktu 108, który obejmuje 7 państw, około 2000 członków i 100 klubów. Jest certyfikowanym Zawodowym Mówcą, współautorem czterech książek o rozwoju i przywództwie, m.in. z Brianem Tracym, oraz mentorem prelegentów TEDx Nikiszowiec Women 2026.",
+        "Na co dzień wykorzystuje AI w pracy menedżerskiej i buduje automatyzacje odciążające zespoły (Claude, ChatGPT, Make.com).",
         "Moderował Self-Storage Summit Poland 2026, prowadzi klub biznesu WFS w Bielsku-Białej i moderuje networking na spotkaniach online Barter Klubu.",
         "Prowadzi firmę Linkaris Sp. z o.o. i zabiera przedsiębiorców na wspólne wyjścia w Beskidy.",
       ],

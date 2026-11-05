@@ -258,7 +258,29 @@ export const en: Content = {
         { title: "Consultant", body: "Diagnoses and recommends. Implementation stays with the company." },
         { title: "Permanent manager", body: "A solution for years, but hiring takes months and a mistake is costly." },
       ],
+    },    automation: {
+      title: "Automations that take load off the team",
+      body: [
+        "When I join a company as an interim, I also look at what takes up people's time without needing their judgement: manual reports, copying data between systems, answering the same questions, gathering information from several sources. Where it makes sense, we set up simple automations and AI assistants that take over that work.",
+        "I work with Claude, ChatGPT and Make.com every day. I build AI assistants for analyses, proposals and reports, design automations that connect spreadsheets, databases and the tools the team uses, and create simple apps that support sales and leadership development. I take part in a Bitrix24 CRM rollout on the client side.",
+        "I'm not a developer and I don't sell IT implementations. My role is to point out what is worth automating, design the process and launch a solution the team understands and actually uses. For larger systems I work with the vendor.",
+      ],
+      items: [
+        { title: "Reports without retyping", body: "Data from several sources collected automatically, the report ready for the meeting." },
+        { title: "An assistant for the team", body: "Answers to recurring questions, proposal and email templates, first drafts of documents." },
+        { title: "Order in the CRM and processes", body: "Clear stages, automatic reminders, fewer dropped topics." },
+      ],
     },
+    audit: {
+      title: "Organisation and process audit",
+      body: [
+        "If you don't yet know whether you need an interim manager, training or mentoring, start with an audit. For a few days I talk to the team and look at how the daily work runs.",
+        "You get a confidential report: what is blocking results, how roles are divided, where information gets lost and which tasks are worth automating. Plus recommendations on what to fix now, what within a quarter, and where training, mentoring or interim support will help.",
+      ],
+      action: "Ask about an audit",
+      mailSubject: "Organisation audit - enquiry",
+    },
+
 
     when: {
       title: "When an interim manager makes sense",
@@ -282,6 +304,7 @@ export const en: Content = {
       body: [
         "I spent more than 20 years in logistics and courier services, 15 of them in management. I led teams in day-to-day operations, under pressure from clients and targets.",
         "On top of that I bring the skills of a mentor and trainer. I won't just deliver the result; I'll leave the team and my successor ready to carry on without me.",
+        "I also bring hands-on experience with AI and automation, so sorting out operations includes tools that take repetitive work off people.",
       ],
     },
     how: {
@@ -535,6 +558,7 @@ export const en: Content = {
         "Today he works with managers, CEOs and business owners. He runs his own mentoring programme, Manager 2.0, built on the W.I.Z.J.A. method, delivers training for boards and teams, and speaks about leadership, communication and decisions. He has mentored more than 70 people, also in English and across many countries, totalling over 500 hours of sessions.",
         "He mentors students in the mentoring programmes of the University of Bielsko-Biala and the University of Wrocław.",
         "He has been active in Toastmasters International since 2018 and served as Director of District 108, which covers 7 countries, around 2000 members and 100 clubs. He is a certified Professional Speaker, co-author of four books on growth and leadership, including one with Brian Tracy, and a speaker mentor at TEDx Nikiszowiec Women 2026.",
+        "He uses AI in his day-to-day management work and builds automations that take load off teams (Claude, ChatGPT, Make.com).",
         "He hosted Self-Storage Summit Poland 2026, runs the WFS business club in Bielsko-Biała and moderates networking at Barter Klub online meetings.",
         "He runs Linkaris Sp. z o.o. and takes entrepreneurs hiking in the Beskid mountains.",
       ],

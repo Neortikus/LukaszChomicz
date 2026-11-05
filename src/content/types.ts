@@ -125,6 +125,8 @@ export type Content = {
   };
   interim: {
     intro: PageIntro;
+    automation: { title: string; body: string[]; items: Item[] };
+    audit: { title: string; body: string[]; action: string; mailSubject: string };
     testimonialsTitle: string;
     explain: Explainer;
     compare: Compare;

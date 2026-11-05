@@ -39,6 +39,40 @@ export default async function InterimPage({ params }: PageProps) {
       </section>
 
       <section className="section section--lavender">
+        <div className="wrap">
+          <div className="split">
+            <SectionHeading>{m.automation.title}</SectionHeading>
+            <div className="stack explainer">
+              {m.automation.body.map((p) => (
+                <p key={p}>{p}</p>
+              ))}
+            </div>
+          </div>
+          <div style={{ marginTop: 40 }}>
+            <Items c={c} items={m.automation.items} />
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="wrap split split--center">
+          <Photo src="/images/szkolenia-warsztat.webp" alt={c.about.portraitAlt} shape="wide" />
+          <div className="stack">
+            <h2>{m.audit.title}</h2>
+            <span className="accent-bar" />
+            {m.audit.body.map((p) => (
+              <p key={p}>{p}</p>
+            ))}
+            <div className="cta-row" style={{ marginTop: 12 }}>
+              <a className="btn" href={mailto(m.audit.mailSubject)}>
+                {m.audit.action}
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section section--lavender">
         <div className="wrap split split--center">
           <Photo src="/images/scena-4.webp" alt={c.about.portraitAlt} shape="wide" />
           <div className="stack">
