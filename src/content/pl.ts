@@ -329,8 +329,8 @@ export const pl: Content = {
     },
       ask: { label: "Zapytaj o szkolenie dla zespołu", mailSubject: "Szkolenie dla zespołu - zapytanie" },
     programs: {
-      title: "Sprawdzone programy",
-      lede: "Trzy warsztaty, które już prowadziłem. Każdy dopasowuję do firmy: czas trwania, przykłady i ćwiczenia ustalamy po rozmowie o tym, co ma się zmienić.",
+      title: "Przykładowe programy",
+      lede: "Trzy z wielu warsztatów, które prowadzę dla firm. Każdy dopasowuję do zespołu: czas trwania, przykłady i ćwiczenia ustalamy po rozmowie o tym, co ma się zmienić. Pozostałe tematy znajdziesz niżej.",
       items: [
         {
           title: "Zarząd, który domyka tematy",

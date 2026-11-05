@@ -329,8 +329,8 @@ export const en: Content = {
     },
       ask: { label: "Ask about training for your team", mailSubject: "Team training - enquiry" },
     programs: {
-      title: "Proven programmes",
-      lede: "Three workshops I have already delivered. I tailor each one to the company: length, examples and exercises are agreed after we talk about what should change.",
+      title: "Sample programmes",
+      lede: "Three of the many workshops I run for companies. I tailor each one to the team: length, examples and exercises are agreed after we talk about what should change. More topics are listed below.",
       items: [
         {
           title: "A board that closes things out",
