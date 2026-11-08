@@ -30,11 +30,11 @@ export default async function NetworkingPage({ params }: PageProps) {
             </div>
           </div>
           <div className="gallery">
-            <Photo src="/images/gory-selfie-grupa.webp" alt={n.intro.title} shape="fill" />
+            <Photo src="/images/gory-jesien.webp" alt={n.intro.title} shape="fill" />
             <Photo src="/images/gory-lukasz.webp" alt={n.intro.title} shape="fill" />
             <Photo src="/images/hero-gory2.webp" alt={n.intro.title} shape="fill" />
             <Photo src="/images/gory-lukasz2.webp" alt={n.intro.title} shape="fill" />
-            <Photo src="/images/gory-bieg.webp" alt={n.intro.title} shape="fill" />
+            <Photo src="/images/gory-wschod-grupa.webp" alt={n.intro.title} shape="fill" position="12% 50%" />
           </div>
         </div>
       </section>

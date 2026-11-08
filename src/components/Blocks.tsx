@@ -139,11 +139,21 @@ export function Bullets({ points }: { points: string[] }) {
   );
 }
 
-export function Photo({ src, alt, shape = "wide" }: { src: string; alt: string; shape?: "wide" | "tall" | "fill" }) {
+export function Photo({
+  src,
+  alt,
+  shape = "wide",
+  position,
+}: {
+  src: string;
+  alt: string;
+  shape?: "wide" | "tall" | "fill";
+  position?: string;
+}) {
   return (
     <div className={`photo${shape === "fill" ? "" : ` photo--${shape}`}`}>
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src={src} alt={alt} loading="lazy" />
+      <img src={src} alt={alt} loading="lazy" style={position ? { objectPosition: position } : undefined} />
     </div>
   );
 }
