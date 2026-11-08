@@ -13,7 +13,7 @@ export default async function SpeakingPage({ params }: PageProps) {
   const s = c.speaking;
   return (
     <>
-      <PageHead icon="swiadomosc" image="/images/scena-2.webp" position="70% 30%" title={s.intro.title} lede={s.intro.lede}>
+      <PageHead icon="swiadomosc" image="/images/scena-2.webp" position="70% 30%" shift={18} title={s.intro.title} lede={s.intro.lede}>
         <a className="btn btn--accent" href={mailto(s.ask.mailSubject)}>
           {s.ask.label}
         </a>

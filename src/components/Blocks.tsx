@@ -15,6 +15,7 @@ export function PageHead({
   image,
   position,
   portrait,
+  shift,
   title,
   lede,
   children,
@@ -24,6 +25,8 @@ export function PageHead({
   position?: string;
   /** Portrait photo: shown on the right half instead of across the whole strip. */
   portrait?: boolean;
+  /** Push the photo to the right (in % of the strip width) so the title stays clear of the person. */
+  shift?: number;
   title: string;
   lede: string;
   children?: React.ReactNode;
@@ -33,7 +36,16 @@ export function PageHead({
       {image && (
         <div className="page-head__bg">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={image} alt="" style={position ? { objectPosition: position } : undefined} />
+          <img src={image} alt="" style={{
+              ...(position ? { objectPosition: position } : {}),
+              ...(shift
+                ? {
+                    transform: `translateX(${shift}%)`,
+                    WebkitMaskImage: "linear-gradient(90deg, transparent 0%, #000 30%)",
+                    maskImage: "linear-gradient(90deg, transparent 0%, #000 30%)",
+                  }
+                : {}),
+            }} />
         </div>
       )}
       <div className="wrap">
