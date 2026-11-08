@@ -13,7 +13,7 @@ export default async function NetworkingPage({ params }: PageProps) {
   const n = c.networking;
   return (
     <>
-      <PageHead icon="rozwoj" image="/images/gory-grupa2.webp" title={n.intro.title} lede={n.intro.lede} />
+      <PageHead icon="rozwoj" image="/images/gory-zima-grupa.webp" position="50% 30%" shift={20} title={n.intro.title} lede={n.intro.lede} />
 
       <section className="section">
         <div className="wrap split split--center">
@@ -30,7 +30,7 @@ export default async function NetworkingPage({ params }: PageProps) {
             </div>
           </div>
           <div className="gallery">
-            <Photo src="/images/gory-grupa.webp" alt={n.intro.title} shape="fill" />
+            <Photo src="/images/gory-selfie-grupa.webp" alt={n.intro.title} shape="fill" />
             <Photo src="/images/gory-lukasz.webp" alt={n.intro.title} shape="fill" />
             <Photo src="/images/hero-gory2.webp" alt={n.intro.title} shape="fill" />
             <Photo src="/images/gory-lukasz2.webp" alt={n.intro.title} shape="fill" />
