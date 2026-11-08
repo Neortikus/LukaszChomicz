@@ -14,7 +14,7 @@ export default async function EventsPage({ params }: PageProps) {
   const e = c.events;
   return (
     <>
-      <PageHead icon="rezultaty" image="/images/scena-3.webp" title={e.intro.title} lede={e.intro.lede} />
+      <PageHead icon="rezultaty" image="/images/ev-tedx-scena.webp" position="50% 25%" shift={15} title={e.intro.title} lede={e.intro.lede} />
 
       <section className="section">
         <div className="wrap">
