@@ -494,7 +494,9 @@ img { max-width: 100%; display: block; }
   padding-bottom: 2px;
 }
 .path:hover img { transform: scale(1.04); }
-.path--books img { object-fit: contain; object-position: 50% 18%; padding: 20px 20px 160px; }
+.path--books img { object-fit: contain; object-position: 100% 50%; padding: 28px 28px 28px 42%; }
+@media (min-width: 961px) { li:has(> .path--books) { grid-column: 1 / -1; } .path--books { min-height: 340px; justify-content: center; } .path--books .path__body { max-width: 40%; } }
+@media (max-width: 960px) { .path.path--books { min-height: 470px; } .path--books img { padding: 18px 14px 0; height: 46%; object-position: 50% 0%; } }
 .path--books { background: var(--grad-dusk); }
 @media (max-width: 960px) { .paths { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 600px) { .paths { grid-template-columns: 1fr; } .path { min-height: 330px; } }
