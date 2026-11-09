@@ -134,7 +134,7 @@ export default async function HomePage({ params }: PageProps) {
               <li key={p.href}>
                 <Link href={p.href} className={`path${p.href === "/ksiazki" ? " path--books" : ""}`}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={p.image} alt="" loading="lazy" />
+                  <img src={p.image} alt="" loading="lazy" style={p.position ? { objectPosition: p.position } : undefined} />
                   <span className="path__body">
                     <Icon name={p.icon} />
                     <h3>{p.title}</h3>

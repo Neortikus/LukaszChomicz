@@ -46,6 +46,7 @@ export type Path = {
   href: AppPathname;
   icon: IconName;
   image: string;
+  position?: string;
   title: string;
   body: string;
   link: string;

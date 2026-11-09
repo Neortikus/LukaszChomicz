@@ -81,7 +81,7 @@ export const en: Content = {
       { href: "/szkolenia", icon: "ludzie", image: "/images/scena-6.webp", title: "Company training", body: "For boards, management teams and staff. Accountability, closing things out, collaboration, clear roles.", link: "Training programmes" },
       { href: "/wystapienia", icon: "swiadomosc", image: "/images/scena-7.webp", title: "Speaking", body: "Keynotes, power speeches and conference hosting. The neuroscience of leadership, communication, talent in teams.", link: "Talk topics" },
       { href: "/networking-w-gorach", icon: "rozwoj", image: "/images/gory-szczyt-grupa.webp", title: "Mountain networking", body: "I take entrepreneurs into the Beskid mountains: Pilsko, Barania Góra, Skrzyczne, Babia Góra.", link: "Upcoming hikes" },
-      { href: "/interim-manager", icon: "rezultaty", image: "/images/portret4.webp", title: "Interim manager", body: "I join a company for a set period: building a department, sorting out operations or leading a team through a transition.", link: "How I work as an interim" },
+      { href: "/interim-manager", icon: "rezultaty", image: "/images/interim-kafel.webp", title: "Interim manager", body: "I join a company for a set period: building a department, sorting out operations or leading a team through a transition.", link: "How I work as an interim" },
       { href: "/ksiazki", icon: "dzialanie", image: "/images/ksiazka-moc-slow.webp", title: "Books", body: "Moc Słów, Wiedza Warta Miliony, Potęga Samodoskonalenia and Sztuka Inspirowania.", link: "See the books" },
     ],
     testimonialsTitle: "What people I've worked with say",
