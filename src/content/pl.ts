@@ -668,6 +668,7 @@ export const pl: Content = {
           "drewniany dom w górach, sauna, balia i jacuzzi",
         ],
         cta: { label: "Zobacz wydarzenie i zapisy", href: "https://fb.me/e/75D9mmFcO", external: true },
+        live: { label: "Relacja na żywo", href: "/wydarzenia/bieszczady-na-zywo" },
       },
       {
         slug: "karkonosze-2027",

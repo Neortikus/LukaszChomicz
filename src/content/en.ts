@@ -668,6 +668,7 @@ export const en: Content = {
           "a wooden house in the mountains with sauna, hot tub and jacuzzi",
         ],
         cta: { label: "Event details and sign-up", href: "https://fb.me/e/75D9mmFcO", external: true },
+        live: { label: "Live report", href: "/wydarzenia/bieszczady-na-zywo" },
       },
       {
         slug: "karkonosze-2027",

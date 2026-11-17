@@ -1095,3 +1095,22 @@ button.btn:disabled { opacity: 0.6; cursor: wait; }
     mask-image: linear-gradient(90deg, transparent 0%, #000 30%, #000 85%, transparent 100%);
   }
 }
+
+/* ---------- Live report ---------- */
+.live-dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; background: #ef5267; box-shadow: 0 0 0 0 rgba(239, 82, 103, 0.6); animation: live-pulse 1.8s infinite; }
+@keyframes live-pulse { 0% { box-shadow: 0 0 0 0 rgba(239, 82, 103, 0.6); } 70% { box-shadow: 0 0 0 10px rgba(239, 82, 103, 0); } 100% { box-shadow: 0 0 0 0 rgba(239, 82, 103, 0); } }
+@media (prefers-reduced-motion: reduce) { .live-dot { animation: none; } }
+.live-badge { display: inline-flex; align-items: center; gap: 10px; padding: 8px 16px; border-radius: 999px; background: rgba(255, 255, 255, 0.12); color: #fff; font-family: var(--font-head); font-weight: 600; font-size: 0.8rem; letter-spacing: 0.14em; text-transform: uppercase; }
+.event__live { display: inline-flex; align-items: center; gap: 10px; }
+.live-days { list-style: none; margin: 36px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 18px; }
+.live-days > li { background: #fff; border: 1px solid #e3dbea; border-radius: var(--radius); padding: 20px 22px; }
+.live-days > li.is-done { opacity: 0.75; }
+.live-days > li.is-now { border: 2px solid var(--plum); box-shadow: 0 14px 34px -20px rgba(112, 64, 128, 0.55); }
+.live-days__head { display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; }
+.live-days__head strong { font-family: var(--font-head); }
+.live-days__status { display: inline-flex; align-items: center; gap: 8px; font-family: var(--font-head); font-weight: 600; font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--plum); }
+.live-days ul { margin: 12px 0 0; padding-left: 18px; color: var(--text-soft); font-size: 0.95rem; }
+.live-days ul li + li { margin-top: 6px; }
+.live-photos { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; margin-top: 28px; max-width: 900px; }
+.live-photos figure { margin: 0; }
+.live-photos figcaption { margin-top: 10px; font-size: 0.9rem; color: var(--text-soft); }

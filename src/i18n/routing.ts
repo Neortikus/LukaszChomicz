@@ -21,6 +21,7 @@ export const routing = defineRouting({
     "/linkaris": "/linkaris",
     "/o-mnie": { pl: "/o-mnie", en: "/about" },
     "/kontakt": { pl: "/kontakt", en: "/contact" },
+    "/wydarzenia/bieszczady-na-zywo": { pl: "/wydarzenia/bieszczady-na-zywo", en: "/events/bieszczady-live" },
     "/regulamin": { pl: "/regulamin", en: "/terms" },
     "/polityka-prywatnosci": { pl: "/polityka-prywatnosci", en: "/privacy-policy" },
     "/regulamin-newslettera": { pl: "/regulamin-newslettera", en: "/newsletter-terms" },

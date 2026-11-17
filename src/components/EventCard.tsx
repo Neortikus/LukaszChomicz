@@ -1,3 +1,4 @@
+import { Link } from "@/i18n/navigation";
 import type { EventInfo } from "@/content/types";
 import { Bullets } from "./Blocks";
 
@@ -36,6 +37,12 @@ export function EventCard({ e, full }: { e: EventInfo; full?: boolean }) {
           >
             {e.cta.label}
           </a>
+          {e.live && (
+            <Link href={e.live.href} className="btn btn--ghost event__live">
+              <span className="live-dot" aria-hidden="true" />
+              {e.live.label}
+            </Link>
+          )}
         </div>
       </div>
     </li>

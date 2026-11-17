@@ -63,6 +63,7 @@ export type EventInfo = {
   facts: { label: string; value: string }[];
   points: string[];
   cta: { label: string; href: string; external?: boolean };
+  live?: { label: string; href: AppPathname };
 };
 
 export type Content = {
